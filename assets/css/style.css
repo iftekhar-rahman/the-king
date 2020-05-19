@@ -1,0 +1,270 @@
+/*****************************
+00. Mixins CSS
+******************************/
+/*****************************
+00. Helper CSS
+*****************************/
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+.owl-nav div {
+  border-radius: 50%; }
+
+.owl-nav div {
+  display: inline-block; }
+
+.boxed-btn {
+  position: relative; }
+
+.owl-nav div {
+  position: absolute; }
+
+.boxed-btn:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: -1; }
+
+a, button, img, input, span, .owl-nav div, .boxed-btn:after {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.owl-nav div {
+  text-align: center; }
+
+.boxed-btn {
+  font-family: "Open Sans", sans-serif; }
+
+/*======fonts==============*/
+/*=================== Reset CSS =====================*/
+img {
+  max-width: 100%;
+  height: auto; }
+
+a, a:hover, a:focus, a:active, button, button:focus,
+input, input:focus, select, textarea, textarea:focus, .slick-slide, .slick-slide:focus, .slick-slide:active {
+  outline: 0 solid; }
+
+::-moz-selection {
+  background: #90B1C3;
+  color: #fff; }
+
+::selection {
+  background: #90B1C3;
+  color: #fff; }
+
+::-moz-selection {
+  background: #90B1C3;
+  color: #fff; }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a, button {
+  color: inherit;
+  display: inline-block;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer; }
+
+*:focus {
+  outline: none !important; }
+
+a:focus {
+  color: inherit;
+  outline: none;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+button, input[type=submit] {
+  cursor: pointer; }
+
+/*==============Common CSS===================*/
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #999999; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 15px;
+  font-weight: 600; }
+
+p:last-child {
+  margin-bottom: 0; }
+
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
+  border-radius: 5px;
+  height: 50px;
+  padding: 8px 20px; }
+
+.form-group {
+  margin-bottom: 25px; }
+  .form-group .form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #2a7d2e; }
+  .form-group .form-control:hover {
+    border-color: #2a7d2e; }
+
+input[type=submit], button[type=submit] {
+  cursor: pointer; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #999999; }
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #999999; }
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #999999; }
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #999999; }
+
+.boxed-btn:hover, input[type=submit]:hover, button[type=submit]:hover {
+  background-color: #0DA0F4;
+  color: #fff; }
+
+textarea {
+  height: 150px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 100%;
+  border-color: #ced4da;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; }
+  textarea:focus {
+    border-color: #2a7d2e; }
+  textarea:hover {
+    border-color: #2a7d2e; }
+
+/*========.section-title=========*/
+.section-title {
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #124a2f; }
+
+/*======.owl-dots customization=======*/
+.owl-dots div {
+  height: 5px;
+  width: 5px;
+  background-color: #BBBBBB;
+  display: inline-block;
+  margin: 0 5px;
+  border-radius: 50%; }
+
+.owl-dots {
+  text-align: center; }
+
+.owl-dots div.active {
+  background-color: #0DA0F4; }
+
+/*=====owl nav customization======*/
+.owl-nav div {
+  left: -10px;
+  top: 50%;
+  color: #2A7D2E;
+  background-color: #fff;
+  line-height: 60px;
+  margin-top: -30px;
+  width: 60px;
+  height: 60px;
+  font-size: 45px;
+  padding-right: 5px; }
+  .owl-nav div.owl-next {
+    left: auto;
+    right: -10px;
+    padding-left: 5px;
+    padding-right: 0; }
+  .owl-nav div:hover {
+    color: #ffffff;
+    background-color: #2A7D2E; }
+
+select {
+  font-size: 19px;
+  color: #0da0f4;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 0;
+  padding: 8px 10px; }
+
+/*========.nice-select=============*/
+.nice-select {
+  width: 100%;
+  border-radius: 50px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  border-color: #ced4da; }
+  .nice-select .list {
+    width: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #ced4da; }
+  .nice-select:focus {
+    border-color: #154D32; }
+  .nice-select:hover {
+    border-color: #154D32; }
+  .nice-select:after {
+    right: 25px;
+    border-color: #ced4da;
+    width: 10px;
+    height: 10px;
+    margin-top: -6px; }
+  .nice-select:hover:after {
+    border-color: #2A7D2E; }
+
+/*=============== Header CSS ==================*/
+/*============== Footer CSS ================*/
+/*=========== Button CSS ==========*/
+.boxed-btn {
+  background-color: #DB2D2E;
+  padding: 8px 20px;
+  font-weight: 600;
+  font-size: 17px;
+  border: 0;
+  z-index: 2;
+  text-transform: capitalize; }
+  .boxed-btn:after {
+    background-color: #323232;
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0); }
+  .boxed-btn:hover:after {
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1); }
+
+.bordered-btn {
+  border: 2px solid #2A7D2E;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  background: transparent; }
+  .bordered-btn:hover {
+    color: #154D32; }
+
+.boxed-btn, .boxed-btn:hover {
+  color: #ffffff; }
+
+/*================Home Page CSS===============*/
+
+/*# sourceMappingURL=style.css.map */

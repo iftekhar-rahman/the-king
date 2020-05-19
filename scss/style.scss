@@ -1,0 +1,31 @@
+// ======================================
+//  Partial Imports
+// ======================================
+
+// Utilities
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/helpers';
+@import 'helpers/mediaquery';
+
+// Base fonts
+@import 'base/fonts';
+
+// Base Styles
+@import 'base/reset';
+@import 'base/common';
+
+// Layout Styles
+@import 'components/header';
+@import 'components/footer';
+
+// Components Styles
+@import 'components/button';
+@import 'components/color'; 
+
+// Pages Styles
+@import 'pages/home';
+
+
+
+

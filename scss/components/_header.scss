@@ -1,0 +1,141 @@
+/*=============== Header CSS ==================*/
+
+
+
+// Dropdown CSS
+.mainmenu ul li ul {
+    @extend %posabsolute;
+    left: 0;
+    top: 120px;
+    width: 300px;
+    @extend %white-bg-color;
+    z-index: 9999;
+    @extend %invisible;
+    @extend %basetransition3;
+}
+.mainmenu ul li ul ul {
+    left: 100%;
+    top: 45px;
+    @extend %invisible;;
+}
+.mainmenu ul li:hover > ul {
+    top: 72px;
+    @extend %visible;
+}
+.mainmenu ul li ul li {
+    @extend %displayblock;
+    border-bottom: 1px solid #f4f4f4;
+    @extend %basetransition2;
+}
+.mainmenu ul li ul li a {
+    padding: 12px 15px 12px;
+    @extend %displayblock;
+    text-transform: capitalize;
+}
+.mainmenu ul li ul li:hover > a {
+    @extend %primary-bg-color;
+    @extend %white-color;
+}
+.mainmenu ul li ul li:hover {
+    border-color: $primary-color;
+}
+.mainmenu ul li ul li:last-child {
+    border-bottom: 4px solid $primary-color;
+}
+.mainmenu ul li ul li:hover ul {
+    top: 0;
+}
+
+
+/* =======slicknav_menu======== */
+.slicknav_menu {
+    @extend %displaynone;
+    @include all-below-med(){
+        display: block;
+        background: #ddd;
+        position: fixed;
+        left: 0;
+        top: -10px;
+        right: 0;
+        width: 720px;
+        z-index: 999999999999;
+        margin: 0 auto;
+        height: 0;
+        span.slicknav_menutxt {
+            display: none;
+        }
+        .slicknav_btn {
+            padding: 0;
+            margin: 0px 11px 0 0;
+            font-size: 30px;
+            background: none;
+            top: 38px;
+            right: 15px;
+            @include mobile-lg{
+                margin: 0px -5px 0 0;
+            }
+            @include all-below-mobile-lg{
+                // top: 34px;
+                // right: 0;
+            }
+            &:hover{
+                background: none;
+            }
+            // @include mx-mobile(){
+            //     right: 0px;
+            // };
+            // @include mx-mobile-lg(){
+            //     right: 63px;
+            // };
+        }
+        .slicknav_icon {
+            margin: 0;
+            span {
+                background-color: #262262;
+                border-radius: 0px;
+            }
+        }
+        .slicknav_nav {
+            padding: 10px 0;
+            background: #fff;
+            position: absolute;
+            left: 0;
+            top: 100px;
+            width: 100%;
+            box-shadow: 2px 10px 30px -14px #000;
+            @include all-below-mobile-lg{
+                // top: 90px;
+            }
+            .slicknav_row {
+                padding: 0;
+                a{
+                    padding: 10px 15px;
+                    display: inline-block;
+                }
+            }
+            .slicknav_row{
+                border-radius: 0px;
+                &:hover {
+                    border-radius: 0px;
+                }
+            }
+        }
+        a {
+            padding: 10px 15px;
+            font-size: 16px;
+            color: #000;
+            border-radius: 0;
+            &:hover {
+                border-radius: 0;
+            }
+        }
+        
+        
+    }
+    @include all-below-mobile-lg(){
+        width: 540px;
+    };
+    @include all-mx-mobile(){
+        width: 100%;
+    };
+}

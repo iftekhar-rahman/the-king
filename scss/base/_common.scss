@@ -1,0 +1,178 @@
+/*==============Common CSS===================*/
+
+body {
+    font-family: $body-font;
+    font-size: $body-font-size;
+    color: $body-color;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 600;
+}
+p {
+    &:last-child{
+    	margin-bottom: 0;
+    }
+}
+a, button, img, input, span {
+    @extend %basetransition; 
+}
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
+    border-radius: 5px;
+    height: 50px;
+    padding: 8px 20px;
+}
+.form-group {
+    margin-bottom: 25px;
+    .form-control{
+        &:focus {
+            box-shadow: none;
+            border-color: #2a7d2e;
+        }
+        &:hover {
+            border-color: #2a7d2e;
+        }
+    }
+}
+input[type=submit], button[type=submit]{
+    cursor: pointer;
+}
+input, textarea{
+	@include placeholder{
+		color: $body-color;
+	}
+}
+input[type=submit], button[type=submit]{
+    &:hover{
+        
+    }
+}
+textarea {
+    height: 150px;
+    padding: 10px 20px;
+    width: 100%;
+    // margin-bottom: -7px;
+    border-color: #ced4da;
+    transition: all .3s ease;
+    &:focus {
+        border-color: #2a7d2e;
+    }
+    &:hover {
+        border-color: #2a7d2e;
+    }
+}
+
+/*========.section-title=========*/ 
+.section-title {
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #124a2f;
+}
+
+/*======.owl-dots customization=======*/
+.owl-dots {
+    text-align: center;
+    div {
+        height: 5px;
+        width: 5px;
+        background-color: #BBBBBB;
+        display: inline-block;
+        margin: 0 5px;
+        border-radius: 50%;
+        &.active {
+            background-color: #0DA0F4;
+        }
+    }
+}
+    
+/*=====owl nav customization======*/
+.owl-nav div {
+    @extend %displayinline;
+    @extend %posabsolute;
+    left: -10px;
+    top: 50%;
+    color: #2A7D2E;
+    background-color: #fff;
+    line-height: 60px;
+    margin-top: -30px;
+    width: 60px;
+    height: 60px;
+    font-size: 45px;
+    padding-right: 5px;
+    @extend %borderradius50;
+    @extend %textcenter;
+    @extend %basetransition;
+    &.owl-next {
+        left: auto;
+        right: -10px;
+        padding-left: 5px;
+        padding-right: 0;
+    }
+    &:hover {
+        color: #ffffff;
+        background-color: #2A7D2E;
+    }
+}
+
+select {
+    font-size: 19px;
+    color: #0da0f4;
+    background-color: #fff;
+    padding: 8px 10px;
+}
+
+/*========.nice-select=============*/ 
+.nice-select {
+    width: 100%;
+    border-radius: 50px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    border-color:  #ced4da;
+    .list {
+        width: 100%;
+        box-shadow: none;
+        border: 1px solid #ced4da;
+    }
+    &:focus {
+        border-color: #154D32;
+    }
+    &:hover {
+        border-color: #154D32;
+    }
+    &:after{
+        right: 25px;
+        border-color: #ced4da;
+        width: 10px;
+        height: 10px;
+        margin-top: -6px;
+    }
+    &:hover:after {
+        border-color: #2A7D2E;
+    }
+}
+.ps__scrollbar-y {
+    background-color: #99822c !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

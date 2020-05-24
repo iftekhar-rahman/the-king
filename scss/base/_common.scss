@@ -7,7 +7,8 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0 0 15px;
-    font-weight: 600;
+    font-weight: 700;
+    color: #0a1f44;
 }
 p {
     &:last-child{
@@ -15,7 +16,7 @@ p {
     }
 }
 a, button, img, input, span {
-    @extend %basetransition; 
+    @extend %basetransition1; 
 }
 input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
     border-radius: 5px;
@@ -64,10 +65,19 @@ textarea {
 
 /*========.section-title=========*/ 
 .section-title {
-    font-size: 38px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #124a2f;
+    h4{
+        color: #e8505b;
+        font-weight: 100;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    h2{
+        font-size: 36px;
+        margin-bottom: 40px;
+        color: #0a1f44;
+        text-transform: capitalize;
+    }
 }
 
 /*======.owl-dots customization=======*/
@@ -102,7 +112,7 @@ textarea {
     padding-right: 5px;
     @extend %borderradius50;
     @extend %textcenter;
-    @extend %basetransition;
+    @extend %basetransition1;
     &.owl-next {
         left: auto;
         right: -10px;

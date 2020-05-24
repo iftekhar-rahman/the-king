@@ -1,6 +1,101 @@
 /*=============== Header CSS ==================*/
+// .header-top-area
+.header-top-area {
+    background: #E8505B;
+    color: #fff;
+    font-size: 15px;
+    .header-contact-info {
+        ul {
+            li {
+                padding: 13px 0 13px;
+                border-right: 1px solid #ED737C;
+                padding-right: 15px;
+                margin-right: 15px;
+                display: inline-block;
+                a {
+                    color: #fff;
+                }
+                &:hover a {
+                    color: #0b185f;
+                }
+                &:last-child {
+                    border: 0;
+                }
+            }
+        }
+    }
+    .header-social-icons {
+        a {
+            border-right: 1px solid #ED737C;
+            padding: 12px 0px 11px;
+            display: inline-block;
+            width: 48px;
+            text-align: center;
+            color: #fff;
+            transition: .3s;
+            font-size: 18px;
+            &:hover {
+                color: #0b185f;
+            }
+            &:first-child {
+                border-left: 1px solid #ED737C;
+            }
+        }
+    }
+}
 
-
+// .mainmenu
+.mainmenu ul li {
+    display: inline-block;
+}
+.mainmenu ul li a {
+    color: #0a1f44;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 39px 12px 40px;
+}
+.mainmenu ul li:hover a {
+    color: #e8505b;
+}
+.header-search {
+    width: 85px;
+    color: #E8505B;
+    border-left: 1px solid #F3F3F3;
+    margin-left: 50px;
+    span {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #F1F1F1;
+        border-radius: 50px;
+        text-align: center;
+        line-height: 47px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+.header-cart {
+    border-left: 1px solid #F3F3F3;
+    border-right: 1px solid #F3F3F3;
+    width: 75px;
+    color: #E0E0E0;
+    font-size: 28px;
+    padding-top: 14px;
+    .number {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: 3px;
+        top: -15px;
+        background: #E8505B;
+        color: #fff;
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 25px;
+    }
+}
 
 // Dropdown CSS
 .mainmenu ul li ul {

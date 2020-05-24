@@ -69,7 +69,7 @@
 	position: absolute;
 	content: "";
 }
-%basetransition{
+%basetransition1{
 	@include transition(all .3s ease);
 }
 %basetransition2{

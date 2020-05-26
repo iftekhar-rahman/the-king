@@ -2,7 +2,7 @@ jQuery(document).ready(function($){
 
     // $(".header-area").sticky({ topSpacing: 0 });
 
-    // $('select').niceSelect();
+    $('select').niceSelect();
 
     // homepage-slides
 	// $(".homepage-slides").owlCarousel({

@@ -20,20 +20,27 @@ a, button, img, input, span {
 }
 input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
     border-radius: 5px;
-    height: 50px;
-    padding: 8px 20px;
+    height: 55px;
+    width: 100%;
+    border: 1px solid transparent;
+    background-color: #fff;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=url]:focus, textarea:focus{
+    border-color: #E8505B;
 }
 .form-group {
-    margin-bottom: 25px;
-    .form-control{
-        &:focus {
-            box-shadow: none;
-            border-color: #2a7d2e;
-        }
-        &:hover {
-            border-color: #2a7d2e;
-        }
-    }
+    margin-bottom: 20px;
+    // .form-control{
+    //     &:focus {
+    //         box-shadow: none;
+    //         border-color: #2a7d2e;
+    //     }
+    //     &:hover {
+    //         border-color: #2a7d2e;
+    //     }
+    // }
 }
 input[type=submit], button[type=submit]{
     cursor: pointer;
@@ -49,17 +56,23 @@ input[type=submit], button[type=submit]{
     }
 }
 textarea {
-    height: 150px;
-    padding: 10px 20px;
+    height: 100px;
+    padding: 15px 20px;
     width: 100%;
-    // margin-bottom: -7px;
-    border-color: #ced4da;
+    // border: 1px solid transparent;
     transition: all .3s ease;
-    &:focus {
-        border-color: #2a7d2e;
-    }
-    &:hover {
-        border-color: #2a7d2e;
+    // &:focus {
+    //     border-color: #E8505B;
+    // }
+    // &:hover {
+    //     border-color: #E8505B;
+    // }
+}
+
+.stars {
+    color: #E8505B;
+    span {
+        margin-right: 1px;
     }
 }
 
@@ -67,7 +80,7 @@ textarea {
 .section-title {
     h4{
         color: #e8505b;
-        font-weight: 100;
+        font-weight: 300;
         font-size: 20px;
         text-transform: uppercase;
         margin-bottom: 10px;
@@ -135,36 +148,34 @@ select {
 /*========.nice-select=============*/ 
 .nice-select {
     width: 100%;
-    border-radius: 50px;
-    height: 50px;
-    line-height: 50px;
+    height: 55px;
+    line-height: 55px;
     padding-left: 20px;
-    border-color:  #ced4da;
+    border:  1px solid transparent;
+    margin-bottom: 20px;
+    font-size: 16px;
+    &:hover{
+        border:  1px solid transparent;
+    }
+    &:focus{
+        border-color: #E8505B;
+    }
     .list {
         width: 100%;
         box-shadow: none;
-        border: 1px solid #ced4da;
-    }
-    &:focus {
-        border-color: #154D32;
-    }
-    &:hover {
-        border-color: #154D32;
     }
     &:after{
         right: 25px;
-        border-color: #ced4da;
+        border-color: #999999;
         width: 10px;
         height: 10px;
         margin-top: -6px;
     }
     &:hover:after {
-        border-color: #2A7D2E;
+        border-color: #E8505B;
     }
 }
-.ps__scrollbar-y {
-    background-color: #99822c !important;
-}
+
 
 
 

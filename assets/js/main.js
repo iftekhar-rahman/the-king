@@ -102,19 +102,103 @@ jQuery(document).ready(function($){
     // });
 
 
+    $(".header-search span").on("click", function(){
+        $(".search-box-wrap").addClass("active");
+        return false;
+    });
+    $(".close-btn, .search-overlay").on("click", function(){
+        $(".search-box-wrap").removeClass("active");
+    });
+
+    // PopUp JS
+	$(".popup-link1").magnificPopup({
+		type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
+    
+    // Sticky Header with smooth animation
+    $(window).on('scroll', function() {
+        if ($(window).scrollTop() >= 300) {
+            $('.header-area').addClass('fixed');
+        } else {
+            $('.header-area').removeClass('fixed');
+        }
+    })
 
 
-	// $(".bodytype-carousel-wrap").magnificPopup({
-	// 	type: 'image',
-    //     gallery: {
-    //         enabled: true
-    //     }
-	// });
-
-
-
+    // Scroll To Top starts
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 500) {
+            $('.scrollTop').addClass('scrollBtn');
+        } else {
+            $('.scrollTop').removeClass('scrollBtn');
+        }
+    });
+    $(".scrollTop").click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    }); // click() scroll top ENDS
 
     
+
+    // portfolio isotope js
+    // init Isotope
+    var $grid = $('.grid').isotope({
+        itemSelector: '.single-portfolio-item'
+    });
+    var $filterButtons = $('.filters .button');
+    updateFilterCounts();
+    // store filter for each group
+    var filters = {};
+    $('.filters').on( 'click', '.button', function() {
+        var $this = $(this);
+        // get group key
+        var $buttonGroup = $this.parents('.button-group');
+        var filterGroup = $buttonGroup.attr('data-filter-group');
+        // set filter for group
+        filters[ filterGroup ] = $this.attr('data-filter');
+        // combine filters
+        var filterValue = concatValues( filters );
+        // set filter for Isotope
+        $grid.isotope({ filter: filterValue });
+        updateFilterCounts();
+    });
+    // change is-checked class on buttons
+    $('.button-group').each( function( i, buttonGroup ) {
+        var $buttonGroup = $( buttonGroup );
+        $buttonGroup.on( 'click', 'button', function() {
+            $buttonGroup.find('.is-checked').removeClass('is-checked');
+            $( this ).addClass('is-checked');
+        });
+    });
+    // flatten object by concatting values
+    function concatValues( obj ) {
+        var value = '';
+        for ( var prop in obj ) {
+            value += obj[ prop ];
+        }
+        return value;
+    }
+    function updateFilterCounts()  {
+        // get filtered item elements
+        var itemElems = $grid.isotope('getFilteredItemElements');
+        var $itemElems = $( itemElems );
+        $filterButtons.each( function( i, button ) {
+            var $button = $( button );
+            var filterValue = $button.attr('data-filter');
+            if ( !filterValue ) {
+                // do not update 'any' buttons
+                return;
+            }
+            var count = $itemElems.filter( filterValue ).length;
+            $button.find('.filter-count').text( '(' + count +')' );
+        });
+    }
+  
 
     
 

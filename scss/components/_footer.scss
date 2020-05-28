@@ -7,17 +7,17 @@
     font-size: 15px;
     // .single-footer-widget-item
     .single-footer-widget-item {
-        color: #fff;
+        @extend %white-color;
         h4 {
-            color: #fff;
+            @extend %white-color;
             font-size: 18px;
-            margin-bottom: 20px;
-            transition: .5s;
+            margin-bottom: 25px;
+            @extend %basetransition2;
         }
         .inline-btn {
-            color: #fff;
+            @extend %white-color;
             &:hover {
-                color: #E8505B;
+                @extend %primary-color;
             }
         }
         .single-recent-blog {
@@ -30,8 +30,9 @@
                 padding-bottom: 0;
             }
             img {
-                float: left;
+                @extend %floarleft;
                 margin-right: 20px;
+                max-width: 80px;
             }
             h4 {
                 font-size: 16px;
@@ -40,31 +41,41 @@
                 line-height: 1.5;
             }
             a {
-                color: #fff;
+                @extend %white-color;
             }
             &:hover a, &:hover a h4 {
-                color: #E8505B;
+                @extend %primary-color;
             }
         }
         .subscription-form {
             input[type=email] {
-                border-color: #ddd;
+                border-color: #f1f1f1;
                 background: #263238;
-                color: #fff;
+                @extend %white-color;
                 margin-bottom: 20px;
+            }
+            ::placeholder {
+                color: #ffffff;
+                opacity: 1;
+            }
+            :-ms-input-placeholder {
+                color: #ffffff;
+            }
+            ::-ms-input-placeholder {
+                color: #ffffff;
             }
             .boxed-btn {
                 padding: 18px 25px;
-                background: #fff;
-                color: #e8505b;
+                @extend %white-bg-color;
+                @extend %primary-color;
                 i {
                     margin-right: 10px;
                 }
                 &:hover:after {
-                    background: #e8505b;
+                    @extend %primary-bg-color;
                 }
                 &:hover {
-                    color: #fff;
+                    @extend %white-color;
                 }
             }
         }
@@ -73,9 +84,36 @@
     .copyright-text {
         padding: 30px 0;
         border-top: 1px solid #2C3940;
-        color: #fff;
+        @extend %white-color;
         margin-top: 90px;
     }
 }
  
+
+// scrollTop
+.scrollTop {
+    right: 2%;
+    bottom: -40px;
+    width: 40px;
+    height: 40px;
+    z-index: 9;
+    @extend %posfixed;
+    @extend %secondary-bg-color;
+    @extend %displayblock;
+    @extend %white-color;
+    @extend %textcenter;
+    @extend %basetransition2;
+    @extend %invisible;
+    font-size: 25px;
+    line-height: 37px;
+    @extend %borderradius5;
+    &.scrollBtn{
+        @extend %visible;
+        bottom: 40px;
+    }
+    &:hover{
+        @extend %white-color;
+        @extend %primary-bg-color;
+    }
+}
 

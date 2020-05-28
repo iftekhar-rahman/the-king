@@ -1,8 +1,12 @@
 /*=============== Header CSS ==================*/
 // .header-top-area
+.header{
+    height: 150px;
+}
+// .header-top-area
 .header-top-area {
-    background: #E8505B;
-    color: #fff;
+    @extend %primary-bg-color;
+    @extend %white-color;
     font-size: 15px;
     .header-contact-info {
         ul {
@@ -11,15 +15,15 @@
                 border-right: 1px solid #ED737C;
                 padding-right: 15px;
                 margin-right: 15px;
-                display: inline-block;
+                @extend %displayinline;
                 a {
-                    color: #fff;
+                    @extend %white-color;
                 }
                 &:hover a {
-                    color: #0b185f;
+                    @extend %secondary-color;
                 }
                 &:last-child {
-                    border: 0;
+                    @extend %borderzero;
                 }
             }
         }
@@ -28,14 +32,14 @@
         a {
             border-right: 1px solid #ED737C;
             padding: 12px 0px 11px;
-            display: inline-block;
+            @extend %displayinline;
             width: 48px;
-            text-align: center;
-            color: #fff;
-            transition: .3s;
+            @extend %textcenter;
+            @extend %white-color;
+            @extend %basetransition1;
             font-size: 18px;
             &:hover {
-                color: #0b185f;
+                @extend %secondary-color;
             }
             &:first-child {
                 border-left: 1px solid #ED737C;
@@ -43,58 +47,62 @@
         }
     }
 }
-
+// .header-area
+.header-area{
+    @extend %white-bg-color;
+    .header-search {
+        width: 85px;
+        @extend %primary-color;
+        border-left: 1px solid #F1F1F1;
+        margin-left: 50px;
+        span {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #F1F1F1;
+            @extend %borderradius50;
+            @extend %textcenter;
+            line-height: 47px;
+            font-size: 20px;
+            @extend %cursorpointer;
+        }
+    }
+    .header-cart {
+        border-left: 1px solid #F1F1F1;
+        border-right: 1px solid #F1F1F1;
+        width: 75px;
+        color: #E0E0E0;
+        font-size: 28px;
+        padding-top: 14px;
+        .number {
+            width: 24px;
+            height: 24px;
+            @extend %posabsolute;
+            left: 4px;
+            top: -15px;
+            @extend %primary-bg-color;
+            @extend %white-color;
+            @extend %borderradius50;
+            font-size: 14px;
+            font-weight: 700;
+            @extend %textcenter;
+            line-height: 25px;
+        }
+    }
+}
 // .mainmenu
 .mainmenu ul li {
-    display: inline-block;
+    @extend %displayinline;
+    @extend %posrelative;
 }
 .mainmenu ul li a {
     color: #0a1f44;
-    text-transform: uppercase;
+    @extend %uppercase;
     font-size: 14px;
     font-weight: 500;
-    padding: 39px 12px 40px;
+    padding: 39px 14px 40px;
 }
-.mainmenu ul li:hover a {
-    color: #e8505b;
-}
-.header-search {
-    width: 85px;
-    color: #E8505B;
-    border-left: 1px solid #F3F3F3;
-    margin-left: 50px;
-    span {
-        width: 50px;
-        height: 50px;
-        border: 1px solid #F1F1F1;
-        border-radius: 50px;
-        text-align: center;
-        line-height: 47px;
-        font-size: 20px;
-        cursor: pointer;
-    }
-}
-.header-cart {
-    border-left: 1px solid #F3F3F3;
-    border-right: 1px solid #F3F3F3;
-    width: 75px;
-    color: #E0E0E0;
-    font-size: 28px;
-    padding-top: 14px;
-    .number {
-        width: 24px;
-        height: 24px;
-        position: absolute;
-        left: 3px;
-        top: -15px;
-        background: #E8505B;
-        color: #fff;
-        border-radius: 50px;
-        font-size: 14px;
-        font-weight: 700;
-        text-align: center;
-        line-height: 25px;
-    }
+.mainmenu ul li:hover > a {
+    @extend %primary-color;
 }
 
 // Dropdown CSS
@@ -104,7 +112,7 @@
     top: 120px;
     width: 300px;
     @extend %white-bg-color;
-    z-index: 9999;
+    z-index: 999;
     @extend %invisible;
     @extend %basetransition3;
 }
@@ -114,7 +122,7 @@
     @extend %invisible;;
 }
 .mainmenu ul li:hover > ul {
-    top: 72px;
+    top: 100px;
     @extend %visible;
 }
 .mainmenu ul li ul li {
@@ -126,6 +134,7 @@
     padding: 12px 15px 12px;
     @extend %displayblock;
     text-transform: capitalize;
+    font-size: 15px;
 }
 .mainmenu ul li ul li:hover > a {
     @extend %primary-bg-color;
@@ -141,6 +150,48 @@
     top: 0;
 }
 
+// Sticky Header with smooth animation
+.header-area {
+    @include desktops{
+        &.fixed {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            animation:slide-down 0.7s;
+            z-index: 999;
+            box-shadow: 0 -40px 20px 30px #000;
+            &:after {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                z-index: -1;
+                opacity: 1;
+            }
+        }
+    }
+    @include all-below-med{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 9;
+        // background: #031a39;
+    }
+}
+@keyframes slide-down {
+    0% {
+        // opacity: 0;
+        transform: translateY(-100%);
+    } 
+    100% {
+        // opacity: 1;
+        transform: translateY(0);
+    } 
+}
 
 /* =======slicknav_menu======== */
 .slicknav_menu {
@@ -234,3 +285,75 @@
         width: 100%;
     };
 }
+
+
+// .search-box-css
+.search-box-wrap {
+    @extend %posfixed;
+    @extend %w100;
+    @extend %h100;
+    @extend %basetransition2;
+    @extend %invisible;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    &.active{
+        @extend %visible;
+    }
+    .close-btn {
+        @extend %posabsolute;
+        @extend %white-color;
+        @extend %cursorpointer;
+        @extend %textcenter;
+        right: 5%;
+        top: 5%;
+        font-size: 20px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        &:hover {
+            @extend %primary-color;
+        }
+    }
+    .search-overlay{
+        &:after{
+            @extend %pseudo;
+            @extend %w100;
+            @extend %h100;
+            @extend %secondary-bg-color;
+            left: 0;
+            top: 0;
+            opacity: .9;
+            z-index: -1;
+        }
+    }
+    .search-box {
+        @extend %posrelative;
+        @extend %textcenter;
+        width: 500px;
+        margin: 0 auto;
+        top: 50%;
+        transform: translate(0px, -50%);
+        left: 0;
+        right: 0;
+        input[type=text]{
+            background-color: #E8F0FE;
+            &:focus{
+                border-color: #E8F0FE;
+            }
+        }
+        button {
+            @extend %posabsolute;
+            @extend %white-color;
+            @extend %primary-bg-color;
+            height: 55px;
+            border: 0;
+            width: 60px;
+            border-radius: 0 5px 5px 0;
+            right: 0;
+            top: 0;
+            z-index: 999999;
+        }
+    }
+}
+

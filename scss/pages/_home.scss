@@ -4,15 +4,13 @@
     height: 700px;
 }
 .hero-area{
-    background-position: center;
-    background-size: cover;
+    @extend %backgroundimage;
     .hero-content {
-        color: #555555;
         padding-right: 60px;
         h3 {
             color: #0a1f44;
             font-size: 24px;
-            text-transform: uppercase;
+            @extend %uppercase;
             font-weight: 100;
             margin-bottom: 10px;
         }
@@ -20,7 +18,7 @@
             font-size: 50px;
             color: #0a1f44;
             span {
-                color: #e8505b;
+                @extend %primary-color;
             }
         }
         .boxed-btn {
@@ -34,12 +32,12 @@
     padding: 0 0 50px;
     margin-top: -40px;
     .single-feature-item {
-        padding: 50px 40px 25px 40px;
+        padding: 42px 40px 25px 40px;
         box-shadow: 0px 0px 8px -5px rgba(0,0,0,0.25);
         height: 100%;
-        border-radius: 5px;
-        background: #fff;
-        transition: .5s;
+        @extend %borderradius5;
+        @extend %white-bg-color;
+        @extend %basetransition2;
         &:hover {
             box-shadow: 0px 8px 8px -5px rgba(0,0,0,0.25);
         }
@@ -50,13 +48,13 @@
         .feature-icon {
             height: 90px;
             width: 90px;
-            background: #E8505B;
-            display: block;
-            border-radius: 50px;
-            text-align: center;
-            line-height: 87px;
-            color: #fff;
             margin-bottom: 35px;
+            line-height: 87px;
+            @extend %primary-bg-color;
+            @extend %displayblock;
+            @extend %borderradius50;
+            @extend %textcenter;
+            @extend %white-color;
             i {
                 font-size: 40px;
                 line-height: 95px;
@@ -67,7 +65,7 @@
 
 // .about-area 
 .about-area {
-    padding: 60px 0 100px;
+    padding: 60px 0 120px;
     .section-title {
         h2{
             margin-bottom: 20px;
@@ -83,15 +81,15 @@
                 margin-bottom: 8px;
             }
             i {
-                position: absolute;
+                @extend %posabsolute;
                 left: 0;
                 top: 0;
                 width: 50px;
                 height: 50px;
-                background: #E8505B;
-                color: #fff;
-                border-radius: 50px;
-                text-align: center;
+                @extend %primary-bg-color;
+                @extend %white-color;
+                @extend %borderradius50;
+                @extend %textcenter;
                 line-height: 51px;
                 font-size: 25px;
                 padding-left: 4px;
@@ -102,14 +100,15 @@
 
 // .services-area
 .services-area {
-    background: #E8505B;
+    @extend %primary-bg-color;
     padding: 115px 0 100px;
     .section-title {
         h4 {
-            color: #fff;
+            @extend %white-color;
         }
         h2 {
-            color: #fff;
+            @extend %white-color;
+            margin-bottom: 60px;
         }
     }
     .services-content{
@@ -121,31 +120,31 @@
         }
     }
     .single-service-item {
-        transition: .5s;
-        background: #fff;
-        padding: 45px 30px 40px 160px;
-        border-radius: 5px;
+        @extend %basetransition2;
+        @extend %white-bg-color;
+        padding: 40px 30px 40px 160px;
+        @extend %borderradius5;
         margin-bottom: 20px;
         .service-icon {
-            position: absolute;
+            @extend %posabsolute;
             left: 40px;
             top: 50px;
             width: 100px;
             height: 100px;
-            background: #E8505B;
-            display: block;
-            border-radius: 50px;
-            text-align: center;
+            @extend %primary-bg-color;
+            @extend %displayblock;
+            @extend %borderradius50;
+            @extend %textcenter;
             line-height: 97px;
             i {
-                color: #fff;
+                @extend %white-color;
                 font-size: 35px;
                 line-height: 100px;
             }
         }
         &:hover{
             .service-icon {
-                background: #0b185f;
+                @extend %secondary-bg-color;
             }
         }
     }
@@ -159,20 +158,36 @@
 // .portfolio-filter
 .portfolio-filter {
     margin-bottom: 40px;
-    ul {
-        li {
-            display: inline-block;
-            margin: 0 4px;
-            a {
-                color: #00394f;
-                font-size: 14px;
-                text-transform: uppercase;
-                font-weight: 700;
-                background: #fff;
-                padding: 19px 70px 19px 25px;
-                border-radius: 5px;
-                box-shadow: 0px 0px 12px -9px rgba(0, 0, 0, 0.5);
+    button {
+        margin: 0 4px;
+        color: #00394f;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 19px 70px 19px 25px;
+        box-shadow: 0px 0px 12px -9px rgba(0, 0, 0, 0.5);
+        border: 0;
+        @extend %displayinline;
+        @extend %uppercase;
+        @extend %white-bg-color;
+        @extend %borderradius5;
+        @extend %posrelative;
+        &.is-checked{
+            @extend %primary-color;
+            .filter-count{
+                @extend %primary-bg-color;
+                @extend %white-color;
             }
+        }
+        .filter-count{
+            width: 35px;
+            height: 35px;
+            border-radius: 50px;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            line-height: 35px;
+            text-align: center;
+            background-color: #FAFAFA;
         }
     }
 }
@@ -188,8 +203,8 @@
         .portfolio-inner{
             border-radius: 5px 5px 0 0;
             box-shadow: 0px 0px 12px -9px rgba(0, 0, 0, 0.5);
-            background-color: #ffffff;
-            transition: .5s;
+            @extend %white-bg-color;
+            @extend %basetransition2;
             // .image-wrap
             .image-wrap {
                 z-index: 2;
@@ -197,43 +212,40 @@
                     border-radius: 5px 5px 0 0;
                 }
                 &:after {
-                    position: absolute;
+                    @extend %pseudo;
                     left: 50%;
                     top: 50%;
                     width: 95%;
                     height: 95%;
-                    background: #fff;
-                    content: "";
+                    @extend %white-bg-color;
                     z-index: 1;
-                    opacity: 0;
-                    visibility: hidden;
-                    transition: .5s;
+                    @extend %invisible;
+                    @extend %basetransition2;
                     transform: translate(-50%, -50%);
                 }
                 .portfolio-hover {
-                    position: absolute;
+                    @extend %posabsolute;
                     left: 0;
                     top: 50%;
                     right: 0;
-                    text-align: center;
+                    @extend %textcenter;
                     transform: translate(0px, -50%);
                     z-index: 3;
-                    opacity: 0;
-                    visibility: hidden;
-                    transition: .5s;
+                    @extend %invisible;
+                    @extend %basetransition2;
                     a {
                         width: 50px;
                         height: 50px;
-                        background: #E8505B;
-                        display: inline-block;
-                        color: #fff;
-                        border-radius: 50px;
+                        @extend %primary-bg-color;
+                        @extend %displayinline;
+                        @extend %white-color;
+                        @extend %borderradius50;
                         font-size: 20px;
                         margin: 0 4px;
                         line-height: 50px;
-                        transition: .5s;
+                        @extend %basetransition2;
                         &:hover {
-                            background: #0b185f;
+                            @extend %secondary-bg-color;
                         }
                     }
                 }
@@ -252,16 +264,15 @@
         }
         &:hover {
             .portfolio-inner {
-                border-radius: 0;
+                @extend %borderzero;
                 box-shadow: 0px 8px 18px -9px rgba(0, 0, 0, 0.5);
                 
                 .portfolio-hover {
-                    opacity: 1;
-                    visibility: visible;
+                    @extend %visible;
                 }
                 .image-wrap{
                     img{
-                        border-radius: 0;
+                        @extend %borderzero;
                     }
                     &:after {
                         opacity: .9;
@@ -270,7 +281,7 @@
                 }
                 .portfolio-content {
                     a{
-                        color: #E8505B;
+                        @extend %primary-color;
                     }
                 }
             }
@@ -280,8 +291,7 @@
 
 // .contact-area
 .contact-area {
-    background-size: cover;
-    background-position: center;
+    @extend %backgroundimage;
     background-color: #FAFAFA;
     padding: 120px 0 100px;
     .form-wrap{
@@ -292,7 +302,7 @@
 // .testimonial-area
 .testimonial-area {
     padding: 115px 0 0;
-    background-color: #E8505B;
+    @extend %primary-bg-color;
     background-repeat: no-repeat;
     background-position: center;
     .testimonials-row {
@@ -300,19 +310,19 @@
     }
     .section-title {
         h4 {
-            color: #fff;
+            @extend %white-color;
         }
         h2 {
-            color: #fff;
+            @extend %white-color;
         }
     }
     .single-testimonial-item {
-        background: #fff;
+        @extend %white-bg-color;
         .testimonial-header {
             padding: 20px 30px;
             border-bottom: 1px solid #F0F0F0;
             .reviewer-photo {
-                position: absolute;
+                @extend %posabsolute;
                 left: 0;
                 top: 0;
                 img {
@@ -326,14 +336,14 @@
                     margin: 7px 0 7px 0px;
                 }
                 h4 {
-                    color: #555555;
+                    @extend %body-color;
                     font-size: 15px;
                     margin: 0;
                 }
             }
         }
         .testimonial-content {
-            padding: 30px;
+            padding: 34px 30px 35px 30px;
         }
     }
     .clients-logo {
@@ -351,12 +361,15 @@
 // .blog-area
 .blog-area {
     padding: 115px 0 100px;
+    .section-title h2 {
+        margin-bottom: 60px;
+    }
     .single-blog-item {
         border-radius: 5px 5px 0 0;
-        background: #fff;
+        @extend %white-bg-color;
         box-shadow: 0px 0px 12px -9px rgba(0, 0, 0, 0.5);
         margin-bottom: 50px;
-        transition: .5s;
+        @extend %basetransition2;
         &:hover {
             box-shadow: 0px 8px 18px -9px rgba(0, 0, 0, 0.5);
         }
@@ -385,19 +398,21 @@
                 font-size: 20px;
                 color: #B2B2B2;
                 .comments-number {
-                    position: absolute;
+                    @extend %posabsolute;
                     left: 2px;
                     top: -5px;
                     width: 16px;
                     height: 16px;
-                    background: #E8505B;
-                    color: #fff;
+                    @extend %primary-bg-color;
+                    @extend %white-color;
                     font-size: 13px;
-                    text-align: center;
-                    border-radius: 50px;
+                    @extend %textcenter;
+                    @extend %borderradius50;
                     line-height: 16px;
                 }
             }
         }
     }
 }
+
+

@@ -14,6 +14,7 @@
         <!--Plugins-->
         <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
         <link href="assets/css/nice-select.css" rel="stylesheet">
+        <link href="assets/css/magnific-popup.css" rel="stylesheet">
 
         <!--Theme specific styles-->
         <link href="assets/css/style.css" rel="stylesheet">
@@ -23,6 +24,17 @@
         <script src="assets/js/jquery-migrate-1.4.1.min.js"></script>
     </head>
     <body>
+
+        <div class="search-box-wrap">
+            <span class="close-btn"><i class="fa fa-close"></i></span>
+            <div class="search-overlay"></div>
+            <div class="search-box">
+                <form action="">
+                    <input type="text" placeholder="Seach..." name="search" id="search">
+                    <button type="submit" value="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
 
         <!-- header starts -->
         <header class="header">
@@ -64,6 +76,17 @@
                             <div class="mainmenu">
                                 <ul>
                                     <li><a href="#">Home</a></li>
+                                    <li><a href="#">Pages</a>
+                                        <ul>
+                                            <li><a href="#">Home 1</a></li>
+                                            <li><a href="#">Home 2</a></li>
+                                            <li><a href="#">About</a></li>
+                                            <li><a href="#">Services</a></li>
+                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="#">Shop</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="#">About</a></li>
                                     <li><a href="#">Services</a></li>
                                     <li><a href="#">Portfolio</a></li>
@@ -121,9 +144,9 @@
                     <div class="col-lg-4">
                         <div class="single-feature-item">
                             <span class="feature-icon">
-                                <i class="fa fa-desktop"></i>
+                                <img src="assets/img/icons/feature-icon-2.png" alt="">
                             </span>
-                            <h3>Digital Services</h3>
+                            <h3>Product Engineering</h3>
                             <p>Hunky dory barney fanny around up the duff not bigge look cups info of tea joly good ruddy say arse.!</p>
                             <a href="#" class="inline-btn">Read More</a>
                         </div><!-- ends -->
@@ -131,9 +154,9 @@
                     <div class="col-lg-4">
                         <div class="single-feature-item">
                             <span class="feature-icon">
-                                <img src="assets/img/icons/feature-icon-1.png" alt="">
+                                <img src="assets/img/icons/feature-icon-3.png" alt="">
                             </span>
-                            <h3>Digital Services</h3>
+                            <h3>IT Consultancy</h3>
                             <p>Hunky dory barney fanny around up the duff not bigge look cups info of tea joly good ruddy say arse.!</p>
                             <a href="#" class="inline-btn">Read More</a>
                         </div><!-- ends -->
@@ -214,7 +237,7 @@
                             <span class="service-icon">
                                 <img src="assets/img/icons/services-icon-3.png" alt="">
                             </span>
-                            <h3>Product Engineering</h3>
+                            <h3>Big Data And Analytics</h3>
                             <p>Since 2006 have been visionary areliable software engineerng partner worldclass brands are bouque digital transformation consultancy.</p>
                         </div><!-- ends -->
                     </div>
@@ -223,7 +246,7 @@
                             <span class="service-icon">
                                 <img src="assets/img/icons/services-icon-4.png" alt="">
                             </span>
-                            <h3>Product Engineering</h3>
+                            <h3>Dedicated IT Solution</h3>
                             <p>Since 2006 have been visionary areliable software engineerng partner worldclass brands are bouque digital transformation consultancy.</p>
                         </div><!-- ends -->
                     </div>
@@ -232,16 +255,16 @@
                             <span class="service-icon">
                                 <img src="assets/img/icons/services-icon-5.png" alt="">
                             </span>
-                            <h3>Product Engineering</h3>
+                            <h3>Infrastructure Plan</h3>
                             <p>Since 2006 have been visionary areliable software engineerng partner worldclass brands are bouque digital transformation consultancy.</p>
                         </div><!-- ends -->
                     </div>
                     <div class="col-lg-6">
                         <div class="single-service-item position-relative">
                             <span class="service-icon">
-                                <i class="fa fa-line-chart"></i>
+                                <img src="assets/img/icons/services-icon-6.png" alt="">
                             </span>
-                            <h3>Product Engineering</h3>
+                            <h3>Firewall Advancement</h3>
                             <p>Since 2006 have been visionary areliable software engineerng partner worldclass brands are bouque digital transformation consultancy.</p>
                         </div><!-- ends -->
                     </div>
@@ -259,24 +282,24 @@
                             <h4>RECENT PROJECTS</h4>
                             <h2>Our Latest Case Studies</h2>
                         </div>
-                        <nav class="portfolio-filter text-center">
-                            <ul>
-                                <li class="active"><a href="#" data-filter="*">Show All</a></li>
-                                <li><a href="#" data-filter=".financial">Financial</a></li>
-                                <li><a href="#" data-filter=".resources">Resources</a></li>
-                                <li><a href="#" data-filter=".solicitory">Solicitory</a></li>
-                                <li><a href="#" data-filter=".startups">Start Ups</a></li>
-                            </ul>
-                        </nav>
+                        <div class="filters">
+                            <div class="portfolio-filter text-center button-group" data-filter-group="">
+                                <button class="button is-checked" data-filter="*">Show All <span class="filter-count"></span></button>
+                                <button class="button" data-filter=".financial">Financial <span class="filter-count"></span></button>
+                                <button class="button" data-filter=".resources">Resources <span class="filter-count"></span></button>
+                                <button class="button" data-filter=".solicitory">Solicitory <span class="filter-count"></span></button>
+                                <button class="button" data-filter=".startups">Start Ups <span class="filter-count"></span></button>
+                            </div>
+                        </div>
                         <!-- .portfolio-gallery starts -->
-                        <div class="portfolio-gallery d-flex flex-wrap">
-                            <div class="single-portfolio-item">
+                        <div class="portfolio-gallery d-flex flex-wrap grid">
+                            <div class="single-portfolio-item resources startups">
                                 <div class="portfolio-inner">
                                     <div class="image-wrap position-relative">
                                         <img src="assets/img/portfolio-1.jpg" alt="">
                                         <div class="portfolio-hover">
                                             <a href="#"><i class="fa fa-link"></i></a>
-                                            <a class="popup-link1" href="#"><i class="fa fa-search"></i></a>
+                                            <a class="popup-link1" href="assets/img/portfolio-1.jpg"><i class="fa fa-search"></i></a>
                                         </div>
                                     </div>
                                     <div class="portfolio-content text-center">
@@ -285,13 +308,13 @@
                                     </div>
                                 </div>
                             </div><!--  ends -->
-                            <div class="single-portfolio-item">
+                            <div class="single-portfolio-item startups resources">
                                 <div class="portfolio-inner">
                                     <div class="image-wrap position-relative">
-                                        <img src="assets/img/portfolio-1.jpg" alt="">
+                                        <img src="assets/img/portfolio-2.jpg" alt="">
                                         <div class="portfolio-hover">
                                             <a href="#"><i class="fa fa-link"></i></a>
-                                            <a class="popup-link1" href="#"><i class="fa fa-search"></i></a>
+                                            <a class="popup-link1" href="assets/img/portfolio-2.jpg"><i class="fa fa-search"></i></a>
                                         </div>
                                     </div>
                                     <div class="portfolio-content text-center">
@@ -300,13 +323,13 @@
                                     </div>
                                 </div>
                             </div><!-- ends -->
-                            <div class="single-portfolio-item">
+                            <div class="single-portfolio-item solicitory financial">
                                 <div class="portfolio-inner">
                                     <div class="image-wrap position-relative">
-                                        <img src="assets/img/portfolio-1.jpg" alt="">
+                                        <img src="assets/img/portfolio-3.jpg" alt="">
                                         <div class="portfolio-hover">
                                             <a href="#"><i class="fa fa-link"></i></a>
-                                            <a class="popup-link1" href="#"><i class="fa fa-search"></i></a>
+                                            <a class="popup-link1" href="assets/img/portfolio-3.jpg"><i class="fa fa-search"></i></a>
                                         </div>
                                     </div>
                                     <div class="portfolio-content text-center">
@@ -315,13 +338,13 @@
                                     </div>
                                 </div>
                             </div><!-- ends -->
-                            <div class="single-portfolio-item">
+                            <div class="single-portfolio-item startups solicitory financial">
                                 <div class="portfolio-inner">
                                     <div class="image-wrap position-relative">
-                                        <img src="assets/img/portfolio-1.jpg" alt="">
+                                        <img src="assets/img/portfolio-4.jpg" alt="">
                                         <div class="portfolio-hover">
                                             <a href="#"><i class="fa fa-link"></i></a>
-                                            <a class="popup-link1" href="#"><i class="fa fa-search"></i></a>
+                                            <a class="popup-link1" href="assets/img/portfolio-4.jpg"><i class="fa fa-search"></i></a>
                                         </div>
                                     </div>
                                     <div class="portfolio-content text-center">
@@ -330,13 +353,13 @@
                                     </div>
                                 </div>
                             </div><!-- ends -->
-                            <div class="single-portfolio-item">
+                            <div class="single-portfolio-item resources startups solicitory">
                                 <div class="portfolio-inner">
                                     <div class="image-wrap position-relative">
-                                        <img src="assets/img/portfolio-1.jpg" alt="">
+                                        <img src="assets/img/portfolio-5.jpg" alt="">
                                         <div class="portfolio-hover">
                                             <a href="#"><i class="fa fa-link"></i></a>
-                                            <a class="popup-link1" href="#"><i class="fa fa-search"></i></a>
+                                            <a class="popup-link1" href="assets/img/portfolio-5.jpg"><i class="fa fa-search"></i></a>
                                         </div>
                                     </div>
                                     <div class="portfolio-content text-center">
@@ -345,13 +368,13 @@
                                     </div>
                                 </div>
                             </div><!-- ends -->
-                            <div class="single-portfolio-item">
+                            <div class="single-portfolio-item solicitory financial">
                                 <div class="portfolio-inner">
                                     <div class="image-wrap position-relative">
-                                        <img src="assets/img/portfolio-1.jpg" alt="">
+                                        <img src="assets/img/portfolio-6.jpg" alt="">
                                         <div class="portfolio-hover">
                                             <a href="#"><i class="fa fa-link"></i></a>
-                                            <a class="popup-link1" href="#"><i class="fa fa-search"></i></a>
+                                            <a class="popup-link1" href="assets/img/portfolio-6.jpg"><i class="fa fa-search"></i></a>
                                         </div>
                                     </div>
                                     <div class="portfolio-content text-center">
@@ -461,8 +484,8 @@
                                     <div class="reviewer-photo">
                                         <img src="assets/img/reviewer-photo-2.png" alt="">
                                     </div>
-                                    <h3>Angel Witicker</h3>
-                                    <h4>UX Designer</h4>
+                                    <h3>Witicker Alax</h3>
+                                    <h4>Founder & CEO</h4>
                                 </div>
                                 <div class="right">
                                     <img src="assets/img/reviewer-logo-2.png" alt="">
@@ -543,7 +566,7 @@
                     <div class="col-lg-4">
                         <!-- .single-blog-item starts -->
                         <div class="single-blog-item">
-                            <img src="assets/img/blog-image-1.jpg" alt="">
+                            <img src="assets/img/blog-image-2.jpg" alt="">
                             <div class="blog-content">
                                 <h3>Financial Reportin Qouncil What Could More...</h3>
                                 <div class="blog-meta">
@@ -564,7 +587,7 @@
                     <div class="col-lg-4">
                         <!-- .single-blog-item starts -->
                         <div class="single-blog-item">
-                            <img src="assets/img/blog-image-1.jpg" alt="">
+                            <img src="assets/img/blog-image-3.jpg" alt="">
                             <div class="blog-content">
                                 <h3>Consultin Reportin Qounc Arei Could More...</h3>
                                 <div class="blog-meta">
@@ -619,7 +642,7 @@
                             </div>
                             <div class="single-recent-blog">
                                 <a href="#">
-                                    <img src="assets/img/recent-blog-1.jpg" alt="">
+                                    <img src="assets/img/recent-blog-2.jpg" alt="">
                                     <h4>Remo Suppor Center What For Semiconductor Provider</h4>
                                     <p>April 09,2020</p>
                                 </a>
@@ -651,12 +674,16 @@
         </footer>
         <!-- .footer-area ends -->
 
+        <a href="#" class="scrollTop d-none d-lg-block"><i class="fa fa-angle-up"></i></a>
+
         <!--Libraries-->
         <script src="assets/js/bootstrap.bundle.min.js"></script>       
 
         <!--Plugins-->
         <script src="assets/js/owl.carousel.min.js"></script>
         <script src="assets/js/jquery.nice-select.min.js"></script>
+        <script src="assets/js/jquery-isotope-pkgd.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
 
         <!--Active & Custom JS-->
         <script src="assets/js/main.js"></script>

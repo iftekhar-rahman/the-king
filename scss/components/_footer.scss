@@ -49,10 +49,13 @@
         }
         .subscription-form {
             input[type=email] {
-                border-color: #f1f1f1;
                 background: #263238;
+                @extend %section-border-color;
                 @extend %white-color;
                 margin-bottom: 20px;
+                &:focus{
+                    @extend %primary-border-color;
+                }
             }
             ::placeholder {
                 color: #ffffff;

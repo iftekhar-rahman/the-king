@@ -19,16 +19,16 @@ a, button, img, input, span {
     @extend %basetransition1; 
 }
 input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
-    border-radius: 5px;
+    @extend %borderradius5;
     height: 55px;
     width: 100%;
     border: 1px solid transparent;
-    background-color: #fff;
+    @extend %white-bg-color;
     padding: 15px 20px;
     font-size: 16px;
 }
 input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=url]:focus, textarea:focus{
-    border-color: #E8505B;
+    @extend %primary-border-color;
 }
 .form-group {
     margin-bottom: 20px;
@@ -68,9 +68,11 @@ textarea {
     //     border-color: #E8505B;
     // }
 }
-
+.section-padding-115-100{
+    padding: 115px 0 100px;
+}
 .stars {
-    color: #E8505B;
+    @extend %primary-color;
     span {
         margin-right: 1px;
     }
@@ -79,30 +81,30 @@ textarea {
 /*========.section-title=========*/ 
 .section-title {
     h4{
-        color: #e8505b;
+        @extend %primary-color;
+        @extend %uppercase;
         font-weight: 300;
         font-size: 20px;
-        text-transform: uppercase;
         margin-bottom: 10px;
     }
     h2{
-        font-size: 36px;
+        font-size: 34px;
         margin-bottom: 40px;
         color: #0a1f44;
-        text-transform: capitalize;
+        @extend %capitalize;
     }
 }
 
 /*======.owl-dots customization=======*/
 .owl-dots {
-    text-align: center;
+    @extend %textcenter;
     div {
         height: 5px;
         width: 5px;
         background-color: #BBBBBB;
-        display: inline-block;
+        @extend %displayinline;
         margin: 0 5px;
-        border-radius: 50%;
+        @extend %borderradius50percent;
         &.active {
             background-color: #0DA0F4;
         }
@@ -141,7 +143,7 @@ textarea {
 
 /*========.nice-select=============*/ 
 .nice-select {
-    width: 100%;
+    @extend %w100;
     height: 55px;
     line-height: 55px;
     padding-left: 20px;
@@ -152,7 +154,7 @@ textarea {
         border:  1px solid transparent;
     }
     &:focus{
-        border-color: #E8505B;
+        @extend %primary-border-color;
     }
     .list {
         width: 100%;
@@ -166,7 +168,7 @@ textarea {
         margin-top: -6px;
     }
     &:hover:after {
-        border-color: #E8505B;
+        @extend %primary-border-color;
     }
 }
 

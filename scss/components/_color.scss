@@ -35,8 +35,14 @@
 %body-color{
 	color: $body-color;
 }
+%section-color{
+	color: $section-color;
+}
 %section-bg-color{
-	background-color: $section-bg-color;
+	background-color: $section-color;
+}
+%section-border-color{
+	border-color: $section-color;
 }
 
 

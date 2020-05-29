@@ -101,6 +101,11 @@ jQuery(document).ready(function($){
     //     }
     // });
 
+    $(".single-accordion").on("click", function(){
+        $(".single-accordion").removeClass("active");
+        $(this).addClass("active");
+    });
+
 
     $(".header-search span").on("click", function(){
         $(".search-box-wrap").addClass("active");

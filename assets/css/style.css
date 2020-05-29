@@ -2,28 +2,31 @@
 00. Mixins CSS
 ******************************/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-.owl-nav div, .header-area .header-search span, .header-area .header-cart .number, .features-area .single-feature-item .feature-icon, .about-area .about-content .single-about-item i, .services-area .single-service-item .service-icon, .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number {
+.owl-dots div {
+  border-radius: 50%; }
+
+.owl-nav div, .header-area .header-search span, .header-area .header-cart .number, .single-box .box-icon, .about-area .about-content .single-about-item i, .portfolio-area .portfolio-filter button .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number {
   border-radius: 50px; }
 
-.scrollTop, .features-area .single-feature-item, .services-area .single-service-item, .portfolio-filter button {
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea, .scrollTop, .single-box, .single-box.wide-box, .portfolio-area .portfolio-filter button {
   border-radius: 5px; }
 
-.header-top-area .header-contact-info ul li:last-child, .portfolio-gallery .single-portfolio-item:hover .portfolio-inner, .portfolio-gallery .single-portfolio-item:hover .portfolio-inner .image-wrap img {
+.header-top-area .header-contact-info ul li:last-child, .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner, .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner .image-wrap img {
   border: 0; }
 
-.mainmenu ul li ul li, .mainmenu ul li ul li a, .scrollTop, .features-area .single-feature-item .feature-icon, .services-area .single-service-item .service-icon {
+.mainmenu ul li ul li, .mainmenu ul li ul li a, .scrollTop, .single-box .box-icon {
   display: block; }
 
 .slicknav_menu {
   display: none; }
 
-.owl-nav div, .header-top-area .header-contact-info ul li, .header-top-area .header-social-icons a, .mainmenu ul li, .portfolio-filter button, .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a {
+.owl-dots div, .owl-nav div, .header-top-area .header-contact-info ul li, .header-top-area .header-social-icons a, .mainmenu ul li, .portfolio-area .portfolio-filter button, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a {
   display: inline-block; }
 
-.mainmenu ul li, .search-box-wrap .search-box, .boxed-btn, .portfolio-filter button {
+.mainmenu ul li, .search-box-wrap .search-box, .boxed-btn, .single-box .box-icon, .portfolio-area .portfolio-filter button {
   position: relative; }
 
-.owl-nav div, .header-area .header-cart .number, .mainmenu ul li ul, .search-box-wrap .close-btn, .search-box-wrap .search-box button, .about-area .about-content .single-about-item i, .services-area .single-service-item .service-icon, .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover, .testimonial-area .single-testimonial-item .testimonial-header .reviewer-photo, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number {
+.owl-nav div, .header-area .header-cart .number, .mainmenu ul li ul, .search-box-wrap .close-btn, .search-box-wrap .search-box button, .single-box.wide-box .box-icon, .about-area .about-content .single-about-item i, .portfolio-area .portfolio-filter button .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover, .testimonial-area .single-testimonial-item .testimonial-header .reviewer-photo, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number {
   position: absolute; }
 
 .search-box-wrap, .scrollTop {
@@ -32,7 +35,7 @@
 .hero-area, .contact-area {
   background-size: cover;
   background-position: center;
-  background-color: #ddd; }
+  background-color: #FAFAFA; }
 
 .boxed-btn:after {
   position: absolute;
@@ -43,7 +46,7 @@
   content: "";
   z-index: -1; }
 
-.search-box-wrap .search-overlay:after, .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after {
+.search-box-wrap .search-overlay:after, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after {
   position: absolute;
   content: ""; }
 
@@ -54,7 +57,7 @@ a, button, img, input, span, .owl-nav div, .header-top-area .header-social-icons
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 
-.mainmenu ul li ul li, .search-box-wrap, .footer-area .single-footer-widget-item h4, .scrollTop, .features-area .single-feature-item, .services-area .single-service-item, .portfolio-gallery .single-portfolio-item .portfolio-inner, .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after, .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover, .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .blog-area .single-blog-item {
+.mainmenu ul li ul li, .search-box-wrap, .footer-area .single-footer-widget-item h4, .scrollTop, .single-box, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .blog-area .single-blog-item {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
@@ -68,31 +71,31 @@ a, button, img, input, span, .owl-nav div, .header-top-area .header-social-icons
   -o-transition: all 0.7s ease;
   transition: all 0.7s ease; }
 
-.mainmenu ul li ul, .mainmenu ul li ul ul, .search-box-wrap, .scrollTop, .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after, .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover {
+.mainmenu ul li ul, .mainmenu ul li ul ul, .search-box-wrap, .scrollTop, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover {
   visibility: hidden;
   opacity: 0; }
 
-.mainmenu ul li:hover > ul, .search-box-wrap.active, .scrollTop.scrollBtn, .portfolio-gallery .single-portfolio-item:hover .portfolio-inner .portfolio-hover {
+.mainmenu ul li:hover > ul, .search-box-wrap.active, .scrollTop.scrollBtn, .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner .portfolio-hover {
   visibility: visible;
   opacity: 1; }
 
-.mainmenu ul li a, .boxed-btn, .inline-btn, .hero-area .hero-content h3, .portfolio-filter button {
+.section-title h4, .mainmenu ul li a, .boxed-btn, .inline-btn, .hero-area .hero-content h3, .portfolio-area .portfolio-filter button {
   text-transform: uppercase; }
 
-.search-box-wrap, .search-box-wrap .search-overlay:after {
+.section-title h2 {
+  text-transform: capitalize; }
+
+.nice-select, .search-box-wrap, .search-box-wrap .search-overlay:after {
   width: 100%; }
 
 .search-box-wrap, .search-box-wrap .search-overlay:after {
   height: 100%; }
 
-.owl-nav div, .header-top-area .header-social-icons a, .header-area .header-search span, .header-area .header-cart .number, .search-box-wrap .close-btn, .search-box-wrap .search-box, .scrollTop, .features-area .single-feature-item .feature-icon, .about-area .about-content .single-about-item i, .services-area .single-service-item .service-icon, .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number {
+.owl-dots, .owl-nav div, .header-top-area .header-social-icons a, .header-area .header-search span, .header-area .header-cart .number, .search-box-wrap .close-btn, .search-box-wrap .search-box, .scrollTop, .single-box .box-icon, .about-area .about-content .single-about-item i, .portfolio-area .portfolio-filter button .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number {
   text-align: center; }
 
 .footer-area .single-footer-widget-item .single-recent-blog img {
   float: left; }
-
-.owl-nav div, .header-area .header-search span, .header-area .header-cart .number, .features-area .single-feature-item .feature-icon, .about-area .about-content .single-about-item i, .services-area .single-service-item .service-icon, .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number {
-  border-radius: 50%; }
 
 .header-area .header-search span, .search-box-wrap .close-btn {
   cursor: pointer; }
@@ -170,16 +173,11 @@ p:last-child {
   margin-bottom: 0; }
 
 input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
-  border-radius: 5px;
   height: 55px;
   width: 100%;
   border: 1px solid transparent;
-  background-color: #fff;
   padding: 15px 20px;
   font-size: 16px; }
-
-input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=url]:focus, textarea:focus {
-  border-color: #E8505B; }
 
 .form-group {
   margin-bottom: 20px; }
@@ -207,37 +205,31 @@ textarea {
   -o-transition: all .3s ease;
   transition: all .3s ease; }
 
-.stars {
-  color: #E8505B; }
-  .stars span {
-    margin-right: 1px; }
+.section-padding-115-100 {
+  padding: 115px 0 100px; }
+
+.stars span {
+  margin-right: 1px; }
 
 /*========.section-title=========*/
 .section-title h4 {
-  color: #e8505b;
   font-weight: 300;
   font-size: 20px;
-  text-transform: uppercase;
   margin-bottom: 10px; }
 
 .section-title h2 {
-  font-size: 36px;
+  font-size: 34px;
   margin-bottom: 40px;
-  color: #0a1f44;
-  text-transform: capitalize; }
+  color: #0a1f44; }
 
 /*======.owl-dots customization=======*/
-.owl-dots {
-  text-align: center; }
-  .owl-dots div {
-    height: 5px;
-    width: 5px;
-    background-color: #BBBBBB;
-    display: inline-block;
-    margin: 0 5px;
-    border-radius: 50%; }
-    .owl-dots div.active {
-      background-color: #0DA0F4; }
+.owl-dots div {
+  height: 5px;
+  width: 5px;
+  background-color: #BBBBBB;
+  margin: 0 5px; }
+  .owl-dots div.active {
+    background-color: #0DA0F4; }
 
 /*=====owl nav customization======*/
 .owl-nav div {
@@ -262,7 +254,6 @@ textarea {
 
 /*========.nice-select=============*/
 .nice-select {
-  width: 100%;
   height: 55px;
   line-height: 55px;
   padding-left: 20px;
@@ -271,8 +262,6 @@ textarea {
   font-size: 16px; }
   .nice-select:hover {
     border: 1px solid transparent; }
-  .nice-select:focus {
-    border-color: #E8505B; }
   .nice-select .list {
     width: 100%;
     -webkit-box-shadow: none;
@@ -283,8 +272,6 @@ textarea {
     width: 10px;
     height: 10px;
     margin-top: -6px; }
-  .nice-select:hover:after {
-    border-color: #E8505B; }
 
 /*=============== Header CSS ==================*/
 .header {
@@ -546,7 +533,6 @@ textarea {
       margin: -3px 0 10px;
       line-height: 1.5; }
   .footer-area .single-footer-widget-item .subscription-form input[type=email] {
-    border-color: #f1f1f1;
     background: #263238;
     margin-bottom: 20px; }
   .footer-area .single-footer-widget-item .subscription-form ::-webkit-input-placeholder {
@@ -609,26 +595,35 @@ textarea {
   font-weight: 700;
   padding: 10px 0; }
 
-.header-area .header-search, .mainmenu ul li:hover > a, .search-box-wrap .close-btn:hover, .footer-area .single-footer-widget-item .inline-btn:hover, .footer-area .single-footer-widget-item .single-recent-blog:hover a, .footer-area .single-footer-widget-item .single-recent-blog:hover a h4, .footer-area .single-footer-widget-item .subscription-form .boxed-btn, .inline-btn:hover, .hero-area .hero-content h2 span, .portfolio-filter button.is-checked, .portfolio-gallery .single-portfolio-item:hover .portfolio-inner .portfolio-content a {
+.stars, .section-title h4, .header-area .header-search, .mainmenu ul li:hover > a, .search-box-wrap .close-btn:hover, .footer-area .single-footer-widget-item .inline-btn:hover, .footer-area .single-footer-widget-item .single-recent-blog:hover a, .footer-area .single-footer-widget-item .single-recent-blog:hover a h4, .footer-area .single-footer-widget-item .subscription-form .boxed-btn, .inline-btn:hover, .hero-area .hero-content h2 span, .portfolio-area .portfolio-filter button.is-checked, .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner .portfolio-content a {
   color: #e8505b; }
 
-.header-top-area, .header-area .header-cart .number, .mainmenu ul li ul li:hover > a, .search-box-wrap .search-box button, .footer-area .single-footer-widget-item .subscription-form .boxed-btn:hover:after, .scrollTop:hover, .boxed-btn, .features-area .single-feature-item .feature-icon, .about-area .about-content .single-about-item i, .services-area, .services-area .single-service-item .service-icon, .portfolio-filter button.is-checked .filter-count, .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .testimonial-area, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number {
+.header-top-area, .header-area .header-cart .number, .mainmenu ul li ul li:hover > a, .search-box-wrap .search-box button, .footer-area .single-footer-widget-item .subscription-form .boxed-btn:hover:after, .scrollTop:hover, .boxed-btn, .single-box .box-icon, .about-area .about-content .single-about-item i, .services-area, .portfolio-area .portfolio-filter button.is-checked .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .testimonial-area, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number {
   background-color: #e8505b; }
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=url]:focus, textarea:focus, .nice-select:focus, .nice-select:hover:after, .footer-area .single-footer-widget-item .subscription-form input[type=email]:focus {
+  border-color: #e8505b; }
 
 .header-top-area .header-contact-info ul li:hover a, .header-top-area .header-social-icons a:hover {
   color: #0b185f; }
 
-.search-box-wrap .search-overlay:after, .scrollTop, .boxed-btn:after, .services-area .single-service-item:hover .service-icon, .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a:hover {
+.search-box-wrap .search-overlay:after, .scrollTop, .boxed-btn:after, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a:hover {
   background-color: #0b185f; }
 
-.header-top-area, .header-top-area .header-contact-info ul li a, .header-top-area .header-social-icons a, .header-area .header-cart .number, .mainmenu ul li ul li:hover > a, .search-box-wrap .close-btn, .search-box-wrap .search-box button, .footer-area .single-footer-widget-item, .footer-area .single-footer-widget-item h4, .footer-area .single-footer-widget-item .inline-btn, .footer-area .single-footer-widget-item .single-recent-blog a, .footer-area .single-footer-widget-item .subscription-form input[type=email], .footer-area .single-footer-widget-item .subscription-form .boxed-btn:hover, .footer-area .copyright-text, .scrollTop, .scrollTop:hover, .boxed-btn, .boxed-btn:hover, .features-area .single-feature-item .feature-icon, .about-area .about-content .single-about-item i, .services-area .section-title h4, .services-area .section-title h2, .services-area .single-service-item .service-icon i, .portfolio-filter button.is-checked .filter-count, .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .testimonial-area .section-title h4, .testimonial-area .section-title h2, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number {
+.header-top-area, .header-top-area .header-contact-info ul li a, .header-top-area .header-social-icons a, .header-area .header-cart .number, .mainmenu ul li ul li:hover > a, .search-box-wrap .close-btn, .search-box-wrap .search-box button, .footer-area .single-footer-widget-item, .footer-area .single-footer-widget-item h4, .footer-area .single-footer-widget-item .inline-btn, .footer-area .single-footer-widget-item .single-recent-blog a, .footer-area .single-footer-widget-item .subscription-form input[type=email], .footer-area .single-footer-widget-item .subscription-form .boxed-btn:hover, .footer-area .copyright-text, .scrollTop, .scrollTop:hover, .boxed-btn, .boxed-btn:hover, .single-box .box-icon, .single-box.wide-box .box-icon i, .about-area .about-content .single-about-item i, .services-area .section-title h4, .services-area .section-title h2, .portfolio-area .portfolio-filter button.is-checked .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .testimonial-area .section-title h4, .testimonial-area .section-title h2, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number {
   color: #ffffff; }
 
-.header-area, .mainmenu ul li ul, .footer-area .single-footer-widget-item .subscription-form .boxed-btn, .features-area .single-feature-item, .services-area .single-service-item, .portfolio-filter button, .portfolio-gallery .single-portfolio-item .portfolio-inner, .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after, .testimonial-area .single-testimonial-item, .blog-area .single-blog-item {
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea, .header-area, .mainmenu ul li ul, .footer-area .single-footer-widget-item .subscription-form .boxed-btn, .single-box, .portfolio-area .portfolio-filter button, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after, .testimonial-area .single-testimonial-item, .blog-area .single-blog-item {
   background-color: #ffffff; }
 
 .testimonial-area .single-testimonial-item .testimonial-header .left h4 {
   color: #555555; }
+
+.portfolio-area .portfolio-filter button .filter-count {
+  background-color: #FAFAFA; }
+
+.footer-area .single-footer-widget-item .subscription-form input[type=email] {
+  border-color: #FAFAFA; }
 
 /*================Home Page CSS===============*/
 .hero-area, .hero-area .row {
@@ -647,28 +642,38 @@ textarea {
   .hero-area .hero-content .boxed-btn {
     margin-top: 30px; }
 
+.single-box {
+  -webkit-box-shadow: 0px 0px 8px -5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 8px -5px rgba(0, 0, 0, 0.25);
+  padding: 42px 40px 25px 40px;
+  height: 100%; }
+  .single-box:hover {
+    -webkit-box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.25); }
+  .single-box h3 {
+    font-size: 20px;
+    margin-bottom: 24px; }
+  .single-box .box-icon {
+    height: 90px;
+    width: 90px;
+    line-height: 87px;
+    left: 0;
+    top: 0; }
+    .single-box .box-icon i {
+      font-size: 40px;
+      line-height: 100px; }
+  .single-box.wide-box {
+    padding: 40px 30px 40px 150px; }
+    .single-box.wide-box .box-icon {
+      left: 45px;
+      top: 50%;
+      -webkit-transform: translate(0px, -50%);
+      -ms-transform: translate(0px, -50%);
+      transform: translate(0px, -50%); }
+
 .features-area {
   padding: 0 0 50px;
   margin-top: -40px; }
-  .features-area .single-feature-item {
-    padding: 42px 40px 25px 40px;
-    -webkit-box-shadow: 0px 0px 8px -5px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 0px 8px -5px rgba(0, 0, 0, 0.25);
-    height: 100%; }
-    .features-area .single-feature-item:hover {
-      -webkit-box-shadow: 0px 8px 8px -5px rgba(0, 0, 0, 0.25);
-      box-shadow: 0px 8px 8px -5px rgba(0, 0, 0, 0.25); }
-    .features-area .single-feature-item h3 {
-      font-size: 20px;
-      margin-bottom: 25px; }
-    .features-area .single-feature-item .feature-icon {
-      height: 90px;
-      width: 90px;
-      margin-bottom: 35px;
-      line-height: 87px; }
-      .features-area .single-feature-item .feature-icon i {
-        font-size: 40px;
-        line-height: 95px; }
 
 .about-area {
   padding: 60px 0 120px; }
@@ -691,35 +696,24 @@ textarea {
         font-size: 25px;
         padding-left: 4px; }
 
-.services-area {
-  padding: 115px 0 100px; }
-  .services-area .section-title h2 {
-    margin-bottom: 60px; }
-  .services-area .services-content {
-    padding-left: 5px;
-    padding-right: 5px; }
-    .services-area .services-content .col-lg-6 {
-      padding-left: 10px;
-      padding-right: 10px; }
-  .services-area .single-service-item {
-    padding: 40px 30px 40px 160px;
+.services-area .section-title h2 {
+  margin-bottom: 60px; }
+
+.services-area.home-1 .single-service-item {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.less-padding-content {
+  padding-left: 5px;
+  padding-right: 5px; }
+  .less-padding-content .col-lg-6, .less-padding-content .col-lg-4 {
+    padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: 20px; }
-    .services-area .single-service-item .service-icon {
-      left: 40px;
-      top: 50px;
-      width: 100px;
-      height: 100px;
-      line-height: 97px; }
-      .services-area .single-service-item .service-icon i {
-        font-size: 35px;
-        line-height: 100px; }
 
-.portfolio-area {
-  padding: 115px 0 90px; }
-
-.portfolio-filter {
+.portfolio-area .portfolio-filter {
   margin-bottom: 40px; }
-  .portfolio-filter button {
+  .portfolio-area .portfolio-filter button {
     margin: 0 4px;
     color: #00394f;
     font-size: 14px;
@@ -728,34 +722,30 @@ textarea {
     -webkit-box-shadow: 0px 0px 12px -9px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 12px -9px rgba(0, 0, 0, 0.5);
     border: 0; }
-    .portfolio-filter button .filter-count {
+    .portfolio-area .portfolio-filter button .filter-count {
       width: 35px;
       height: 35px;
-      border-radius: 50px;
-      position: absolute;
       right: 20px;
       top: 10px;
-      line-height: 35px;
-      text-align: center;
-      background-color: #FAFAFA; }
+      line-height: 35px; }
 
-.portfolio-gallery {
+.portfolio-area .portfolio-gallery {
   margin-right: -15px;
   margin-left: -15px; }
-  .portfolio-gallery .single-portfolio-item {
+  .portfolio-area .portfolio-gallery .single-portfolio-item {
     width: 33.3333%;
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 30px; }
-    .portfolio-gallery .single-portfolio-item .portfolio-inner {
+    .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner {
       border-radius: 5px 5px 0 0;
       -webkit-box-shadow: 0px 0px 12px -9px rgba(0, 0, 0, 0.5);
       box-shadow: 0px 0px 12px -9px rgba(0, 0, 0, 0.5); }
-      .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap {
+      .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap {
         z-index: 2; }
-        .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap img {
+        .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap img {
           border-radius: 5px 5px 0 0; }
-        .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after {
+        .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after {
           left: 50%;
           top: 50%;
           width: 95%;
@@ -764,7 +754,7 @@ textarea {
           -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
-        .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover {
+        .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover {
           left: 0;
           top: 50%;
           right: 0;
@@ -772,31 +762,28 @@ textarea {
           -ms-transform: translate(0px, -50%);
           transform: translate(0px, -50%);
           z-index: 3; }
-          .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a {
+          .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a {
             width: 50px;
             height: 50px;
             font-size: 20px;
             margin: 0 4px;
             line-height: 50px; }
-      .portfolio-gallery .single-portfolio-item .portfolio-inner .portfolio-content {
+      .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .portfolio-content {
         padding: 26px 15px; }
-        .portfolio-gallery .single-portfolio-item .portfolio-inner .portfolio-content h3 {
+        .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .portfolio-content h3 {
           font-size: 20px;
           margin-bottom: 10px; }
-        .portfolio-gallery .single-portfolio-item .portfolio-inner .portfolio-content a {
+        .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .portfolio-content a {
           color: #0a1f44; }
-    .portfolio-gallery .single-portfolio-item:hover .portfolio-inner {
+    .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner {
       -webkit-box-shadow: 0px 8px 18px -9px rgba(0, 0, 0, 0.5);
       box-shadow: 0px 8px 18px -9px rgba(0, 0, 0, 0.5); }
-      .portfolio-gallery .single-portfolio-item:hover .portfolio-inner .image-wrap:after {
+      .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner .image-wrap:after {
         opacity: .9;
         visibility: visible; }
 
-.contact-area {
-  background-color: #FAFAFA;
-  padding: 120px 0 100px; }
-  .contact-area .form-wrap {
-    padding-left: 80px; }
+.contact-area .form-wrap {
+  padding-left: 80px; }
 
 .testimonial-area {
   padding: 115px 0 0;
@@ -822,51 +809,119 @@ textarea {
         margin: 0; }
   .testimonial-area .single-testimonial-item .testimonial-content {
     padding: 34px 30px 35px 30px; }
-  .testimonial-area .clients-logo {
-    padding: 55px 0;
-    border-top: 1px solid #E76F7A; }
-    .testimonial-area .clients-logo .single-logo {
-      padding-right: 40px; }
-      .testimonial-area .clients-logo .single-logo:last-child {
-        padding-right: 0; }
 
-.blog-area {
-  padding: 115px 0 100px; }
-  .blog-area .section-title h2 {
+.clients-logo {
+  padding: 55px 0;
+  border-top: 1px solid #E76F7A; }
+  .clients-logo .single-logo {
+    padding-right: 40px; }
+    .clients-logo .single-logo:last-child {
+      padding-right: 0; }
+
+.blog-area .section-title h2 {
+  margin-bottom: 60px; }
+
+.blog-area .single-blog-item {
+  border-radius: 5px 5px 0 0;
+  -webkit-box-shadow: 0px 0px 12px -9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 12px -9px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px; }
+  .blog-area .single-blog-item:hover {
+    -webkit-box-shadow: 0px 8px 18px -9px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 8px 18px -9px rgba(0, 0, 0, 0.5); }
+  .blog-area .single-blog-item img {
+    border-radius: 5px 5px 0 0; }
+  .blog-area .single-blog-item .blog-content {
+    padding: 30px 25px 20px 26px; }
+    .blog-area .single-blog-item .blog-content h3 {
+      font-size: 20px;
+      line-height: 1.5; }
+    .blog-area .single-blog-item .blog-content .blog-meta {
+      color: #888888;
+      margin-bottom: 10px; }
+      .blog-area .single-blog-item .blog-content .blog-meta span {
+        margin-right: 20px; }
+  .blog-area .single-blog-item .blog-footer {
+    padding: 7px 30px;
+    border-top: 1px solid #F7F7F7; }
+    .blog-area .single-blog-item .blog-footer .blog-comments {
+      margin-top: 10px;
+      font-size: 20px;
+      color: #B2B2B2; }
+      .blog-area .single-blog-item .blog-footer .blog-comments .comments-number {
+        left: 2px;
+        top: -5px;
+        width: 16px;
+        height: 16px;
+        font-size: 13px;
+        line-height: 16px; }
+
+/*---------Home Page-2------------*/
+.features-area.home-2 {
+  padding: 100px 0;
+  margin-top: 0; }
+  .features-area.home-2 .section-title h2 {
     margin-bottom: 60px; }
-  .blog-area .single-blog-item {
-    border-radius: 5px 5px 0 0;
-    -webkit-box-shadow: 0px 0px 12px -9px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 12px -9px rgba(0, 0, 0, 0.5);
-    margin-bottom: 50px; }
-    .blog-area .single-blog-item:hover {
-      -webkit-box-shadow: 0px 8px 18px -9px rgba(0, 0, 0, 0.5);
-      box-shadow: 0px 8px 18px -9px rgba(0, 0, 0, 0.5); }
-    .blog-area .single-blog-item img {
-      border-radius: 5px 5px 0 0; }
-    .blog-area .single-blog-item .blog-content {
-      padding: 30px 25px 20px 26px; }
-      .blog-area .single-blog-item .blog-content h3 {
-        font-size: 20px;
-        line-height: 1.5; }
-      .blog-area .single-blog-item .blog-content .blog-meta {
-        color: #888888;
-        margin-bottom: 10px; }
-        .blog-area .single-blog-item .blog-content .blog-meta span {
-          margin-right: 20px; }
-    .blog-area .single-blog-item .blog-footer {
-      padding: 7px 30px;
-      border-top: 1px solid #F7F7F7; }
-      .blog-area .single-blog-item .blog-footer .blog-comments {
-        margin-top: 10px;
-        font-size: 20px;
-        color: #B2B2B2; }
-        .blog-area .single-blog-item .blog-footer .blog-comments .comments-number {
-          left: 2px;
-          top: -5px;
-          width: 16px;
-          height: 16px;
-          font-size: 13px;
-          line-height: 16px; }
+  .features-area.home-2 .single-feature-item {
+    -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25); }
+    .features-area.home-2 .single-feature-item:hover {
+      -webkit-box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.25); }
+
+.brand-area .clients-logo {
+  border-top: 0;
+  border-bottom: 1px solid #E2E9F7; }
+
+.about-area.home-2 {
+  padding: 115px 0 110px; }
+  .about-area.home-2 .about-image {
+    margin-right: -140px; }
+
+.accordion-wrap .single-accordion {
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
+  position: relative; }
+  .accordion-wrap .single-accordion:after {
+    position: absolute;
+    left: 25px;
+    top: 21px;
+    font-family: fontawesome;
+    content: "\f067";
+    width: 35px;
+    height: 35px;
+    background: #E8505B;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    line-height: 37px;
+    font-size: 14px;
+    padding-left: 2px; }
+  .accordion-wrap .single-accordion.active:after {
+    content: "\f068"; }
+  .accordion-wrap .single-accordion .accordion-header .btn {
+    padding: 24px 25px 24px 70px;
+    color: #0a1f44;
+    font-weight: 700;
+    font-size: 20px;
+    position: relative; }
+    .accordion-wrap .single-accordion .accordion-header .btn:focus, .accordion-wrap .single-accordion .accordion-header .btn:hover {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      text-decoration: none; }
+  .accordion-wrap .single-accordion .accordion-body {
+    padding: 0px 25px 25px; }
+
+.services-area.home-2 {
+  background: #ffffff; }
+  .services-area.home-2 .section-title h4 {
+    color: #0a1f44; }
+  .services-area.home-2 .section-title h2 {
+    color: #0a1f44; }
+  .services-area.home-2 .single-service-item .box-icon {
+    margin-bottom: 35px; }
 
 /*# sourceMappingURL=style.css.map */

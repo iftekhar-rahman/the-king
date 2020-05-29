@@ -1,0 +1,101 @@
+/*---------Home Page-2------------*/ 
+.features-area {
+    &.home-2{
+        padding: 100px 0;
+        margin-top: 0;
+        .section-title {
+            h2 {
+                margin-bottom: 60px;
+            }
+        }
+        .single-feature-item{
+            box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
+            &:hover{
+                box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.25);
+            }
+        }
+    }
+}
+
+// brand-area
+.brand-area{
+    .clients-logo{
+        border-top: 0;
+        border-bottom: 1px solid #E2E9F7;
+    }
+}
+
+// .about-area
+.about-area{
+    &.home-2{
+        padding: 115px 0 110px;
+        .about-image {
+            margin-right: -140px;
+        }
+    }
+}
+// accordion-wrap
+.accordion-wrap{
+    .single-accordion {
+        background: #fff;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
+        position: relative;
+        &:after {
+            position: absolute;
+            left: 25px;
+            top: 21px;
+            font-family: fontawesome;
+            content: "\f067";
+            width: 35px;
+            height: 35px;
+            background: #E8505B;
+            color: #fff;
+            text-align: center;
+            border-radius: 50px;
+            line-height: 37px;
+            font-size: 14px;
+            padding-left: 2px;
+        }
+        &.active:after {
+            content: "\f068";
+        }
+        .accordion-header {
+            .btn {
+                padding: 24px 25px 24px 70px;
+                color: #0a1f44;
+                font-weight: 700;
+                font-size: 20px;
+                position: relative;
+                &:focus, &:hover {
+                    box-shadow: none;
+                    text-decoration: none;
+                }
+            }
+        }
+        .accordion-body {
+            padding: 0px 25px 25px;
+        }
+    }
+}
+
+// .services-area
+.services-area{
+    &.home-2 {
+        background: #ffffff;
+        .section-title {
+            h4 {
+                color: #0a1f44;
+            }
+            h2 {
+                color: #0a1f44;
+            }
+        }
+        .single-service-item {
+            .box-icon {
+                margin-bottom: 35px;
+            }
+        }
+    }
+}

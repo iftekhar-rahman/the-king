@@ -172,9 +172,37 @@ textarea {
     }
 }
 
-
-
-
+// Social icons default color
+.facebook{
+    color: $facebook-color;
+    &:hover{
+        color: $facebook-color;
+    }
+}
+.twitter{
+    color: $twitter-color;
+    &:hover{
+        color: $twitter-color;
+    }
+}
+.google-plus{
+    color: $google-plus-color;
+    &:hover{
+        color: $google-plus-color;
+    }
+}
+.vimeo{
+    color: $vimeo-color;
+    &:hover{
+        color: $vimeo-color;
+    }
+}
+.pinterest{
+    color: $pinterest-color;
+    &:hover{
+        color: $pinterest-color;
+    }
+}
 
 
 

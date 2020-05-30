@@ -40,12 +40,13 @@
     }
     h3 {
         font-size: 20px;
-        margin-bottom: 24px;
+        margin-bottom: 22px;
     }
     .box-icon {
         height: 90px;
         width: 90px;
         line-height: 87px;
+        margin-bottom: 35px;
         @extend %primary-bg-color;
         @extend %displayblock;
         @extend %borderradius50;
@@ -63,6 +64,7 @@
         padding: 40px 30px 40px 150px;
         @extend %borderradius5;
         .box-icon {
+            margin-bottom: 0;
             @extend %posabsolute;
             left: 45px;
             top: 50%;

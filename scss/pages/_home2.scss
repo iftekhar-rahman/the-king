@@ -92,9 +92,209 @@
                 color: #0a1f44;
             }
         }
-        .single-service-item {
-            .box-icon {
-                margin-bottom: 35px;
+    }
+}
+
+// .portfolio-area
+.portfolio-area {
+    &.home-2{
+        @extend %primary-bg-color;
+        .section-title {
+            h4, h2{
+                color: #fff;
+            }
+        }
+        .portfolio-gallery {
+            .single-portfolio-item {
+                .portfolio-inner{
+                    box-shadow: none;
+                    border-radius: 0;
+                    img{
+                        border-radius: 0;
+                    }
+                }
+                &:hover{
+                    .portfolio-inner {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// .team-area
+.team-area{
+    .section-title {
+        h2 {
+            margin-bottom: 60px;
+        }
+    }
+    .single-team-item{
+        box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
+        @extend %basetransition2;
+        border: 1px solid #F0F0F0;
+        padding-top: 30px;
+        margin-bottom: 30px;
+        &:hover{
+            box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.25);
+        }
+        img {
+            margin-bottom: 20px;
+            border-radius: 50%;
+        }
+        h4 {
+            font-size: 20px;
+            margin: 0 0 10px;
+        }
+        h5 {
+            font-size: 16px;
+            font-weight: 400;
+            color: #555;
+            margin: 0;
+        }
+        .member-social-info {
+            padding: 7px 0;
+            border-top: 1px solid #F0F0F0;
+            margin-top: 18px;
+            a {
+                font-size: 16px;
+                padding: 5px 6px;
+            }
+        }
+    }
+}
+
+// pricing-plan-area
+.pricing-plan-area{
+    .section-title {
+        h2 {
+            margin-bottom: 50px;
+        }
+    }
+    .single-pricing-plan{
+        box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
+        @extend %basetransition2;
+        background-color: #fff;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        &:hover{
+            box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.25);
+        }
+        .pricing-header {
+            padding: 31px 40px;
+            h3 {
+                margin: 0;
+                font-size: 24px;
+            }
+        }
+        .pricing-tag {
+            background: #E8505B;
+            color: #fff;
+            padding: 36px 40px;
+            .price-tag {
+                font-size: 36px;
+                display: block;
+                font-weight: 700;
+            }
+        }
+        .pricing-content {
+            padding: 40px 40px;
+            .boxed-btn {
+                margin-top: 30px;
+            }
+            ul {
+                li {
+                    color: #555555;
+                    position: relative;
+                    padding-left: 25px;
+                    margin-bottom: 15px;
+                    i {
+                        width: 15px;
+                        height: 15px;
+                        background: #DBDBDB;
+                        font-size: 10px;
+                        text-align: center;
+                        border-radius: 50px;
+                        line-height: 15px;
+                        position: absolute;
+                        left: 0;
+                        top: 4px;
+                        padding-left: 1px;
+                        color: #fff;
+                    }
+                    &.active i {
+                        background: #E8505B;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// map-area
+.map-area{
+    height: 600px;
+    background-color: #ddd;
+    .map-content-wrap {
+        position: absolute;
+        left: 0;
+        bottom: 30px;
+        width: 100%;
+        .map-content {
+            background: #fff;
+            padding: 40px;
+            border-radius: 5px;
+            .single-map-content{
+                padding-right: 40px;
+                &:last-child {
+                    padding-right: 0;
+                }
+                .icon {
+                    height: 40px;
+                    display: block;
+                    margin-bottom: 15px;
+                    i {
+                        color: #E8505B;
+                        font-size: 35px;
+                        &.fa-mobile {
+                            font-size: 40px;
+                        }
+                        &.fa-envelope-o {
+                            font-size: 30px;
+                        }
+                    }
+                }
+                h4 {
+                    font-size: 18px;
+                }
+                a{
+                    @extend %body-color;
+                    &:hover{
+                        @extend %primary-color;
+                    }
+                }
+                &.text {
+                    width: 350px;
+                    h4 {
+                        font-size: 16px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        margin: 0 0 10px;
+                    }
+                    h3 {
+                        font-size: 24px;
+                    }
+                }
+                &.address {
+                    width: 290px;
+                }
+                &.phone-number {
+                    width: 200px;
+                }
+                &.email-address {
+                    width: 190px;
+                }
             }
         }
     }

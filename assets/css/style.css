@@ -2,19 +2,19 @@
 00. Mixins CSS
 ******************************/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-.owl-dots div {
+.owl-dots div, .team-area .single-team-item img {
   border-radius: 50%; }
 
-.owl-nav div, .header-area .header-search span, .header-area .header-cart .number, .single-box .box-icon, .about-area .about-content .single-about-item i, .portfolio-area .portfolio-filter button .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number {
+.owl-nav div, .header-area .header-search span, .header-area .header-cart .number, .single-box .box-icon, .about-area .about-content .single-about-item i, .portfolio-area .portfolio-filter button .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number, .accordion-wrap .single-accordion:after, .pricing-plan-area .single-pricing-plan .pricing-content ul li i {
   border-radius: 50px; }
 
-input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea, .scrollTop, .single-box, .single-box.wide-box, .portfolio-area .portfolio-filter button {
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea, .scrollTop, .single-box, .single-box.wide-box, .portfolio-area .portfolio-filter button, .accordion-wrap .single-accordion, .pricing-plan-area .single-pricing-plan, .map-area .map-content-wrap .map-content {
   border-radius: 5px; }
 
 .header-top-area .header-contact-info ul li:last-child, .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner, .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner .image-wrap img {
   border: 0; }
 
-.mainmenu ul li ul li, .mainmenu ul li ul li a, .scrollTop, .single-box .box-icon {
+.mainmenu ul li ul li, .mainmenu ul li ul li a, .scrollTop, .single-box .box-icon, .pricing-plan-area .single-pricing-plan .pricing-tag .price-tag, .map-area .map-content-wrap .map-content .single-map-content .icon {
   display: block; }
 
 .slicknav_menu {
@@ -23,10 +23,10 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
 .owl-dots div, .owl-nav div, .header-top-area .header-contact-info ul li, .header-top-area .header-social-icons a, .mainmenu ul li, .portfolio-area .portfolio-filter button, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a {
   display: inline-block; }
 
-.mainmenu ul li, .search-box-wrap .search-box, .boxed-btn, .single-box .box-icon, .portfolio-area .portfolio-filter button {
+.mainmenu ul li, .search-box-wrap .search-box, .boxed-btn, .single-box .box-icon, .portfolio-area .portfolio-filter button, .accordion-wrap .single-accordion, .accordion-wrap .single-accordion .accordion-header .btn, .pricing-plan-area .single-pricing-plan .pricing-content ul li {
   position: relative; }
 
-.owl-nav div, .header-area .header-cart .number, .mainmenu ul li ul, .search-box-wrap .close-btn, .search-box-wrap .search-box button, .single-box.wide-box .box-icon, .about-area .about-content .single-about-item i, .portfolio-area .portfolio-filter button .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover, .testimonial-area .single-testimonial-item .testimonial-header .reviewer-photo, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number {
+.owl-nav div, .header-area .header-cart .number, .mainmenu ul li ul, .search-box-wrap .close-btn, .search-box-wrap .search-box button, .single-box.wide-box .box-icon, .about-area .about-content .single-about-item i, .portfolio-area .portfolio-filter button .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover, .testimonial-area .single-testimonial-item .testimonial-header .reviewer-photo, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number, .accordion-wrap .single-accordion:after, .pricing-plan-area .single-pricing-plan .pricing-content ul li i, .map-area .map-content-wrap {
   position: absolute; }
 
 .search-box-wrap, .scrollTop {
@@ -79,7 +79,7 @@ a, button, img, input, span, .owl-nav div, .header-top-area .header-social-icons
   visibility: visible;
   opacity: 1; }
 
-.section-title h4, .mainmenu ul li a, .boxed-btn, .inline-btn, .hero-area .hero-content h3, .portfolio-area .portfolio-filter button {
+.section-title h4, .mainmenu ul li a, .boxed-btn, .inline-btn, .hero-area .hero-content h3, .portfolio-area .portfolio-filter button, .map-area .map-content-wrap .map-content .single-map-content.text h4 {
   text-transform: uppercase; }
 
 .section-title h2 {
@@ -91,7 +91,7 @@ a, button, img, input, span, .owl-nav div, .header-top-area .header-social-icons
 .search-box-wrap, .search-box-wrap .search-overlay:after {
   height: 100%; }
 
-.owl-dots, .owl-nav div, .header-top-area .header-social-icons a, .header-area .header-search span, .header-area .header-cart .number, .search-box-wrap .close-btn, .search-box-wrap .search-box, .scrollTop, .single-box .box-icon, .about-area .about-content .single-about-item i, .portfolio-area .portfolio-filter button .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number {
+.owl-dots, .owl-nav div, .header-top-area .header-social-icons a, .header-area .header-search span, .header-area .header-cart .number, .search-box-wrap .close-btn, .search-box-wrap .search-box, .scrollTop, .single-box .box-icon, .about-area .about-content .single-about-item i, .portfolio-area .portfolio-filter button .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number, .accordion-wrap .single-accordion:after, .pricing-plan-area .single-pricing-plan .pricing-content ul li i {
   text-align: center; }
 
 .footer-area .single-footer-widget-item .single-recent-blog img {
@@ -305,7 +305,7 @@ textarea {
 .header-top-area {
   font-size: 15px; }
   .header-top-area .header-contact-info ul li {
-    padding: 13px 0 13px;
+    padding: 14px 0 14px;
     border-right: 1px solid #ED737C;
     padding-right: 15px;
     margin-right: 15px; }
@@ -319,18 +319,18 @@ textarea {
 
 .header-area .header-search {
   width: 85px;
-  border-left: 1px solid #F1F1F1;
+  border-left: 1px solid #F0F0F0;
   margin-left: 50px; }
   .header-area .header-search span {
     width: 50px;
     height: 50px;
-    border: 1px solid #F1F1F1;
+    border: 1px solid #F0F0F0;
     line-height: 47px;
     font-size: 20px; }
 
 .header-area .header-cart {
-  border-left: 1px solid #F1F1F1;
-  border-right: 1px solid #F1F1F1;
+  border-left: 1px solid #F0F0F0;
+  border-right: 1px solid #F0F0F0;
   width: 75px;
   color: #E0E0E0;
   font-size: 28px;
@@ -620,28 +620,28 @@ textarea {
   font-weight: 700;
   padding: 10px 0; }
 
-.stars, .section-title h4, .header-area .header-search, .mainmenu ul li:hover > a, .search-box-wrap .close-btn:hover, .footer-area .single-footer-widget-item .inline-btn:hover, .footer-area .single-footer-widget-item .single-recent-blog:hover a, .footer-area .single-footer-widget-item .single-recent-blog:hover a h4, .footer-area .single-footer-widget-item .subscription-form .boxed-btn, .inline-btn:hover, .hero-area .hero-content h2 span, .portfolio-area .portfolio-filter button.is-checked, .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner .portfolio-content a, .map-area .map-content-wrap .map-content .single-map-content a:hover {
+.stars, .section-title h4, .header-area .header-search, .mainmenu ul li:hover > a, .search-box-wrap .close-btn:hover, .footer-area .single-footer-widget-item .inline-btn:hover, .footer-area .single-footer-widget-item .single-recent-blog:hover a, .footer-area .single-footer-widget-item .single-recent-blog:hover a h4, .footer-area .single-footer-widget-item .subscription-form .boxed-btn, .inline-btn:hover, .hero-area .hero-content h2 span, .portfolio-area .portfolio-filter button.is-checked, .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner .portfolio-content a, .map-area .map-content-wrap .map-content .single-map-content .icon i, .map-area .map-content-wrap .map-content .single-map-content a:hover {
   color: #e8505b; }
 
-.header-top-area, .header-area .header-cart .number, .mainmenu ul li ul li:hover > a, .search-box-wrap .search-box button, .footer-area .single-footer-widget-item .subscription-form .boxed-btn:hover:after, .scrollTop:hover, .boxed-btn, .single-box .box-icon, .about-area .about-content .single-about-item i, .services-area, .portfolio-area .portfolio-filter button.is-checked .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .testimonial-area, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number, .portfolio-area.home-2 {
+.header-top-area, .header-area .header-cart .number, .mainmenu ul li ul li:hover > a, .search-box-wrap .search-box button, .footer-area .single-footer-widget-item .subscription-form .boxed-btn:hover:after, .scrollTop:hover, .boxed-btn, .single-box .box-icon, .about-area .about-content .single-about-item i, .services-area, .portfolio-area .portfolio-filter button.is-checked .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .testimonial-area, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number, .accordion-wrap .single-accordion:after, .portfolio-area.home-2, .pricing-plan-area .single-pricing-plan .pricing-tag, .pricing-plan-area .single-pricing-plan .pricing-content ul li.active i {
   background-color: #e8505b; }
 
 input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=url]:focus, textarea:focus, .nice-select:focus, .nice-select:hover:after, .footer-area .single-footer-widget-item .subscription-form input[type=email]:focus {
   border-color: #e8505b; }
 
-.header-top-area .header-contact-info ul li:hover a, .header-top-area .header-social-icons a:hover {
+.header-top-area .header-contact-info ul li:hover a, .header-top-area .header-social-icons a:hover, .accordion-wrap .single-accordion .accordion-header .btn {
   color: #0b185f; }
 
 .search-box-wrap .search-overlay:after, .scrollTop, .boxed-btn:after, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a:hover {
   background-color: #0b185f; }
 
-.header-top-area, .header-top-area .header-contact-info ul li a, .header-top-area .header-social-icons a, .header-area .header-cart .number, .mainmenu ul li ul li:hover > a, .search-box-wrap .close-btn, .search-box-wrap .search-box button, .footer-area .single-footer-widget-item, .footer-area .single-footer-widget-item h4, .footer-area .single-footer-widget-item .inline-btn, .footer-area .single-footer-widget-item .single-recent-blog a, .footer-area .single-footer-widget-item .subscription-form input[type=email], .footer-area .single-footer-widget-item .subscription-form .boxed-btn:hover, .footer-area .copyright-text, .scrollTop, .scrollTop:hover, .boxed-btn, .boxed-btn:hover, .single-box .box-icon, .single-box.wide-box .box-icon i, .about-area .about-content .single-about-item i, .services-area .section-title h4, .services-area .section-title h2, .portfolio-area .portfolio-filter button.is-checked .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .testimonial-area .section-title h4, .testimonial-area .section-title h2, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number {
+.header-top-area, .header-top-area .header-contact-info ul li a, .header-top-area .header-social-icons a, .header-area .header-cart .number, .mainmenu ul li ul li:hover > a, .search-box-wrap .close-btn, .search-box-wrap .search-box button, .footer-area .single-footer-widget-item, .footer-area .single-footer-widget-item h4, .footer-area .single-footer-widget-item .inline-btn, .footer-area .single-footer-widget-item .single-recent-blog a, .footer-area .single-footer-widget-item .subscription-form input[type=email], .footer-area .single-footer-widget-item .subscription-form .boxed-btn:hover, .footer-area .copyright-text, .scrollTop, .scrollTop:hover, .boxed-btn, .boxed-btn:hover, .single-box .box-icon, .single-box.wide-box .box-icon i, .about-area .about-content .single-about-item i, .services-area .section-title h4, .services-area .section-title h2, .portfolio-area .portfolio-filter button.is-checked .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .testimonial-area .section-title h4, .testimonial-area .section-title h2, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number, .accordion-wrap .single-accordion:after, .portfolio-area.home-2 .section-title h4, .portfolio-area.home-2 .section-title h2, .pricing-plan-area .single-pricing-plan .pricing-tag, .pricing-plan-area .single-pricing-plan .pricing-content ul li i {
   color: #ffffff; }
 
-input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea, .header-area, .mainmenu ul li ul, .footer-area .single-footer-widget-item .subscription-form .boxed-btn, .single-box, .portfolio-area .portfolio-filter button, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after, .testimonial-area .single-testimonial-item, .blog-area .single-blog-item, .services-area.home-2 {
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea, .header-area, .mainmenu ul li ul, .footer-area .single-footer-widget-item .subscription-form .boxed-btn, .single-box, .portfolio-area .portfolio-filter button, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after, .testimonial-area .single-testimonial-item, .blog-area .single-blog-item, .accordion-wrap .single-accordion, .services-area.home-2, .pricing-plan-area .single-pricing-plan, .map-area .map-content-wrap .map-content {
   background-color: #ffffff; }
 
-.testimonial-area .single-testimonial-item .testimonial-header .left h4, .map-area .map-content-wrap .map-content .single-map-content a {
+.testimonial-area .single-testimonial-item .testimonial-header .left h4, .team-area .single-team-item h5, .pricing-plan-area .single-pricing-plan .pricing-content ul li, .map-area .map-content-wrap .map-content .single-map-content a {
   color: #555555; }
 
 .portfolio-area .portfolio-filter button .filter-count {
@@ -898,7 +898,7 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
 
 .brand-area .clients-logo {
   border-top: 0;
-  border-bottom: 1px solid #E2E9F7; }
+  border-bottom: 1px solid #F0F0F0; }
 
 .about-area.home-2 {
   padding: 115px 0 110px; }
@@ -906,24 +906,16 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
     margin-right: -140px; }
 
 .accordion-wrap .single-accordion {
-  background: #fff;
-  border-radius: 5px;
   margin-bottom: 10px;
   -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
-  position: relative; }
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25); }
   .accordion-wrap .single-accordion:after {
-    position: absolute;
     left: 25px;
     top: 21px;
     font-family: fontawesome;
     content: "\f067";
     width: 35px;
     height: 35px;
-    background: #E8505B;
-    color: #fff;
-    text-align: center;
-    border-radius: 50px;
     line-height: 37px;
     font-size: 14px;
     padding-left: 2px; }
@@ -931,25 +923,14 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
     content: "\f068"; }
   .accordion-wrap .single-accordion .accordion-header .btn {
     padding: 24px 25px 24px 70px;
-    color: #0a1f44;
     font-weight: 700;
-    font-size: 20px;
-    position: relative; }
+    font-size: 20px; }
     .accordion-wrap .single-accordion .accordion-header .btn:focus, .accordion-wrap .single-accordion .accordion-header .btn:hover {
       -webkit-box-shadow: none;
       box-shadow: none;
       text-decoration: none; }
   .accordion-wrap .single-accordion .accordion-body {
     padding: 0px 25px 25px; }
-
-.services-area.home-2 .section-title h4 {
-  color: #0a1f44; }
-
-.services-area.home-2 .section-title h2 {
-  color: #0a1f44; }
-
-.portfolio-area.home-2 .section-title h4, .portfolio-area.home-2 .section-title h2 {
-  color: #fff; }
 
 .portfolio-area.home-2 .portfolio-gallery .single-portfolio-item .portfolio-inner {
   -webkit-box-shadow: none;
@@ -975,15 +956,13 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
     -webkit-box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.25); }
   .team-area .single-team-item img {
-    margin-bottom: 20px;
-    border-radius: 50%; }
+    margin-bottom: 20px; }
   .team-area .single-team-item h4 {
     font-size: 20px;
     margin: 0 0 10px; }
   .team-area .single-team-item h5 {
     font-size: 16px;
     font-weight: 400;
-    color: #555;
     margin: 0; }
   .team-area .single-team-item .member-social-info {
     padding: 7px 0;
@@ -999,9 +978,7 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
 .pricing-plan-area .single-pricing-plan {
   -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
-  background-color: #fff;
-  margin-bottom: 20px;
-  border-radius: 5px; }
+  margin-bottom: 20px; }
   .pricing-plan-area .single-pricing-plan:hover {
     -webkit-box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.25); }
@@ -1011,20 +988,15 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
       margin: 0;
       font-size: 24px; }
   .pricing-plan-area .single-pricing-plan .pricing-tag {
-    background: #E8505B;
-    color: #fff;
     padding: 36px 40px; }
     .pricing-plan-area .single-pricing-plan .pricing-tag .price-tag {
       font-size: 36px;
-      display: block;
       font-weight: 700; }
   .pricing-plan-area .single-pricing-plan .pricing-content {
     padding: 40px 40px; }
     .pricing-plan-area .single-pricing-plan .pricing-content .boxed-btn {
       margin-top: 30px; }
     .pricing-plan-area .single-pricing-plan .pricing-content ul li {
-      color: #555555;
-      position: relative;
       padding-left: 25px;
       margin-bottom: 15px; }
       .pricing-plan-area .single-pricing-plan .pricing-content ul li i {
@@ -1032,39 +1004,28 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
         height: 15px;
         background: #DBDBDB;
         font-size: 10px;
-        text-align: center;
-        border-radius: 50px;
         line-height: 15px;
-        position: absolute;
         left: 0;
         top: 4px;
-        padding-left: 1px;
-        color: #fff; }
-      .pricing-plan-area .single-pricing-plan .pricing-content ul li.active i {
-        background: #E8505B; }
+        padding-left: 1px; }
 
 .map-area {
   height: 600px;
   background-color: #ddd; }
   .map-area .map-content-wrap {
-    position: absolute;
     left: 0;
     bottom: 30px;
     width: 100%; }
     .map-area .map-content-wrap .map-content {
-      background: #fff;
-      padding: 40px;
-      border-radius: 5px; }
+      padding: 40px; }
       .map-area .map-content-wrap .map-content .single-map-content {
         padding-right: 40px; }
         .map-area .map-content-wrap .map-content .single-map-content:last-child {
           padding-right: 0; }
         .map-area .map-content-wrap .map-content .single-map-content .icon {
           height: 40px;
-          display: block;
           margin-bottom: 15px; }
           .map-area .map-content-wrap .map-content .single-map-content .icon i {
-            color: #E8505B;
             font-size: 35px; }
             .map-area .map-content-wrap .map-content .single-map-content .icon i.fa-mobile {
               font-size: 40px; }
@@ -1077,7 +1038,6 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
           .map-area .map-content-wrap .map-content .single-map-content.text h4 {
             font-size: 16px;
             font-weight: 400;
-            text-transform: uppercase;
             margin: 0 0 10px; }
           .map-area .map-content-wrap .map-content .single-map-content.text h3 {
             font-size: 24px; }

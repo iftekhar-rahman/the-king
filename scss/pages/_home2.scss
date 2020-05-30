@@ -21,7 +21,7 @@
 .brand-area{
     .clients-logo{
         border-top: 0;
-        border-bottom: 1px solid #E2E9F7;
+        border-bottom: 1px solid #F0F0F0;
     }
 }
 
@@ -37,23 +37,23 @@
 // accordion-wrap
 .accordion-wrap{
     .single-accordion {
-        background: #fff;
-        border-radius: 5px;
+        @extend %white-bg-color;
+        @extend %borderradius5;
+        @extend %posrelative;
         margin-bottom: 10px;
         box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
-        position: relative;
         &:after {
-            position: absolute;
+            @extend %posabsolute;
             left: 25px;
             top: 21px;
             font-family: fontawesome;
             content: "\f067";
             width: 35px;
             height: 35px;
-            background: #E8505B;
-            color: #fff;
-            text-align: center;
-            border-radius: 50px;
+            @extend %primary-bg-color;
+            @extend %white-color;
+            @extend %textcenter;
+            @extend %borderradius50;
             line-height: 37px;
             font-size: 14px;
             padding-left: 2px;
@@ -64,10 +64,10 @@
         .accordion-header {
             .btn {
                 padding: 24px 25px 24px 70px;
-                color: #0a1f44;
+                @extend %secondary-color;
                 font-weight: 700;
                 font-size: 20px;
-                position: relative;
+                @extend %posrelative;
                 &:focus, &:hover {
                     box-shadow: none;
                     text-decoration: none;
@@ -81,17 +81,9 @@
 }
 
 // .services-area
-.services-area{
+.services-area {
     &.home-2 {
         @extend %white-bg-color;
-        .section-title {
-            h4 {
-                color: #0a1f44;
-            }
-            h2 {
-                color: #0a1f44;
-            }
-        }
     }
 }
 
@@ -101,7 +93,7 @@
         @extend %primary-bg-color;
         .section-title {
             h4, h2{
-                color: #fff;
+                @extend %white-color;
             }
         }
         .portfolio-gallery {
@@ -141,7 +133,7 @@
         }
         img {
             margin-bottom: 20px;
-            border-radius: 50%;
+            @extend %borderradius50percent;
         }
         h4 {
             font-size: 20px;
@@ -150,7 +142,7 @@
         h5 {
             font-size: 16px;
             font-weight: 400;
-            color: #555;
+            @extend %body-color;
             margin: 0;
         }
         .member-social-info {
@@ -175,9 +167,9 @@
     .single-pricing-plan{
         box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
         @extend %basetransition2;
-        background-color: #fff;
+        @extend %white-bg-color;
         margin-bottom: 20px;
-        border-radius: 5px;
+        @extend %borderradius5;
         &:hover{
             box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.25);
         }
@@ -189,12 +181,12 @@
             }
         }
         .pricing-tag {
-            background: #E8505B;
-            color: #fff;
+            @extend %primary-bg-color;
+            @extend %white-color;
             padding: 36px 40px;
             .price-tag {
                 font-size: 36px;
-                display: block;
+                @extend %displayblock;
                 font-weight: 700;
             }
         }
@@ -205,8 +197,8 @@
             }
             ul {
                 li {
-                    color: #555555;
-                    position: relative;
+                    @extend %body-color;
+                    @extend %posrelative;
                     padding-left: 25px;
                     margin-bottom: 15px;
                     i {
@@ -214,17 +206,17 @@
                         height: 15px;
                         background: #DBDBDB;
                         font-size: 10px;
-                        text-align: center;
-                        border-radius: 50px;
+                        @extend %textcenter;
+                        @extend %borderradius50;
                         line-height: 15px;
-                        position: absolute;
+                        @extend %posabsolute;
                         left: 0;
                         top: 4px;
                         padding-left: 1px;
-                        color: #fff;
+                        @extend %white-color;
                     }
                     &.active i {
-                        background: #E8505B;
+                        @extend %primary-bg-color;
                     }
                 }
             }
@@ -237,14 +229,14 @@
     height: 600px;
     background-color: #ddd;
     .map-content-wrap {
-        position: absolute;
+        @extend %posabsolute;
         left: 0;
         bottom: 30px;
         width: 100%;
         .map-content {
-            background: #fff;
+            @extend %white-bg-color;
             padding: 40px;
-            border-radius: 5px;
+            @extend %borderradius5;
             .single-map-content{
                 padding-right: 40px;
                 &:last-child {
@@ -252,10 +244,10 @@
                 }
                 .icon {
                     height: 40px;
-                    display: block;
+                    @extend %displayblock;
                     margin-bottom: 15px;
                     i {
-                        color: #E8505B;
+                        @extend %primary-color;
                         font-size: 35px;
                         &.fa-mobile {
                             font-size: 40px;
@@ -279,7 +271,7 @@
                     h4 {
                         font-size: 16px;
                         font-weight: 400;
-                        text-transform: uppercase;
+                        @extend %uppercase;
                         margin: 0 0 10px;
                     }
                     h3 {

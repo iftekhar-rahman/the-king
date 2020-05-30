@@ -83,7 +83,7 @@
 // .services-area
 .services-area{
     &.home-2 {
-        background: #ffffff;
+        @extend %white-bg-color;
         .section-title {
             h4 {
                 color: #0a1f44;

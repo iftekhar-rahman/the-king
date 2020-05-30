@@ -638,7 +638,7 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, inp
 .header-top-area, .header-top-area .header-contact-info ul li a, .header-top-area .header-social-icons a, .header-area .header-cart .number, .mainmenu ul li ul li:hover > a, .search-box-wrap .close-btn, .search-box-wrap .search-box button, .footer-area .single-footer-widget-item, .footer-area .single-footer-widget-item h4, .footer-area .single-footer-widget-item .inline-btn, .footer-area .single-footer-widget-item .single-recent-blog a, .footer-area .single-footer-widget-item .subscription-form input[type=email], .footer-area .single-footer-widget-item .subscription-form .boxed-btn:hover, .footer-area .copyright-text, .scrollTop, .scrollTop:hover, .boxed-btn, .boxed-btn:hover, .single-box .box-icon, .single-box.wide-box .box-icon i, .about-area .about-content .single-about-item i, .services-area .section-title h4, .services-area .section-title h2, .portfolio-area .portfolio-filter button.is-checked .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .testimonial-area .section-title h4, .testimonial-area .section-title h2, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number {
   color: #ffffff; }
 
-input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea, .header-area, .mainmenu ul li ul, .footer-area .single-footer-widget-item .subscription-form .boxed-btn, .single-box, .portfolio-area .portfolio-filter button, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after, .testimonial-area .single-testimonial-item, .blog-area .single-blog-item {
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea, .header-area, .mainmenu ul li ul, .footer-area .single-footer-widget-item .subscription-form .boxed-btn, .single-box, .portfolio-area .portfolio-filter button, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after, .testimonial-area .single-testimonial-item, .blog-area .single-blog-item, .services-area.home-2 {
   background-color: #ffffff; }
 
 .testimonial-area .single-testimonial-item .testimonial-header .left h4, .map-area .map-content-wrap .map-content .single-map-content a {
@@ -942,12 +942,11 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
   .accordion-wrap .single-accordion .accordion-body {
     padding: 0px 25px 25px; }
 
-.services-area.home-2 {
-  background: #ffffff; }
-  .services-area.home-2 .section-title h4 {
-    color: #0a1f44; }
-  .services-area.home-2 .section-title h2 {
-    color: #0a1f44; }
+.services-area.home-2 .section-title h4 {
+  color: #0a1f44; }
+
+.services-area.home-2 .section-title h2 {
+  color: #0a1f44; }
 
 .portfolio-area.home-2 .section-title h4, .portfolio-area.home-2 .section-title h2 {
   color: #fff; }

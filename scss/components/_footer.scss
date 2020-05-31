@@ -33,12 +33,19 @@
                 @extend %floarleft;
                 margin-right: 20px;
                 max-width: 80px;
+                @include mx-desktops{
+                    margin-right: 10px;
+                    margin-bottom: 15px;
+                }
             }
             h4 {
                 font-size: 16px;
                 font-weight: 500;
                 margin: -3px 0 10px;
                 line-height: 1.5;
+                @include mx-desktops{
+                    font-size: 15px;
+                }
             }
             a {
                 @extend %white-color;

@@ -92,6 +92,9 @@ textarea {
         margin-bottom: 40px;
         color: #0a1f44;
         @extend %capitalize;
+        @include mx-desktops{
+            font-size: 32px;
+        }
     }
 }
 

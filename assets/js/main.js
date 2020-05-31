@@ -1,6 +1,7 @@
 jQuery(document).ready(function($){
 
-    // $(".header-area").sticky({ topSpacing: 0 });
+    // responsive menu
+    $('#menu').slicknav();
 
     $('select').niceSelect();
 
@@ -13,9 +14,6 @@ jQuery(document).ready(function($){
     //     autoplay: false,
     //     navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
 	// });
-
-        // perfectScrollbar
-        // $(".nice-select .list").perfectScrollbar();
 
     // $("#range_49").ionRangeSlider({
     //     type: "single",

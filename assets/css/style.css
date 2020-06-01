@@ -32,7 +32,7 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
 .search-box-wrap, .scrollTop {
   position: fixed; }
 
-.hero-area, .contact-area {
+.hero-area, .contact-area, .about-area.home-2 {
   background-size: cover;
   background-position: center;
   background-color: #FAFAFA; }
@@ -397,34 +397,25 @@ textarea {
 .mainmenu ul li ul li:hover ul {
   top: 0; }
 
-@media (min-width: 992px) {
-  .header-area.fixed {
+.header-area.fixed {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-animation: slide-down 0.7s;
+  animation: slide-down 0.7s;
+  z-index: 999;
+  -webkit-box-shadow: 0 -40px 20px 30px #000;
+  box-shadow: 0 -40px 20px 30px #000; }
+  .header-area.fixed:after {
+    position: absolute;
+    content: "";
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    -webkit-animation: slide-down 0.7s;
-    animation: slide-down 0.7s;
-    z-index: 999;
-    -webkit-box-shadow: 0 -40px 20px 30px #000;
-    box-shadow: 0 -40px 20px 30px #000; }
-    .header-area.fixed:after {
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      z-index: -1;
-      opacity: 1; } }
-
-@media (max-width: 991px) {
-  .header-area {
-    position: fixed;
+    height: 100%;
     left: 0;
     top: 0;
-    width: 100%;
-    z-index: 9; } }
+    z-index: -1;
+    opacity: 1; }
 
 @-webkit-keyframes slide-down {
   0% {
@@ -668,7 +659,7 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
 .testimonial-area .single-testimonial-item .testimonial-header .left h4, .team-area .single-team-item h5, .pricing-plan-area .single-pricing-plan .pricing-content ul li, .map-area .map-content-wrap .map-content .single-map-content a {
   color: #555555; }
 
-.portfolio-area .portfolio-filter button .filter-count {
+.portfolio-area .portfolio-filter button .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap img, .blog-area .single-blog-item:hover, .map-area {
   background-color: #FAFAFA; }
 
 .footer-area .single-footer-widget-item .subscription-form input[type=email] {
@@ -698,7 +689,7 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
   -webkit-box-shadow: 0px 0px 8px -5px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 8px -5px rgba(0, 0, 0, 0.25);
   padding: 42px 40px 25px 40px;
-  height: 100%; }
+  margin-bottom: 20px; }
   @media (min-width: 992px) and (max-width: 1199px) {
     .single-box {
       padding: 32px 20px 20px 20px; } }
@@ -735,7 +726,7 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
           left: 40px; } }
 
 .features-area {
-  padding: 0 0 50px;
+  padding: 0 0 30px;
   margin-top: -40px; }
 
 .about-area {
@@ -774,8 +765,7 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
   padding-right: 5px; }
   .less-padding-content .col-lg-6, .less-padding-content .col-lg-4 {
     padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 20px; }
+    padding-right: 10px; }
 
 .portfolio-area .portfolio-filter {
   margin-bottom: 40px; }
@@ -947,10 +937,13 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
 .about-area.home-2 {
   padding: 115px 0 110px; }
   .about-area.home-2 .about-image {
-    margin-right: -140px; }
-    @media (min-width: 992px) and (max-width: 1199px) {
+    margin-right: 0; }
+    @media (min-width: 1500px) {
       .about-area.home-2 .about-image {
-        margin-right: 0; } }
+        margin-right: -140px; } }
+    @media (min-width: 1200px) and (max-width: 1500px) {
+      .about-area.home-2 .about-image {
+        margin-right: -35px; } }
   .about-area.home-2 .about-content {
     padding-left: 0; }
 
@@ -1072,43 +1065,43 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
         top: 4px;
         padding-left: 1px; }
 
-.map-area {
-  height: 600px;
-  background-color: #ddd; }
-  .map-area .map-content-wrap {
-    left: 0;
-    bottom: 30px;
-    width: 100%; }
-    .map-area .map-content-wrap .map-content {
-      padding: 40px; }
-      .map-area .map-content-wrap .map-content .single-map-content {
-        padding-right: 40px; }
-        .map-area .map-content-wrap .map-content .single-map-content:last-child {
-          padding-right: 0; }
-        .map-area .map-content-wrap .map-content .single-map-content .icon {
-          height: 40px;
-          margin-bottom: 15px; }
-          .map-area .map-content-wrap .map-content .single-map-content .icon i {
-            font-size: 35px; }
-            .map-area .map-content-wrap .map-content .single-map-content .icon i.fa-mobile {
-              font-size: 40px; }
-            .map-area .map-content-wrap .map-content .single-map-content .icon i.fa-envelope-o {
-              font-size: 30px; }
-        .map-area .map-content-wrap .map-content .single-map-content h4 {
-          font-size: 18px; }
-        .map-area .map-content-wrap .map-content .single-map-content.text {
-          width: 350px; }
-          .map-area .map-content-wrap .map-content .single-map-content.text h4 {
-            font-size: 16px;
-            font-weight: 400;
-            margin: 0 0 10px; }
-          .map-area .map-content-wrap .map-content .single-map-content.text h3 {
-            font-size: 24px; }
-        .map-area .map-content-wrap .map-content .single-map-content.address {
-          width: 290px; }
-        .map-area .map-content-wrap .map-content .single-map-content.phone-number {
-          width: 200px; }
-        .map-area .map-content-wrap .map-content .single-map-content.email-address {
-          width: 190px; }
+.map-area .map {
+  height: 600px; }
+
+.map-area .map-content-wrap {
+  left: 0;
+  bottom: 30px;
+  width: 100%; }
+  .map-area .map-content-wrap .map-content {
+    padding: 40px; }
+    .map-area .map-content-wrap .map-content .single-map-content {
+      padding-right: 40px; }
+      .map-area .map-content-wrap .map-content .single-map-content:last-child {
+        padding-right: 0; }
+      .map-area .map-content-wrap .map-content .single-map-content .icon {
+        height: 40px;
+        margin-bottom: 15px; }
+        .map-area .map-content-wrap .map-content .single-map-content .icon i {
+          font-size: 35px; }
+          .map-area .map-content-wrap .map-content .single-map-content .icon i.fa-mobile {
+            font-size: 40px; }
+          .map-area .map-content-wrap .map-content .single-map-content .icon i.fa-envelope-o {
+            font-size: 30px; }
+      .map-area .map-content-wrap .map-content .single-map-content h4 {
+        font-size: 18px; }
+      .map-area .map-content-wrap .map-content .single-map-content.text {
+        width: 350px; }
+        .map-area .map-content-wrap .map-content .single-map-content.text h4 {
+          font-size: 16px;
+          font-weight: 400;
+          margin: 0 0 10px; }
+        .map-area .map-content-wrap .map-content .single-map-content.text h3 {
+          font-size: 24px; }
+      .map-area .map-content-wrap .map-content .single-map-content.address {
+        width: 290px; }
+      .map-area .map-content-wrap .map-content .single-map-content.phone-number {
+        width: 200px; }
+      .map-area .map-content-wrap .map-content .single-map-content.email-address {
+        width: 190px; }
 
 /*# sourceMappingURL=style.css.map */

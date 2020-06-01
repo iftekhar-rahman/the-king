@@ -31,7 +31,7 @@
             <span class="close-btn"><i class="fa fa-close"></i></span>
             <div class="search-overlay"></div>
             <div class="search-box">
-                <form action="">
+                <form action="POST">
                     <input type="text" placeholder="Seach..." name="search" id="search">
                     <button type="submit" value="submit"><i class="fa fa-search"></i></button>
                 </form>
@@ -42,14 +42,14 @@
         <!-- header starts -->
         <header class="header">
             <!-- .header-top-area starts -->
-            <section class="header-top-area">
+            <div class="header-top-area">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8">
                             <div class="header-contact-info">
                                 <ul>
                                     <li><i class="fa fa-clock-o"></i> 9:30am - 6:30pm Mon - Sun</li>
-                                    <li><a href="tel:+800-123-4567 6587"><i class="fa fa-phone"></i> +800-123-4567 6587</a></li>
+                                    <li><a href="tel:+80012345676587"><i class="fa fa-phone"></i> +800-123-4567 6587</a></li>
                                     <li><a href="#"><i class="fa fa-map-marker"></i> Beverley, New York 224 US</a></li>
                                 </ul>
                             </div>
@@ -65,18 +65,18 @@
                         </div>
                     </div>
                 </div>
-            </section><!-- .header-top-area ends -->
+            </div><!-- .header-top-area ends -->
             <!-- .header-area starts -->
-            <section class="header-area">
+            <div class="header-area">
                 <div class="container">
                     <div class="row">
                         <div class="col-auto d-flex align-items-center">
                             <div class="site-logo">
-                                <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                                <a href="index.html"><img src="assets/img/logo.png" alt="Site logo"></a>
                             </div>
                         </div>
                         <div class="col d-flex align-items-center justify-content-end">
-                            <div class="mainmenu">
+                            <div class="mainmenu d-none d-lg-block">
                                 <ul>
                                     <li><a href="#">Home</a></li>
                                     <!-- <li><a href="#">Pages</a>
@@ -109,12 +109,12 @@
                         </div>
                     </div>
                 </div>
-            </section><!-- .header-area ends -->
+            </div><!-- .header-area ends -->
         </header>
         <!-- header ends -->
 
         <!-- .hero-area starts -->
-        <section class="hero-area" style="background-image: url(./assets/img/hero-banner.jpg);">
+        <div class="hero-area" style="background-image: url(./assets/img/hero-banner.jpg);">
             <div class="container">
                 <div class="row my-auto">
                     <div class="col-lg-7 my-auto">
@@ -127,17 +127,17 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- .hero-area ends -->
 
         <!-- .features-area starts -->
-        <section class="features-area">
+        <div class="features-area">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="single-feature-item single-box">
                             <span class="box-icon">
-                                <img src="assets/img/icons/feature-icon-1.png" alt="">
+                                <img src="assets/img/icons/feature-icon-1.png" alt="Feature icon">
                             </span>
                             <h3>Digital Services</h3>
                             <p>Hunky dory barney fanny around up the duff not bigge look cups info of tea joly good ruddy say arse.!</p>
@@ -147,7 +147,7 @@
                     <div class="col-lg-4">
                         <div class="single-feature-item single-box">
                             <span class="box-icon">
-                                <img src="assets/img/icons/feature-icon-2.png" alt="">
+                                <img src="assets/img/icons/feature-icon-2.png" alt="Feature icon">
                             </span>
                             <h3>Product Engineering</h3>
                             <p>Hunky dory barney fanny around up the duff not bigge look cups info of tea joly good ruddy say arse.!</p>
@@ -157,7 +157,7 @@
                     <div class="col-lg-4">
                         <div class="single-feature-item single-box">
                             <span class="box-icon">
-                                <img src="assets/img/icons/feature-icon-3.png" alt="">
+                                <img src="assets/img/icons/feature-icon-3.png" alt="Feature icon">
                             </span>
                             <h3>IT Consultancy</h3>
                             <p>Hunky dory barney fanny around up the duff not bigge look cups info of tea joly good ruddy say arse.!</p>
@@ -166,16 +166,16 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- .features-area ends -->
 
         <!-- .about-area starts -->
-        <section class="about-area">
+        <div class="about-area">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 d-block d-lg-flex align-items-center">
                         <div class="about-image">
-                            <img src="assets/img/about-image-1.jpg" alt="">
+                            <img src="assets/img/about-image-1.png" alt="About image">
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -204,11 +204,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- .about-area ends -->
 
         <!-- .services-area starts -->
-        <section class="services-area home-1 section-padding-115-100">
+        <div class="services-area home-1 section-padding-115-100">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -222,7 +222,7 @@
                     <div class="col-lg-6">
                         <div class="single-service-item single-box wide-box">
                             <span class="box-icon">
-                                <img src="assets/img/icons/services-icon-1.png" alt="">
+                                <img src="assets/img/icons/services-icon-1.png" alt="Services icon">
                             </span>
                             <h3>Product Engineering</h3>
                             <p>Since 2006 have been visionary areliable software engineerng partner worldclass brands are bouque digital transformation consultancy.</p>
@@ -231,7 +231,7 @@
                     <div class="col-lg-6">
                         <div class="single-service-item single-box wide-box">
                             <span class="box-icon">
-                                <img src="assets/img/icons/services-icon-2.png" alt="">
+                                <img src="assets/img/icons/services-icon-2.png" alt="Services icon">
                             </span>
                             <h3>UI/UX Design Strategy</h3>
                             <p>Since 2006 have been visionary areliable software engineerng partner worldclass brands are bouque digital transformation consultancy.</p>
@@ -240,7 +240,7 @@
                     <div class="col-lg-6">
                         <div class="single-service-item single-box wide-box">
                             <span class="box-icon">
-                                <img src="assets/img/icons/services-icon-3.png" alt="">
+                                <img src="assets/img/icons/services-icon-3.png" alt="Services icon">
                             </span>
                             <h3>Big Data And Analytics</h3>
                             <p>Since 2006 have been visionary areliable software engineerng partner worldclass brands are bouque digital transformation consultancy.</p>
@@ -249,7 +249,7 @@
                     <div class="col-lg-6">
                         <div class="single-service-item single-box wide-box">
                             <span class="box-icon">
-                                <img src="assets/img/icons/services-icon-4.png" alt="">
+                                <img src="assets/img/icons/services-icon-4.png" alt="Services icon">
                             </span>
                             <h3>Dedicated IT Solution</h3>
                             <p>Since 2006 have been visionary areliable software engineerng partner worldclass brands are bouque digital transformation consultancy.</p>
@@ -258,7 +258,7 @@
                     <div class="col-lg-6">
                         <div class="single-service-item single-box wide-box">
                             <span class="box-icon">
-                                <img src="assets/img/icons/services-icon-5.png" alt="">
+                                <img src="assets/img/icons/services-icon-5.png" alt="Services icon">
                             </span>
                             <h3>Infrastructure Plan</h3>
                             <p>Since 2006 have been visionary areliable software engineerng partner worldclass brands are bouque digital transformation consultancy.</p>
@@ -267,7 +267,7 @@
                     <div class="col-lg-6">
                         <div class="single-service-item single-box wide-box">
                             <span class="box-icon">
-                                <img src="assets/img/icons/services-icon-6.png" alt="">
+                                <img src="assets/img/icons/services-icon-6.png" alt="Services icon">
                             </span>
                             <h3>Firewall Advancement</h3>
                             <p>Since 2006 have been visionary areliable software engineerng partner worldclass brands are bouque digital transformation consultancy.</p>
@@ -275,11 +275,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- .services-area ends -->
 
         <!-- .portfolio-area starts -->
-        <section class="portfolio-area section-padding-115-100">
+        <div class="portfolio-area section-padding-115-100">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -301,7 +301,7 @@
                             <div class="single-portfolio-item resources startups">
                                 <div class="portfolio-inner">
                                     <div class="image-wrap position-relative">
-                                        <img src="assets/img/portfolio-1.jpg" alt="">
+                                        <img src="assets/img/portfolio-1.jpg" alt="Financial Human">
                                         <div class="portfolio-hover">
                                             <a href="#"><i class="fa fa-link"></i></a>
                                             <a class="popup-link1" href="assets/img/portfolio-1.jpg"><i class="fa fa-search"></i></a>
@@ -316,7 +316,7 @@
                             <div class="single-portfolio-item startups resources">
                                 <div class="portfolio-inner">
                                     <div class="image-wrap position-relative">
-                                        <img src="assets/img/portfolio-2.jpg" alt="">
+                                        <img src="assets/img/portfolio-2.jpg" alt="Resources Strategy">
                                         <div class="portfolio-hover">
                                             <a href="#"><i class="fa fa-link"></i></a>
                                             <a class="popup-link1" href="assets/img/portfolio-2.jpg"><i class="fa fa-search"></i></a>
@@ -331,7 +331,7 @@
                             <div class="single-portfolio-item solicitory financial">
                                 <div class="portfolio-inner">
                                     <div class="image-wrap position-relative">
-                                        <img src="assets/img/portfolio-3.jpg" alt="">
+                                        <img src="assets/img/portfolio-3.jpg" alt="Start Ups Resources">
                                         <div class="portfolio-hover">
                                             <a href="#"><i class="fa fa-link"></i></a>
                                             <a class="popup-link1" href="assets/img/portfolio-3.jpg"><i class="fa fa-search"></i></a>
@@ -346,7 +346,7 @@
                             <div class="single-portfolio-item startups solicitory financial">
                                 <div class="portfolio-inner">
                                     <div class="image-wrap position-relative">
-                                        <img src="assets/img/portfolio-4.jpg" alt="">
+                                        <img src="assets/img/portfolio-4.jpg" alt="Financial Human">
                                         <div class="portfolio-hover">
                                             <a href="#"><i class="fa fa-link"></i></a>
                                             <a class="popup-link1" href="assets/img/portfolio-4.jpg"><i class="fa fa-search"></i></a>
@@ -361,7 +361,7 @@
                             <div class="single-portfolio-item resources startups solicitory">
                                 <div class="portfolio-inner">
                                     <div class="image-wrap position-relative">
-                                        <img src="assets/img/portfolio-5.jpg" alt="">
+                                        <img src="assets/img/portfolio-5.jpg" alt="Resources Strategy">
                                         <div class="portfolio-hover">
                                             <a href="#"><i class="fa fa-link"></i></a>
                                             <a class="popup-link1" href="assets/img/portfolio-5.jpg"><i class="fa fa-search"></i></a>
@@ -376,7 +376,7 @@
                             <div class="single-portfolio-item solicitory financial">
                                 <div class="portfolio-inner">
                                     <div class="image-wrap position-relative">
-                                        <img src="assets/img/portfolio-6.jpg" alt="">
+                                        <img src="assets/img/portfolio-6.jpg" alt="Start Ups Resources">
                                         <div class="portfolio-hover">
                                             <a href="#"><i class="fa fa-link"></i></a>
                                             <a class="popup-link1" href="assets/img/portfolio-6.jpg"><i class="fa fa-search"></i></a>
@@ -392,11 +392,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- .portfolio-area ends -->
 
         <!-- .contact-area starts -->
-        <section class="contact-area section-padding-115-100" style="background-image: url(./assets/img/contact-banner.jpg);">
+        <div class="contact-area section-padding-115-100" style="background-image: url(./assets/img/contact-banner.jpg);">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 offset-lg-5">
@@ -407,7 +407,7 @@
                             </div>
                             <!-- .contact-form starts -->
                             <div class="contact-form">
-                                <form action="">
+                                <form action="POST">
                                     <div class="form-group">
                                         <select name="businessplan" id="businessplan">
                                             <option value="Plan 1">Business Planning</option>
@@ -439,11 +439,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- .contact-area ends -->
 
         <!-- .testimonial-area starts -->
-        <section class="testimonial-area" style="background-image: url(./assets/img/map-bg-1.png);">
+        <div class="testimonial-area" style="background-image: url(./assets/img/map-bg-1.png);">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -460,13 +460,13 @@
                             <div class="testimonial-header d-flex justify-content-between">
                                 <div class="left position-relative">
                                     <div class="reviewer-photo">
-                                        <img src="assets/img/reviewer-photo-1.png" alt="">
+                                        <img src="assets/img/reviewer-photo-1.png" alt="Reviewer">
                                     </div>
                                     <h3>Angel Witicker</h3>
                                     <h4>UX Designer</h4>
                                 </div>
                                 <div class="right">
-                                    <img src="assets/img/reviewer-logo-1.png" alt="">
+                                    <img src="assets/img/reviewer-logo-1.png" alt="Reviewer Logo">
                                 </div>
                             </div>
                             <div class="testimonial-content">
@@ -487,13 +487,13 @@
                             <div class="testimonial-header d-flex justify-content-between">
                                 <div class="left position-relative">
                                     <div class="reviewer-photo">
-                                        <img src="assets/img/reviewer-photo-2.png" alt="">
+                                        <img src="assets/img/reviewer-photo-2.png" alt="Reviewer">
                                     </div>
                                     <h3>Witicker Alax</h3>
                                     <h4>Founder & CEO</h4>
                                 </div>
                                 <div class="right">
-                                    <img src="assets/img/reviewer-logo-2.png" alt="">
+                                    <img src="assets/img/reviewer-logo-2.png" alt="Reviewer Logo">
                                 </div>
                             </div>
                             <div class="testimonial-content">
@@ -514,29 +514,29 @@
                         <!-- .clients-logo starts -->
                         <div class="clients-logo d-flex justify-content-between">
                             <div class="single-logo">
-                                <img src="assets/img/clients-logo-1.png" alt="">
+                                <img src="assets/img/clients-logo-1.png" alt="Brand Logo">
                             </div>
                             <div class="single-logo">
-                                <img src="assets/img/clients-logo-2.png" alt="">
+                                <img src="assets/img/clients-logo-2.png" alt="Brand Logo">
                             </div>
                             <div class="single-logo">
-                                <img src="assets/img/clients-logo-3.png" alt="">
+                                <img src="assets/img/clients-logo-3.png" alt="Brand Logo">
                             </div>
                             <div class="single-logo">
-                                <img src="assets/img/clients-logo-4.png" alt="">
+                                <img src="assets/img/clients-logo-4.png" alt="Brand Logo">
                             </div>
                             <div class="single-logo">
-                                <img src="assets/img/clients-logo-5.png" alt="">
+                                <img src="assets/img/clients-logo-5.png" alt="Brand Logo">
                             </div>
                         </div><!-- .clients-logo ends -->
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- .testimonial-area ends -->
 
         <!-- .blog-area starts -->
-        <section class="blog-area section-padding-115-100">
+        <div class="blog-area section-padding-115-100">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -550,7 +550,7 @@
                     <div class="col-lg-4">
                         <!-- .single-blog-item starts -->
                         <div class="single-blog-item">
-                            <img src="assets/img/blog-image-1.jpg" alt="">
+                            <img src="assets/img/blog-image-1.jpg" alt="Blog image">
                             <div class="blog-content">
                                 <h3>Business Ueportin Rouncil Them Could Plan...</h3>
                                 <div class="blog-meta">
@@ -571,7 +571,7 @@
                     <div class="col-lg-4">
                         <!-- .single-blog-item starts -->
                         <div class="single-blog-item">
-                            <img src="assets/img/blog-image-2.jpg" alt="">
+                            <img src="assets/img/blog-image-2.jpg" alt="Blog image">
                             <div class="blog-content">
                                 <h3>Financial Reportin Qouncil What Could More...</h3>
                                 <div class="blog-meta">
@@ -592,7 +592,7 @@
                     <div class="col-lg-4">
                         <!-- .single-blog-item starts -->
                         <div class="single-blog-item">
-                            <img src="assets/img/blog-image-3.jpg" alt="">
+                            <img src="assets/img/blog-image-3.jpg" alt="Blog image">
                             <div class="blog-content">
                                 <h3>Consultin Reportin Qounc Arei Could More...</h3>
                                 <div class="blog-meta">
@@ -619,7 +619,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- .blog-area ends -->
 
         <!-- .footer-area starts -->
@@ -640,14 +640,14 @@
                             <h4>Recent Blog Posts</h4>
                             <div class="single-recent-blog">
                                 <a href="#">
-                                    <img src="assets/img/recent-blog-1.jpg" alt="">
+                                    <img src="assets/img/recent-blog-1.jpg" alt="Recent blog">
                                     <h4>Remo Suppor Center What For Semiconductor Provider</h4>
                                     <p>April 08,2020</p>
                                 </a>
                             </div>
                             <div class="single-recent-blog">
                                 <a href="#">
-                                    <img src="assets/img/recent-blog-2.jpg" alt="">
+                                    <img src="assets/img/recent-blog-2.jpg" alt="Recent blog">
                                     <h4>Remo Suppor Center What For Semiconductor Provider</h4>
                                     <p>April 09,2020</p>
                                 </a>
@@ -660,7 +660,7 @@
                             <h4>Newsletter Subscription</h4>
                             <p>Enter your email and get latest updates and offers subscribe us</p>
                             <div class="subscription-form">
-                                <form action="">
+                                <form action="POST">
                                     <input type="email" placeholder="Enter your email">
                                     <button type="submit" value="submit" class="boxed-btn"><i class="fa fa-paper-plane"></i> Subscribe Now!</button>
                                 </form>

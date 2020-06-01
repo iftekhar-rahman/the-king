@@ -28,11 +28,15 @@
 // .about-area
 .about-area{
     &.home-2{
+        @extend %backgroundimage;
         padding: 115px 0 110px;
         .about-image {
-            margin-right: -140px;
-            @include mx-desktops{
-                margin-right: 0;
+            margin-right: 0;
+            @include mx-extra-large-desktops{
+                margin-right: -140px;
+            }
+            @include mx-large-desktops{
+                margin-right: -35px;
             }
         }
         .about-content{
@@ -252,8 +256,10 @@
 
 // map-area
 .map-area{
-    height: 600px;
-    background-color: #ddd;
+    .map{
+        height: 600px;
+    }
+    @extend %section-bg-color;
     .map-content-wrap {
         @extend %posabsolute;
         left: 0;

@@ -165,7 +165,7 @@
 
 // Sticky Header with smooth animation
 .header-area {
-    @include desktops{
+    // @include desktops{
         &.fixed {
             width: 100%;
             position: fixed;
@@ -185,13 +185,13 @@
                 opacity: 1;
             }
         }
-    }
+    // }
     @include all-below-med{
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        z-index: 9;
+        // position: fixed;
+        // left: 0;
+        // top: 0;
+        // width: 100%;
+        // z-index: 9;
         // background: #031a39;
     }
 }

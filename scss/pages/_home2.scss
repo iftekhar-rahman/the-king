@@ -3,9 +3,15 @@
     &.home-2{
         padding: 100px 0;
         margin-top: 0;
+        @include all-below-med{
+            padding: 60px 0 50px;
+        }
         .section-title {
             h2 {
                 margin-bottom: 60px;
+                @include all-below-med{
+                    margin-bottom: 25px;
+                }
             }
         }
         .single-feature-item{
@@ -30,6 +36,9 @@
     &.home-2{
         @extend %backgroundimage;
         padding: 115px 0 110px;
+        @include all-below-med{
+            padding: 70px 0 60px;
+        }
         .about-image {
             margin-right: 0;
             @include mx-extra-large-desktops{
@@ -148,6 +157,9 @@
     .section-title {
         h2 {
             margin-bottom: 60px;
+            @include all-below-med{
+                margin-bottom: 25px;
+            }
         }
     }
     .single-team-item{
@@ -192,6 +204,9 @@
     .section-title {
         h2 {
             margin-bottom: 50px;
+            @include all-below-med{
+                margin-bottom: 25px;
+            }
         }
     }
     .single-pricing-plan{
@@ -258,6 +273,9 @@
 .map-area{
     .map{
         height: 600px;
+        @include all-below-med{
+            height: 400px;
+        }
     }
     @extend %section-bg-color;
     .map-content-wrap {
@@ -265,12 +283,24 @@
         left: 0;
         bottom: 30px;
         width: 100%;
+        @include all-below-med{
+           position: relative;
+           bottom: 0;
+           background-color: #fff;
+        }
         .map-content {
             @extend %white-bg-color;
             padding: 40px;
             @extend %borderradius5;
+            @include all-below-med{
+                padding: 40px 0px 20px 0px;
+            }
             .single-map-content{
                 padding-right: 40px;
+                @include all-below-med{
+                    flex-basis: 50%;
+                    margin-bottom: 30px;
+                }
                 &:last-child {
                     padding-right: 0;
                 }

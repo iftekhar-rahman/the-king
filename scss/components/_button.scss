@@ -12,6 +12,9 @@
     @extend %posrelative;
     @extend %white-color;
     @extend %uppercase;
+    @include all-below-med{
+        padding: 13px 35px;
+    }
     &:after {
         @extend %pseudoabsolute;
         @extend %secondary-bg-color;

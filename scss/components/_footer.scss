@@ -5,9 +5,18 @@
     background-position: center;
     padding-top: 100px;
     font-size: 15px;
+    @include all-below-med{
+        padding-top: 60px;
+    }
     // .single-footer-widget-item
     .single-footer-widget-item {
         @extend %white-color;
+        @include all-below-med{
+            margin-bottom: 30px;
+            &.pl-3{
+                padding-left: 0 !important;
+            }
+        }
         h4 {
             @extend %white-color;
             font-size: 18px;
@@ -96,6 +105,10 @@
         border-top: 1px solid #2C3940;
         @extend %white-color;
         margin-top: 90px;
+        @include all-below-med{
+            padding: 20px 0;
+            margin-top: 30px;
+        }
     }
 }
  

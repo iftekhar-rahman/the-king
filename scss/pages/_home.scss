@@ -2,17 +2,27 @@
 // .hero-area
 .hero-area, .hero-area .row {
     height: 700px;
+    @include all-below-med{
+        height: 450px;
+    }
 }
 .hero-area{
     @extend %backgroundimage;
     .hero-content {
         padding-right: 60px;
+        @include all-below-med{
+            width: 400px;
+            padding-right: 0
+        }
         h3 {
             color: #0a1f44;
             font-size: 24px;
             @extend %uppercase;
             font-weight: 100;
             margin-bottom: 10px;
+            @include all-below-med{
+                font-size: 22px;
+            }
         }
         h2 {
             font-size: 50px;
@@ -20,12 +30,18 @@
             @include mx-desktops{
                 font-size: 44px;
             }
+            @include all-below-med{
+                font-size: 36px;
+            }
             span {
                 @extend %primary-color;
             }
         }
         .boxed-btn {
             margin-top: 30px;
+            @include all-below-med{
+                margin-top: 15px;
+            }
         }
     }
 }
@@ -40,6 +56,9 @@
     @extend %basetransition2;
     @include mx-desktops{
         padding: 32px 20px 20px 20px;
+    }
+    @include all-below-med{
+        text-align: center;
     }
     &:hover {
         box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.25);
@@ -61,6 +80,10 @@
         @extend %posrelative;
         left: 0;
         top: 0;
+        @include all-below-med{
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
         i {
             font-size: 40px;
             line-height: 100px;
@@ -71,6 +94,9 @@
         @extend %borderradius5;
         @include mx-desktops{
             padding: 30px 30px 30px 140px;
+        }
+        @include all-below-med{
+            text-align: left;
         }
         .box-icon {
             margin-bottom: 0;
@@ -92,20 +118,36 @@
 .features-area {
     padding: 0 0 30px;
     margin-top: -40px;
+    @include all-below-med{
+        margin-top: 50px;
+        padding: 0 0 20px;
+    }
 }
 
 // .about-area 
 .about-area {
     padding: 60px 0 120px;
+    @include all-below-med{
+        padding: 30px 0 60px;
+    }
     .section-title {
         h2{
             margin-bottom: 20px;
+        }
+    }
+    .about-image{
+        @include all-below-med{
+            margin-bottom: 30px;
+            text-align: center;
         }
     }
     .about-content {
         padding-left: 40px;
         @include mx-desktops{
             padding-left: 20px;
+        }
+        @include all-below-med{
+            padding-left: 0px;
         }
         .single-about-item {
             padding-left: 70px;
@@ -142,6 +184,9 @@
         h2 {
             @extend %white-color;
             margin-bottom: 60px;
+            @include all-below-med{
+                margin-bottom: 20px;
+            }
         }
     }
     &.home-1{
@@ -178,6 +223,10 @@
             @extend %white-bg-color;
             @extend %borderradius5;
             @extend %posrelative;
+            @include all-below-med{
+                padding: 15px 40px 15px 10px;
+                margin: 0 2px;
+            }
             &.is-checked{
                 @extend %primary-color;
                 .filter-count{
@@ -195,6 +244,12 @@
                 @extend %posabsolute;
                 @extend %textcenter;
                 @extend %section-bg-color;
+                @include all-below-med{
+                    width: 30px;
+                    height: 30px;
+                    right: 5px;
+                    line-height: 32px;
+                }
             }
         }
     }
@@ -207,6 +262,9 @@
             padding-left: 15px;
             padding-right: 15px;
             margin-bottom: 30px;
+            @include all-below-med{
+                width: 50%;
+            }
             .portfolio-inner{
                 border-radius: 5px 5px 0 0;
                 box-shadow: 0px 0px 12px -9px rgba(0, 0, 0, 0.5);
@@ -301,8 +359,15 @@
 // .contact-area
 .contact-area {
     @extend %backgroundimage;
+    @include all-below-med{
+        background-image: none !important;
+        background-color: #FAFAFA;
+    }
     .form-wrap{
         padding-left: 80px;
+        @include all-below-med{
+            padding-left: 0;
+        }
     }
 }
 
@@ -312,8 +377,14 @@
     @extend %primary-bg-color;
     background-repeat: no-repeat;
     background-position: center;
+    @include all-below-med{
+        padding: 60px 0 0;
+    }
     .testimonials-row {
         padding-bottom: 100px;
+        @include all-below-med{
+            padding-bottom: 30px;
+        }
     }
     .section-title {
         h4 {
@@ -325,6 +396,9 @@
     }
     .single-testimonial-item {
         @extend %white-bg-color;
+        @include all-below-med{
+            margin-bottom: 20px;
+        }
         .testimonial-header {
             padding: 20px 30px;
             border-bottom: 1px solid #F0F0F0;
@@ -360,6 +434,9 @@
 .clients-logo {
     padding: 55px 0;
     border-top: 1px solid #E76F7A;
+    @include all-below-med{
+        padding: 40px 0;
+    }
     .single-logo {
         padding-right: 40px;
         &:last-child {
@@ -372,6 +449,9 @@
 .blog-area {
     .section-title h2 {
         margin-bottom: 60px;
+        @include all-below-med{
+            margin-bottom: 25px;
+        }
     }
     .single-blog-item {
         border-radius: 5px 5px 0 0;
@@ -383,8 +463,14 @@
             box-shadow: 0px 8px 18px -9px rgba(0, 0, 0, 0.5);
             @extend %section-bg-color;
         }
+        @include all-below-med{
+            margin-bottom: 30px;
+        }
         img {
             border-radius: 5px 5px 0 0;
+            @include all-below-med{
+                width: 100%;
+            }
         }
         .blog-content {
             padding: 30px 25px 20px 26px;

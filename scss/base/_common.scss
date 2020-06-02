@@ -26,6 +26,10 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
     @extend %white-bg-color;
     padding: 15px 20px;
     font-size: 16px;
+    @include all-below-med{
+        padding: 12px 20px;
+        height: 50px;
+    }
 }
 input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=url]:focus, textarea:focus{
     @extend %primary-border-color;
@@ -70,6 +74,9 @@ textarea {
 }
 .section-padding-115-100{
     padding: 115px 0 100px;
+    @include all-below-med{
+        padding: 60px 0 50px;
+    }
 }
 .stars {
     @extend %primary-color;
@@ -94,6 +101,10 @@ textarea {
         @extend %capitalize;
         @include mx-desktops{
             font-size: 32px;
+        }
+        @include all-below-med{
+            font-size: 28px;
+            margin-bottom: 25px;
         }
     }
 }
@@ -153,6 +164,10 @@ textarea {
     border:  1px solid transparent;
     margin-bottom: 20px;
     font-size: 16px;
+    @include all-below-med{
+        height: 50px;
+        line-height: 50px;
+    }
     &:hover{
         border:  1px solid transparent;
     }

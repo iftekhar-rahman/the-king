@@ -44,5 +44,16 @@
 %section-border-color{
 	border-color: $section-color;
 }
-
+%default-box-shadow{
+	box-shadow: $default-box-shadow;
+}
+%default-box-shadow-hover{
+	box-shadow: $default-box-shadow-hover;
+}
+%default-box-shadow-2{
+	box-shadow: $default-box-shadow-2;
+}
+%default-box-shadow-hover-2{
+	box-shadow: $default-box-shadow-hover-2;
+}
 

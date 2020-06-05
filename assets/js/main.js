@@ -1,5 +1,8 @@
 jQuery(document).ready(function($){
 
+    // Animate on scroll jQuery plugin
+    AOS.init();
+
     // responsive menu
     $('#menu').slicknav();
 
@@ -203,6 +206,7 @@ jQuery(document).ready(function($){
     }
   
 
+    
     
 
 });

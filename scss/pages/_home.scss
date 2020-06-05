@@ -6,7 +6,13 @@
         height: 450px;
     }
 }
+[data-aos^=fade][data-aos^=fade].aos-animate {
+    transition-duration: .9s;
+}
 .hero-area{
+    [data-aos^=fade][data-aos^=fade].aos-animate {
+    transition-duration: .9s;
+}
     @extend %backgroundimage;
     .hero-content {
         padding-right: 60px;
@@ -48,12 +54,12 @@
 
 // single-box
 .single-box{
-    box-shadow: 0px 0px 8px -5px rgba(0,0,0,0.25);
+    @extend %default-box-shadow;
     padding: 42px 40px 25px 40px;
     margin-bottom: 20px;
     @extend %borderradius5;
     @extend %white-bg-color;
-    @extend %basetransition2;
+    @extend %basetransition1;
     @include mx-desktops{
         padding: 32px 20px 20px 20px;
     }
@@ -61,7 +67,7 @@
         text-align: center;
     }
     &:hover {
-        box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.25);
+        @extend %default-box-shadow-hover;
     }
     h3 {
         font-size: 20px;
@@ -216,8 +222,8 @@
             font-size: 14px;
             font-weight: 700;
             padding: 19px 70px 19px 25px;
-            box-shadow: 0px 0px 12px -9px rgba(0, 0, 0, 0.5);
             border: 0;
+            @extend %default-box-shadow-2;
             @extend %displayinline;
             @extend %uppercase;
             @extend %white-bg-color;
@@ -267,9 +273,9 @@
             }
             .portfolio-inner{
                 border-radius: 5px 5px 0 0;
-                box-shadow: 0px 0px 12px -9px rgba(0, 0, 0, 0.5);
+                @extend %default-box-shadow;
                 @extend %white-bg-color;
-                @extend %basetransition2;
+                @extend %basetransition1;
                 // .image-wrap
                 .image-wrap {
                     z-index: 2;
@@ -286,7 +292,7 @@
                         @extend %white-bg-color;
                         z-index: 1;
                         @extend %invisible;
-                        @extend %basetransition2;
+                        @extend %basetransition1;
                         transform: translate(-50%, -50%);
                     }
                     .portfolio-hover {
@@ -298,7 +304,7 @@
                         transform: translate(0px, -50%);
                         z-index: 3;
                         @extend %invisible;
-                        @extend %basetransition2;
+                        @extend %basetransition1;
                         a {
                             width: 50px;
                             height: 50px;
@@ -309,7 +315,7 @@
                             font-size: 20px;
                             margin: 0 4px;
                             line-height: 50px;
-                            @extend %basetransition2;
+                            @extend %basetransition1;
                             &:hover {
                                 @extend %secondary-bg-color;
                             }
@@ -331,8 +337,7 @@
             &:hover {
                 .portfolio-inner {
                     @extend %borderzero;
-                    box-shadow: 0px 8px 18px -9px rgba(0, 0, 0, 0.5);
-                    
+                    @extend %default-box-shadow-hover;
                     .portfolio-hover {
                         @extend %visible;
                     }
@@ -456,12 +461,16 @@
     .single-blog-item {
         border-radius: 5px 5px 0 0;
         @extend %white-bg-color;
-        box-shadow: 0px 0px 12px -9px rgba(0, 0, 0, 0.5);
+        @extend %default-box-shadow;
         margin-bottom: 50px;
-        @extend %basetransition2;
+        @extend %basetransition1;
         &:hover {
-            box-shadow: 0px 8px 18px -9px rgba(0, 0, 0, 0.5);
-            @extend %section-bg-color;
+            @extend %default-box-shadow-hover;
+            .blog-thumb{
+                img{
+                    transform: scale(1.1);
+                }
+            }
         }
         @include all-below-med{
             margin-bottom: 30px;
@@ -481,13 +490,17 @@
             .blog-meta {
                 color: #888888;
                 margin-bottom: 10px;
-                span {
+                a {
                     margin-right: 20px;
+                    @extend %body-color;
                     @include mx-desktops{
                         margin-right: 10px;
                     }
                     &:last-child{
                         margin-right: 0;
+                    }
+                    &:hover{
+                        @extend %primary-color;
                     }
                 }
             }

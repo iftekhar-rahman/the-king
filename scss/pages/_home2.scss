@@ -15,9 +15,10 @@
             }
         }
         .single-feature-item{
-            box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
+            @extend %basetransition1;
+            @extend %default-box-shadow-2;
             &:hover{
-                box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.25);
+                @extend %default-box-shadow-hover-2;
             }
         }
     }
@@ -60,7 +61,7 @@
         @extend %borderradius5;
         @extend %posrelative;
         margin-bottom: 10px;
-        box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
+        @extend %default-box-shadow-2;
         &:after {
             @extend %posabsolute;
             left: 25px;
@@ -163,12 +164,12 @@
         }
     }
     .single-team-item{
-        box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
-        @extend %basetransition2;
+        @extend %default-box-shadow-2;
+        @extend %basetransition1;
         border: 1px solid #F0F0F0;
         margin-bottom: 30px;
         &:hover{
-            box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.25);
+            @extend %default-box-shadow-hover-2;
         }
         img {
             margin-bottom: 20px;
@@ -210,13 +211,13 @@
         }
     }
     .single-pricing-plan{
-        box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
-        @extend %basetransition2;
+        @extend %default-box-shadow;
+        @extend %basetransition1;
         @extend %white-bg-color;
         margin-bottom: 20px;
         @extend %borderradius5;
         &:hover{
-            box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.25);
+            @extend %default-box-shadow-hover;
         }
         .pricing-header {
             padding: 31px 40px;

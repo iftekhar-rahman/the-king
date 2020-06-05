@@ -71,7 +71,7 @@
             display: block !important;
             text-align: center;
             width: 250px;
-            z-index: 999;
+            z-index: 99;
         }
         .col{
             height: 80px;
@@ -174,7 +174,7 @@
     top: 120px;
     width: 300px;
     @extend %white-bg-color;
-    z-index: 999;
+    z-index: 99;
     @extend %invisible;
     @extend %basetransition3;
 }
@@ -221,7 +221,7 @@
             top: 0;
             left: 0;
             animation:slide-down 0.7s;
-            z-index: 999;
+            z-index: 99;
             box-shadow: 0 -40px 20px 30px #000;
             &:after {
                 position: absolute;
@@ -240,7 +240,7 @@
         left: 0;
         top: 0;
         width: 100%;
-        z-index: 999;
+        z-index: 99;
     }
 }
 @keyframes slide-down {
@@ -265,7 +265,7 @@
         top: -10px;
         right: 0;
         width: 720px;
-        z-index: 999999999999;
+        z-index: 998;
         margin: 0 auto;
         height: 0;
         span.slicknav_menutxt {
@@ -357,7 +357,7 @@
     @extend %invisible;
     top: 0;
     left: 0;
-    z-index: 99999;
+    z-index: 999;
     &.active{
         @extend %visible;
     }
@@ -413,7 +413,7 @@
             border-radius: 0 5px 5px 0;
             right: 0;
             top: 0;
-            z-index: 999999;
+            z-index: 999;
         }
     }
 }

@@ -50,14 +50,14 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
   position: absolute;
   content: ""; }
 
-a, button, img, input, span, .owl-nav div, .header-top-area .header-social-icons a, .boxed-btn:after {
+a, button, img, input, span, .owl-nav div, .header-top-area .header-social-icons a, .boxed-btn:after, .single-box, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .blog-area .single-blog-item, .features-area.home-2 .single-feature-item, .team-area .single-team-item, .pricing-plan-area .single-pricing-plan {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 
-.mainmenu ul li ul li, .search-box-wrap, .footer-area .single-footer-widget-item h4, .scrollTop, .single-box, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .blog-area .single-blog-item, .team-area .single-team-item, .pricing-plan-area .single-pricing-plan {
+.mainmenu ul li ul li, .search-box-wrap, .footer-area .single-footer-widget-item h4, .scrollTop {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
@@ -359,7 +359,7 @@ textarea {
       display: block !important;
       text-align: center;
       width: 250px;
-      z-index: 999; }
+      z-index: 99; }
     .header-area .col {
       height: 80px; }
     .header-area .site-logo {
@@ -440,7 +440,7 @@ textarea {
   left: 0;
   top: 120px;
   width: 300px;
-  z-index: 999; }
+  z-index: 99; }
 
 .mainmenu ul li ul ul {
   left: 100%;
@@ -474,7 +474,7 @@ textarea {
     left: 0;
     -webkit-animation: slide-down 0.7s;
     animation: slide-down 0.7s;
-    z-index: 999;
+    z-index: 99;
     -webkit-box-shadow: 0 -40px 20px 30px #000;
     box-shadow: 0 -40px 20px 30px #000; }
     .header-area.fixed:after {
@@ -493,7 +493,7 @@ textarea {
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 999; } }
+    z-index: 99; } }
 
 @-webkit-keyframes slide-down {
   0% {
@@ -521,7 +521,7 @@ textarea {
     top: -10px;
     right: 0;
     width: 720px;
-    z-index: 999999999999;
+    z-index: 998;
     margin: 0 auto;
     height: 0; }
     .slicknav_menu span.slicknav_menutxt {
@@ -582,7 +582,7 @@ textarea {
 .search-box-wrap {
   top: 0;
   left: 0;
-  z-index: 99999; }
+  z-index: 999; }
   .search-box-wrap .close-btn {
     right: 5%;
     top: 5%;
@@ -615,7 +615,7 @@ textarea {
       border-radius: 0 5px 5px 0;
       right: 0;
       top: 0;
-      z-index: 999999; }
+      z-index: 999; }
 
 /*============== Footer CSS ================*/
 .footer-area {
@@ -728,7 +728,7 @@ textarea {
   font-weight: 700;
   padding: 10px 0; }
 
-.stars, .section-title h4, .header-area .header-search, .mainmenu ul li:hover > a, .search-box-wrap .close-btn:hover, .footer-area .single-footer-widget-item .inline-btn:hover, .footer-area .single-footer-widget-item .single-recent-blog:hover a, .footer-area .single-footer-widget-item .single-recent-blog:hover a h4, .footer-area .single-footer-widget-item .subscription-form .boxed-btn, .inline-btn:hover, .hero-area .hero-content h2 span, .portfolio-area .portfolio-filter button.is-checked, .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner .portfolio-content a, .services-area.home-2 .section-title h4, .map-area .map-content-wrap .map-content .single-map-content .icon i, .map-area .map-content-wrap .map-content .single-map-content a:hover {
+.stars, .section-title h4, .header-area .header-search, .mainmenu ul li:hover > a, .search-box-wrap .close-btn:hover, .footer-area .single-footer-widget-item .inline-btn:hover, .footer-area .single-footer-widget-item .single-recent-blog:hover a, .footer-area .single-footer-widget-item .single-recent-blog:hover a h4, .footer-area .single-footer-widget-item .subscription-form .boxed-btn, .inline-btn:hover, .hero-area .hero-content h2 span, .portfolio-area .portfolio-filter button.is-checked, .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner .portfolio-content a, .blog-area .single-blog-item .blog-content .blog-meta a:hover, .services-area.home-2 .section-title h4, .map-area .map-content-wrap .map-content .single-map-content .icon i, .map-area .map-content-wrap .map-content .single-map-content a:hover {
   color: #e8505b; }
 
 .header-top-area, .header-area .header-cart .number, .mainmenu ul li ul li:hover > a, .search-box-wrap .search-box button, .footer-area .single-footer-widget-item .subscription-form .boxed-btn:hover:after, .scrollTop:hover, .boxed-btn, .single-box .box-icon, .about-area .about-content .single-about-item i, .services-area, .portfolio-area .portfolio-filter button.is-checked .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .testimonial-area, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number, .accordion-wrap .single-accordion:after, .portfolio-area.home-2, .pricing-plan-area .single-pricing-plan .pricing-tag, .pricing-plan-area .single-pricing-plan .pricing-content ul li.active i {
@@ -749,14 +749,30 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, inp
 input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea, .header-area, .mainmenu ul li ul, .footer-area .single-footer-widget-item .subscription-form .boxed-btn, .single-box, .portfolio-area .portfolio-filter button, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after, .testimonial-area .single-testimonial-item, .blog-area .single-blog-item, .accordion-wrap .single-accordion, .services-area.home-2, .pricing-plan-area .single-pricing-plan, .map-area .map-content-wrap .map-content {
   background-color: #ffffff; }
 
-.testimonial-area .single-testimonial-item .testimonial-header .left h4, .team-area .single-team-item h5, .pricing-plan-area .single-pricing-plan .pricing-content ul li, .map-area .map-content-wrap .map-content .single-map-content a {
+.testimonial-area .single-testimonial-item .testimonial-header .left h4, .blog-area .single-blog-item .blog-content .blog-meta a, .team-area .single-team-item h5, .pricing-plan-area .single-pricing-plan .pricing-content ul li, .map-area .map-content-wrap .map-content .single-map-content a {
   color: #555555; }
 
-.portfolio-area .portfolio-filter button .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap img, .blog-area .single-blog-item:hover, .map-area {
+.portfolio-area .portfolio-filter button .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap img, .map-area {
   background-color: #FAFAFA; }
 
 .footer-area .single-footer-widget-item .subscription-form input[type=email] {
   border-color: #FAFAFA; }
+
+.single-box, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner, .blog-area .single-blog-item, .pricing-plan-area .single-pricing-plan {
+  -webkit-box-shadow: 0px 2px 10px -6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 10px -6px rgba(0, 0, 0, 0.25); }
+
+.single-box:hover, .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner, .blog-area .single-blog-item:hover, .pricing-plan-area .single-pricing-plan:hover {
+  -webkit-box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.25); }
+
+.portfolio-area .portfolio-filter button, .features-area.home-2 .single-feature-item, .accordion-wrap .single-accordion, .team-area .single-team-item {
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25); }
+
+.features-area.home-2 .single-feature-item:hover, .team-area .single-team-item:hover {
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25); }
 
 /*================Home Page CSS===============*/
 .hero-area, .hero-area .row {
@@ -764,6 +780,16 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
   @media (max-width: 991px) {
     .hero-area, .hero-area .row {
       height: 450px; } }
+
+[data-aos^=fade][data-aos^=fade].aos-animate {
+  -webkit-transition-duration: .9s;
+  -o-transition-duration: .9s;
+  transition-duration: .9s; }
+
+.hero-area [data-aos^=fade][data-aos^=fade].aos-animate {
+  -webkit-transition-duration: .9s;
+  -o-transition-duration: .9s;
+  transition-duration: .9s; }
 
 .hero-area .hero-content {
   padding-right: 60px; }
@@ -795,8 +821,6 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
         margin-top: 15px; } }
 
 .single-box {
-  -webkit-box-shadow: 0px 0px 8px -5px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 0px 8px -5px rgba(0, 0, 0, 0.25);
   padding: 42px 40px 25px 40px;
   margin-bottom: 20px; }
   @media (min-width: 992px) and (max-width: 1199px) {
@@ -805,9 +829,6 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
   @media (max-width: 991px) {
     .single-box {
       text-align: center; } }
-  .single-box:hover {
-    -webkit-box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.25); }
   .single-box h3 {
     font-size: 20px;
     margin-bottom: 22px; }
@@ -911,8 +932,6 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
     font-size: 14px;
     font-weight: 700;
     padding: 19px 70px 19px 25px;
-    -webkit-box-shadow: 0px 0px 12px -9px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 12px -9px rgba(0, 0, 0, 0.5);
     border: 0; }
     @media (max-width: 991px) {
       .portfolio-area .portfolio-filter button {
@@ -943,9 +962,7 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
       .portfolio-area .portfolio-gallery .single-portfolio-item {
         width: 50%; } }
     .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner {
-      border-radius: 5px 5px 0 0;
-      -webkit-box-shadow: 0px 0px 12px -9px rgba(0, 0, 0, 0.5);
-      box-shadow: 0px 0px 12px -9px rgba(0, 0, 0, 0.5); }
+      border-radius: 5px 5px 0 0; }
       .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap {
         z-index: 2; }
         .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap img {
@@ -980,12 +997,9 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
           margin-bottom: 10px; }
         .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .portfolio-content a {
           color: #0a1f44; }
-    .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner {
-      -webkit-box-shadow: 0px 8px 18px -9px rgba(0, 0, 0, 0.5);
-      box-shadow: 0px 8px 18px -9px rgba(0, 0, 0, 0.5); }
-      .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner .image-wrap:after {
-        opacity: .9;
-        visibility: visible; }
+    .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner .image-wrap:after {
+      opacity: .9;
+      visibility: visible; }
 
 @media (max-width: 991px) {
   .contact-area {
@@ -1051,12 +1065,11 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
 
 .blog-area .single-blog-item {
   border-radius: 5px 5px 0 0;
-  -webkit-box-shadow: 0px 0px 12px -9px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 12px -9px rgba(0, 0, 0, 0.5);
   margin-bottom: 50px; }
-  .blog-area .single-blog-item:hover {
-    -webkit-box-shadow: 0px 8px 18px -9px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 8px 18px -9px rgba(0, 0, 0, 0.5); }
+  .blog-area .single-blog-item:hover .blog-thumb img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
   @media (max-width: 991px) {
     .blog-area .single-blog-item {
       margin-bottom: 30px; } }
@@ -1073,12 +1086,12 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
     .blog-area .single-blog-item .blog-content .blog-meta {
       color: #888888;
       margin-bottom: 10px; }
-      .blog-area .single-blog-item .blog-content .blog-meta span {
+      .blog-area .single-blog-item .blog-content .blog-meta a {
         margin-right: 20px; }
         @media (min-width: 992px) and (max-width: 1199px) {
-          .blog-area .single-blog-item .blog-content .blog-meta span {
+          .blog-area .single-blog-item .blog-content .blog-meta a {
             margin-right: 10px; } }
-        .blog-area .single-blog-item .blog-content .blog-meta span:last-child {
+        .blog-area .single-blog-item .blog-content .blog-meta a:last-child {
           margin-right: 0; }
   .blog-area .single-blog-item .blog-footer {
     padding: 7px 30px;
@@ -1107,12 +1120,6 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
     @media (max-width: 991px) {
       .features-area.home-2 .section-title h2 {
         margin-bottom: 25px; } }
-  .features-area.home-2 .single-feature-item {
-    -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25); }
-    .features-area.home-2 .single-feature-item:hover {
-      -webkit-box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.25);
-      box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.25); }
 
 .brand-area .clients-logo {
   border-top: 0;
@@ -1135,9 +1142,7 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
     padding-left: 0; }
 
 .accordion-wrap .single-accordion {
-  margin-bottom: 10px;
-  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25); }
+  margin-bottom: 10px; }
   .accordion-wrap .single-accordion:after {
     left: 25px;
     top: 23px;
@@ -1192,13 +1197,8 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
       margin-bottom: 25px; } }
 
 .team-area .single-team-item {
-  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
   border: 1px solid #F0F0F0;
   margin-bottom: 30px; }
-  .team-area .single-team-item:hover {
-    -webkit-box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.25); }
   .team-area .single-team-item img {
     margin-bottom: 20px; }
   .team-area .single-team-item h4 {
@@ -1225,12 +1225,7 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
       margin-bottom: 25px; } }
 
 .pricing-plan-area .single-pricing-plan {
-  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
   margin-bottom: 20px; }
-  .pricing-plan-area .single-pricing-plan:hover {
-    -webkit-box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.25); }
   .pricing-plan-area .single-pricing-plan .pricing-header {
     padding: 31px 40px; }
     .pricing-plan-area .single-pricing-plan .pricing-header h3 {

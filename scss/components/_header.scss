@@ -72,6 +72,9 @@
             text-align: center;
             width: 250px;
             z-index: 99;
+            @include all-mx-mobile {
+                width: 200px;
+            }
         }
         .col{
             height: 80px;
@@ -96,6 +99,9 @@
             width: 60px;
             margin-left: 0px;
             border: 0;
+        }
+        @include all-below-mobile-lg{
+            width: 50px;
         }
         span {
             width: 50px;
@@ -127,6 +133,11 @@
         @include all-below-med{
             width: 60px;
             font-size: 24px;
+        }
+        @include all-below-mobile-lg{
+            border: 0;
+            width: 40px;
+            font-size: 22px;
         }
         .number {
             width: 24px;
@@ -399,6 +410,7 @@
         right: 0;
         input[type=text]{
             background-color: #E8F0FE;
+            height: 55px;
             &:focus{
                 border-color: #E8F0FE;
             }

@@ -93,6 +93,9 @@ textarea {
         font-weight: 300;
         font-size: 20px;
         margin-bottom: 10px;
+        @include all-below-med{
+            font-size: 18px;
+        }
     }
     h2{
         font-size: 34px;

@@ -277,6 +277,9 @@
         @include all-below-med{
             height: 400px;
         }
+        @include all-below-mobile-lg{
+            height: 350px;
+        }
     }
     @extend %section-bg-color;
     .map-content-wrap {
@@ -298,9 +301,19 @@
             }
             .single-map-content{
                 padding-right: 40px;
+                @include mx-desktops{
+                    padding-right: 20px;
+                }
                 @include all-below-med{
                     flex-basis: 50%;
                     margin-bottom: 30px;
+                }
+                @include mx-mobile-lg{
+                    padding-right: 30px;
+                }
+                @include all-mx-mobile{
+                    padding-right: 0px;
+                    text-align: center;
                 }
                 &:last-child {
                     padding-right: 0;
@@ -331,6 +344,12 @@
                 }
                 &.text {
                     width: 350px;
+                    @include mx-mobile-lg{
+                        flex-basis: 50%;
+                    }
+                    @include all-mx-mobile{
+                        flex-basis: 100%;
+                    }
                     h4 {
                         font-size: 16px;
                         font-weight: 400;
@@ -343,12 +362,37 @@
                 }
                 &.address {
                     width: 290px;
+                    @include mx-mobile-lg{
+                        flex-basis: 50%;
+                        padding-right: 0;
+                    }
+                    @include all-mx-mobile{
+                        flex-basis: 100%;
+                    }
                 }
                 &.phone-number {
                     width: 200px;
+                    @include mx-mobile-lg{
+                        flex-basis: 50%;
+                    }
+                    @include all-mx-mobile{
+                        flex-basis: 100%;
+                    }
+                    a{
+                        @extend %displayblock;
+                    }
                 }
                 &.email-address {
                     width: 190px;
+                    @include mx-mobile-lg{
+                        flex-basis: 50%;
+                    }
+                    @include all-mx-mobile{
+                        flex-basis: 100%;
+                    }
+                    a{
+                        @extend %displayblock;
+                    }
                 }
             }
         }

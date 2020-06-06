@@ -1,7 +1,12 @@
 jQuery(document).ready(function($){
 
     // Animate on scroll jQuery plugin
-    AOS.init();
+    AOS.init({
+        disable: function() {
+            var maxWidth = 767;
+            return window.innerWidth < maxWidth;
+        }
+    });
 
     // responsive menu
     $('#menu').slicknav();

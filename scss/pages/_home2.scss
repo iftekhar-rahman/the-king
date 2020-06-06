@@ -296,6 +296,7 @@
             @extend %white-bg-color;
             padding: 40px;
             @extend %borderradius5;
+            @extend %default-box-shadow-2;
             @include all-below-med{
                 padding: 40px 0px 20px 0px;
             }

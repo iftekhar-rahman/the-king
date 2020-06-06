@@ -408,6 +408,12 @@
         transform: translate(0px, -50%);
         left: 0;
         right: 0;
+        @include mx-mobile-lg{
+            width: 400px;
+        }
+        @include all-mx-mobile{
+            width: 90%;
+        }
         input[type=text]{
             background-color: #E8F0FE;
             height: 55px;

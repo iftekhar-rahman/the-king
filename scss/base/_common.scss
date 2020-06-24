@@ -15,9 +15,6 @@ p {
     	margin-bottom: 0;
     }
 }
-a, button, img, input, span {
-    @extend %basetransition1; 
-}
 input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
     @extend %borderradius5;
     height: 55px;
@@ -26,6 +23,7 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
     @extend %white-bg-color;
     padding: 15px 20px;
     font-size: 16px;
+    @extend %basetransition1;
     @include all-below-med{
         padding: 12px 20px;
         height: 50px;
@@ -34,17 +32,16 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
 input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=url]:focus, textarea:focus{
     @extend %primary-border-color;
 }
-.form-group {
+// .single-form-item
+.single-form-item {
     margin-bottom: 20px;
-    // .form-control{
-    //     &:focus {
-    //         box-shadow: none;
-    //         border-color: #2a7d2e;
-    //     }
-    //     &:hover {
-    //         border-color: #2a7d2e;
-    //     }
-    // }
+    height: 55px;
+    @include all-below-med{
+        height: 50px;
+    }
+    &.textarea{
+        height: 100px;
+    }
 }
 input[type=submit], button[type=submit]{
     cursor: pointer;
@@ -54,23 +51,10 @@ input, textarea{
 		color: $body-color;
 	}
 }
-input[type=submit], button[type=submit]{
-    &:hover{
-        
-    }
-}
 textarea {
     height: 100px;
     padding: 15px 20px;
     width: 100%;
-    // border: 1px solid transparent;
-    transition: all .3s ease;
-    // &:focus {
-    //     border-color: #E8505B;
-    // }
-    // &:hover {
-    //     border-color: #E8505B;
-    // }
 }
 .section-padding-115-100{
     padding: 115px 0 100px;
@@ -113,49 +97,49 @@ textarea {
 }
 
 /*======.owl-dots customization=======*/
-.owl-dots {
-    @extend %textcenter;
-    div {
-        height: 5px;
-        width: 5px;
-        background-color: #BBBBBB;
-        @extend %displayinline;
-        margin: 0 5px;
-        @extend %borderradius50percent;
-        &.active {
-            background-color: #0DA0F4;
-        }
-    }
-}
+// .owl-dots {
+//     @extend %textcenter;
+//     div {
+//         height: 5px;
+//         width: 5px;
+//         background-color: #BBBBBB;
+//         @extend %displayinline;
+//         margin: 0 5px;
+//         @extend %borderradius50percent;
+//         &.active {
+//             background-color: #0DA0F4;
+//         }
+//     }
+// }
     
 /*=====owl nav customization======*/
-.owl-nav div {
-    @extend %displayinline;
-    @extend %posabsolute;
-    left: -10px;
-    top: 50%;
-    color: #2A7D2E;
-    background-color: #fff;
-    line-height: 60px;
-    margin-top: -30px;
-    width: 60px;
-    height: 60px;
-    font-size: 45px;
-    padding-right: 5px;
-    @extend %borderradius50;
-    @extend %textcenter;
-    @extend %basetransition1;
-    &.owl-next {
-        left: auto;
-        right: -10px;
-        padding-left: 5px;
-        padding-right: 0;
-    }
-    &:hover {
-        color: #ffffff;
-        background-color: #2A7D2E;
-    }
-}
+// .owl-nav div {
+//     @extend %displayinline;
+//     @extend %posabsolute;
+//     left: -10px;
+//     top: 50%;
+//     color: #2A7D2E;
+//     background-color: #fff;
+//     line-height: 60px;
+//     margin-top: -30px;
+//     width: 60px;
+//     height: 60px;
+//     font-size: 45px;
+//     padding-right: 5px;
+//     @extend %borderradius50;
+//     @extend %textcenter;
+//     @extend %basetransition1;
+//     &.owl-next {
+//         left: auto;
+//         right: -10px;
+//         padding-left: 5px;
+//         padding-right: 0;
+//     }
+//     &:hover {
+//         color: #ffffff;
+//         background-color: #2A7D2E;
+//     }
+// }
 
 
 /*========.nice-select=============*/ 

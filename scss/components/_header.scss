@@ -25,6 +25,7 @@
                 }
                 a {
                     @extend %white-color;
+                    @extend %basetransition1;
                 }
                 &:hover a {
                     @extend %secondary-color;
@@ -89,7 +90,7 @@
     .header-search {
         width: 85px;
         @extend %primary-color;
-        border-left: 1px solid #F0F0F0;
+        border-left: 1px solid $border-color;
         margin-left: 50px;
         @include mx-desktops{
             width: 75px;
@@ -118,15 +119,23 @@
                 line-height: 40px;
                 font-size: 18px;
             }
+            i{
+                @extend %visible; 
+            }
+            &.active{
+                i{
+                    @extend %invisible; 
+                }
+            }
         }
     }
     .header-cart {
-        border-left: 1px solid #F0F0F0;
-        border-right: 1px solid #F0F0F0;
+        border-left: 1px solid $border-color;
+        border-right: 1px solid $border-color;
         width: 75px;
         color: #E0E0E0;
-        font-size: 28px;
-        padding-top: 14px;
+        font-size: 30px;
+        padding-top: 17px;
         @include mx-desktops{
             width: 65px;
         }
@@ -143,8 +152,8 @@
             width: 24px;
             height: 24px;
             @extend %posabsolute;
-            left: 4px;
-            top: -15px;
+            left: 5px;
+            top: -10px;
             @extend %primary-bg-color;
             @extend %white-color;
             @extend %borderradius50;
@@ -155,7 +164,7 @@
             @include all-below-med{
                 width: 20px;
                 height: 20px;
-                top: -10px;
+                top: -11px;
                 font-size: 12px;;
                 line-height: 22px;
             }
@@ -170,9 +179,13 @@
 .mainmenu ul li a {
     color: #0a1f44;
     @extend %uppercase;
+    @extend %basetransition1;
     font-size: 14px;
     font-weight: 500;
     padding: 39px 14px 40px;
+    @include mx-desktops{
+        padding: 39px 10px 40px;
+    }
 }
 .mainmenu ul li:hover > a {
     @extend %primary-color;
@@ -200,7 +213,7 @@
 }
 .mainmenu ul li ul li {
     @extend %displayblock;
-    border-bottom: 1px solid #f4f4f4;
+    border-bottom: 1px solid $border-color;
     @extend %basetransition2;
 }
 .mainmenu ul li ul li a {
@@ -361,62 +374,51 @@
 
 // .search-box-css
 .search-box-wrap {
-    @extend %posfixed;
-    @extend %w100;
-    @extend %h100;
-    @extend %basetransition2;
-    @extend %invisible;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    &.active{
-        @extend %visible;
-    }
     .close-btn {
         @extend %posabsolute;
-        @extend %white-color;
+        @extend %primary-color;
         @extend %cursorpointer;
         @extend %textcenter;
-        right: 5%;
-        top: 5%;
-        font-size: 20px;
+        @extend %invisible;
+        right: 16px;
+        top: 26px;
+        font-size: 24px;
         width: 50px;
         height: 50px;
         line-height: 50px;
-        &:hover {
-            @extend %primary-color;
-        }
-    }
-    .search-overlay{
-        &:after{
-            @extend %pseudo;
-            @extend %w100;
-            @extend %h100;
-            @extend %secondary-bg-color;
-            left: 0;
-            top: 0;
-            opacity: .9;
-            z-index: -1;
+        &.active {
+            @extend %visible;
         }
     }
     .search-box {
-        @extend %posrelative;
+        @extend %posabsolute;
         @extend %textcenter;
-        width: 500px;
-        margin: 0 auto;
-        top: 50%;
-        transform: translate(0px, -50%);
-        left: 0;
+        width: 350px;
+        left: -267px;
         right: 0;
+        bottom: -50px;
+        background: #263238;
+        padding: 8px 9px;
+        border-radius: 5px;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+        &.active{
+            @extend %visible;
+            bottom: -100px;
+        }
         @include mx-mobile-lg{
-            width: 400px;
+            width: 350px;
         }
         @include all-mx-mobile{
-            width: 90%;
+            width: 350px;
         }
         input[type=text]{
-            background-color: #E8F0FE;
-            height: 55px;
+            background-color: #263238;
+            color: #f4f4f4;
+            border-color: #F0F0F0;
+            height: 50px;
+            padding: 12px 63px 12px 15px;
             &:focus{
                 border-color: #E8F0FE;
             }
@@ -425,12 +427,12 @@
             @extend %posabsolute;
             @extend %white-color;
             @extend %primary-bg-color;
-            height: 55px;
+            height: 48px;
             border: 0;
-            width: 60px;
+            width: 50px;
             border-radius: 0 5px 5px 0;
-            right: 0;
-            top: 0;
+            right: 10px;
+            top: 9px;
             z-index: 999;
         }
     }

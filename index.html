@@ -35,19 +35,6 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- search-box-wrap starts -->
-        <div class="search-box-wrap">
-            <span class="close-btn"><i class="fa fa-close"></i></span>
-            <div class="search-overlay"></div>
-            <div class="search-box">
-                <form action="POST">
-                    <input type="text" placeholder="Seach..." name="search" id="search">
-                    <button type="submit" value="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-        </div>
-        <!-- search-box-wrap ends -->
-
         <!-- header starts -->
         <header class="header">
             <!-- .header-top-area starts -->
@@ -57,19 +44,19 @@
                         <div class="col-lg-8">
                             <div class="header-contact-info">
                                 <ul>
-                                    <li><i class="fa fa-clock-o"></i> 9:30am - 6:30pm Mon - Sun</li>
-                                    <li><a href="tel:+80012345676587"><i class="fa fa-phone"></i> +800-123-4567 6587</a></li>
-                                    <li><a href="#"><i class="fa fa-map-marker"></i> Beverley, New York 224 US</a></li>
+                                    <li><i class="far fa-clock"></i> 9:30am - 6:30pm Mon - Sun</li>
+                                    <li><a href="tel:+80012345676587"><i class="far fa-phone-alt"></i> +800-123-4567 6587</a></li>
+                                    <li><a href="#"><i class="far fa-map-marker-alt"></i> Beverley, New York 224 US</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="header-social-icons text-right">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-vimeo"></i></a>
-                                <a href="#"><i class="fa fa-skype"></i></a>
-                                <a href="#"><i class="fa fa-wifi"></i></a>
+                                <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-vimeo"></i></a>
+                                <a href="#"><i class="fab fa-skype"></i></a>
+                                <a href="#"><i class="fas fa-rss"></i></a>
                             </div>
                         </div>
                     </div>
@@ -93,20 +80,41 @@
                                             <li><a href="index-2.html">Home Style 2</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">About <span class="d-none d-lg-inline-block">+</span></a>
+                                        <ul>
+                                            <li><a href="about-1.html">About Style 1</a></li>
+                                            <li><a href="about-2.html">About Style 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Services <span class="d-none d-lg-inline-block">+</span></a>
+                                        <ul>
+                                            <li><a href="services.html">Services</a></li>
+                                            <li><a href="single-service.html">Single service</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="#">Portfolio</a></li>
                                     <li><a href="#">Blog</a></li>
                                     <li><a href="#">Shop</a></li>
                                     <li><a href="#">Contacts</a></li>
                                 </ul>
                             </div>
-                            <div class="header-search d-flex align-items-center justify-content-start justify-content-lg-center h-100">
-                                <span><i class="fa fa-search"></i></span>
+                            <div class="header-search d-flex align-items-center justify-content-start justify-content-lg-center h-100 position-relative">
+                                <span><i class="far fa-search"></i></span>
+                                <!-- search-box-wrap starts -->
+                                <div class="search-box-wrap">
+                                    <div class="close-btn"><i class="fal fa-times"></i></div>
+                                    <div class="search-box">
+                                        <form action="POST">
+                                            <input type="text" placeholder="Seach..." name="search" id="search">
+                                            <button type="submit" value="submit"><i class="fal fa-search"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- search-box-wrap ends -->
                             </div>
                             <div class="header-cart d-flex align-items-center justify-content-center h-100">
                                 <span class="header-cart-icon position-relative">
-                                    <span class="number">02</span> <i class="fa fa-shopping-basket"></i>
+                                    <span class="number">02</span> <i class="fal fa-shopping-basket"></i>
                                 </span>
                             </div>
                         </div>
@@ -117,9 +125,9 @@
         <!-- header ends -->
 
         <!-- .hero-area starts -->
-        <div class="hero-area" style="background-image: url(./assets/img/hero-banner.jpg);">
+        <section class="hero-area" style="background-image: url(./assets/img/hero-banner.jpg);">
             <div class="container">
-                <div class="row my-auto">
+                <div class="row">
                     <div class="col-lg-7 my-auto">
                         <div data-aos="fade-up" class="hero-content">
                             <h3>Optimize it Systems</h3>
@@ -130,11 +138,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- .hero-area ends -->
 
         <!-- .features-area starts -->
-        <div class="features-area">
+        <section class="features-area">
             <div class="container">
                 <div class="row">
                     <div data-aos="fade-up" class="col-lg-4">
@@ -169,11 +177,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- .features-area ends -->
 
         <!-- .about-area starts -->
-        <div class="about-area overflow-hidden">
+        <section class="about-area overflow-hidden">
             <div class="container">
                 <div class="row">
                     <div data-aos="fade-right" class="col-lg-6 d-block d-lg-flex align-items-center">
@@ -189,17 +197,17 @@
                             </div><!-- ends -->
                             <p>Since 2007 we have been and visionary and reliable softwarIe engineerng partner foring worldclass brands We are boutique digital consultancy and awesome software company PSD Template.</p>
                             <div class="single-about-item position-relative">
-                                <i class="fa fa-check"></i>
+                                <i class="far fa-check"></i>
                                 <h4>Automated Software</h4>
                                 <p>Have Parts Have Theme Maured sembe Creative Auto Metal Parts wasin Andn semble</p>
                             </div><!-- ends -->
                             <div class="single-about-item position-relative">
-                                <i class="fa fa-check"></i>
+                                <i class="far fa-check"></i>
                                 <h4>DevOps Development</h4>
                                 <p>Have Parts Have Theme Maured sembe Creative Auto Metal Parts wasin Andn semble</p>
                             </div><!-- ends -->
                             <div class="single-about-item position-relative">
-                                <i class="fa fa-check"></i>
+                                <i class="far fa-check"></i>
                                 <h4>Automated Software</h4>
                                 <p>Have Parts Have Theme Maured sembe Creative Auto Metal Parts wasin Andn semble</p>
                             </div><!-- ends -->
@@ -207,11 +215,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- .about-area ends -->
 
         <!-- .services-area starts -->
-        <div class="services-area home-1 section-padding-115-100">
+        <section class="services-area home-1 section-padding-115-100">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -278,11 +286,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- .services-area ends -->
 
         <!-- .portfolio-area starts -->
-        <div class="portfolio-area section-padding-115-100">
+        <section class="portfolio-area section-padding-115-100">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -305,8 +313,8 @@
                                     <div class="image-wrap position-relative">
                                         <img src="assets/img/portfolio-1.jpg" alt="Financial Human">
                                         <div class="portfolio-hover">
-                                            <a href="#"><i class="fa fa-link"></i></a>
-                                            <a class="popup-link1" href="assets/img/portfolio-1.jpg"><i class="fa fa-search"></i></a>
+                                            <a href="#"><i class="fal fa-link"></i></a>
+                                            <a class="popup-link1" href="assets/img/portfolio-1.jpg"><i class="fal fa-search"></i></a>
                                         </div>
                                     </div>
                                     <div class="portfolio-content text-center">
@@ -320,8 +328,8 @@
                                     <div class="image-wrap position-relative">
                                         <img src="assets/img/portfolio-2.jpg" alt="Resources Strategy">
                                         <div class="portfolio-hover">
-                                            <a href="#"><i class="fa fa-link"></i></a>
-                                            <a class="popup-link1" href="assets/img/portfolio-2.jpg"><i class="fa fa-search"></i></a>
+                                            <a href="#"><i class="fal fa-link"></i></a>
+                                            <a class="popup-link1" href="assets/img/portfolio-2.jpg"><i class="fal fa-search"></i></a>
                                         </div>
                                     </div>
                                     <div class="portfolio-content text-center">
@@ -335,8 +343,8 @@
                                     <div class="image-wrap position-relative">
                                         <img src="assets/img/portfolio-3.jpg" alt="Start Ups Resources">
                                         <div class="portfolio-hover">
-                                            <a href="#"><i class="fa fa-link"></i></a>
-                                            <a class="popup-link1" href="assets/img/portfolio-3.jpg"><i class="fa fa-search"></i></a>
+                                            <a href="#"><i class="fal fa-link"></i></a>
+                                            <a class="popup-link1" href="assets/img/portfolio-3.jpg"><i class="fal fa-search"></i></a>
                                         </div>
                                     </div>
                                     <div class="portfolio-content text-center">
@@ -350,8 +358,8 @@
                                     <div class="image-wrap position-relative">
                                         <img src="assets/img/portfolio-4.jpg" alt="Financial Human">
                                         <div class="portfolio-hover">
-                                            <a href="#"><i class="fa fa-link"></i></a>
-                                            <a class="popup-link1" href="assets/img/portfolio-4.jpg"><i class="fa fa-search"></i></a>
+                                            <a href="#"><i class="fal fa-link"></i></a>
+                                            <a class="popup-link1" href="assets/img/portfolio-4.jpg"><i class="fal fa-search"></i></a>
                                         </div>
                                     </div>
                                     <div class="portfolio-content text-center">
@@ -365,8 +373,8 @@
                                     <div class="image-wrap position-relative">
                                         <img src="assets/img/portfolio-5.jpg" alt="Resources Strategy">
                                         <div class="portfolio-hover">
-                                            <a href="#"><i class="fa fa-link"></i></a>
-                                            <a class="popup-link1" href="assets/img/portfolio-5.jpg"><i class="fa fa-search"></i></a>
+                                            <a href="#"><i class="fal fa-link"></i></a>
+                                            <a class="popup-link1" href="assets/img/portfolio-5.jpg"><i class="fal fa-search"></i></a>
                                         </div>
                                     </div>
                                     <div class="portfolio-content text-center">
@@ -380,8 +388,8 @@
                                     <div class="image-wrap position-relative">
                                         <img src="assets/img/portfolio-6.jpg" alt="Start Ups Resources">
                                         <div class="portfolio-hover">
-                                            <a href="#"><i class="fa fa-link"></i></a>
-                                            <a class="popup-link1" href="assets/img/portfolio-6.jpg"><i class="fa fa-search"></i></a>
+                                            <a href="#"><i class="fal fa-link"></i></a>
+                                            <a class="popup-link1" href="assets/img/portfolio-6.jpg"><i class="fal fa-search"></i></a>
                                         </div>
                                     </div>
                                     <div class="portfolio-content text-center">
@@ -394,11 +402,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- .portfolio-area ends -->
 
         <!-- .contact-area starts -->
-        <div class="contact-area section-padding-115-100" style="background-image: url(./assets/img/contact-banner.jpg);">
+        <section class="contact-area section-padding-115-100" style="background-image: url(./assets/img/contact-banner.jpg);">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 offset-lg-5">
@@ -440,11 +448,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- .contact-area ends -->
 
         <!-- .testimonial-area starts -->
-        <div class="testimonial-area" style="background-image: url(./assets/img/map-bg-1.png);">
+        <section class="testimonial-area" style="background-image: url(./assets/img/map-bg-1.png);">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -472,11 +480,11 @@
                             <div class="testimonial-content">
                                 <p>Rapidiously buildcollaboration anden deas sharing viaing bleeding and edge nterfaces Energstcally plagiarize team anbuilding and paradgmis whereas goingi forward process mproveents and monetze fully tested ergstcally plariarize team whereas goingi forward process an services whereas going forward process</p>
                                 <div class="stars">
-                                    <span><i class="fa fa-star-o"></i></span>
-                                    <span><i class="fa fa-star-o"></i></span>
-                                    <span><i class="fa fa-star-o"></i></span>
-                                    <span><i class="fa fa-star-o"></i></span>
-                                    <span><i class="fa fa-star-o"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
                                 </div>
                             </div>
                         </div><!-- ends -->
@@ -498,11 +506,11 @@
                             <div class="testimonial-content">
                                 <p>Rapidiously buildcollaboration anden deas sharing viaing bleeding and edge nterfaces Energstcally plagiarize team anbuilding and paradgmis whereas goingi forward process mproveents and monetze fully tested ergstcally plariarize team whereas goingi forward process an services whereas going forward process</p>
                                 <div class="stars">
-                                    <span><i class="fa fa-star-o"></i></span>
-                                    <span><i class="fa fa-star-o"></i></span>
-                                    <span><i class="fa fa-star-o"></i></span>
-                                    <span><i class="fa fa-star-o"></i></span>
-                                    <span><i class="fa fa-star-o"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
                                 </div>
                             </div>
                         </div><!-- ends -->
@@ -510,7 +518,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div class="clients-logo d-flex flex-wrap flex-md-nowrap justify-content-center justify-content-md-between">
+                        <div class="clients-logo d-flex flex-wrap flex-md-nowrap justify-content-center justify-content-md-between align-items-center">
                             <div class="single-logo">
                                 <img src="assets/img/clients-logo-1.png" alt="Brand Logo">
                             </div>
@@ -530,11 +538,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- .testimonial-area ends -->
 
         <!-- .blog-area starts -->
-        <div class="blog-area section-padding-115-100">
+        <section class="blog-area section-padding-115-100">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -555,8 +563,8 @@
                             <div class="blog-content">
                                 <h3>Business Ueportin Rouncil Them Could Plan...</h3>
                                 <div class="blog-meta">
-                                    <a href="#"><i class="fa fa-calendar"></i> Dece 04, 2020</a>
-                                    <a href="#"><i class="fa fa-user"></i> Robot Smith</a>
+                                    <a href="#"><i class="far fa-calendar-alt"></i> Dece 04, 2020</a>
+                                    <a href="#"><i class="fas fa-user"></i> Robot Smith</a>
                                 </div>
                                 <p>Enthusiastically morph magnetic scenarios Uniquelly synthesize strategic theme areas vis parallel customer service.</p>
                             </div>
@@ -564,7 +572,7 @@
                                 <a href="#" class="inline-btn">Read More</a>
                                 <span class="blog-comments position-relative">
                                     <span class="comments-number">2</span>
-                                    <i class="fa fa-comments-o"></i>
+                                    <i class="fal fa-comment-alt-lines"></i>
                                 </span>
                             </div>
                         </article><!-- ends -->
@@ -579,8 +587,8 @@
                             <div class="blog-content">
                                 <h3>Financial Reportin Qouncil What Could More...</h3>
                                 <div class="blog-meta">
-                                    <a href="#"><i class="fa fa-calendar"></i> Dece 04, 2020</a>
-                                    <a href="#"><i class="fa fa-user"></i> Robot Smith</a>
+                                    <a href="#"><i class="far fa-calendar-alt"></i> Dece 04, 2020</a>
+                                    <a href="#"><i class="fas fa-user"></i> Robot Smith</a>
                                 </div>
                                 <p>Enthusiastically morph magnetic scenarios Uniquelly synthesize strategic theme areas vis parallel customer service.</p>
                             </div>
@@ -588,7 +596,7 @@
                                 <a href="#" class="inline-btn">Read More</a>
                                 <span class="blog-comments position-relative">
                                     <span class="comments-number">2</span>
-                                    <i class="fa fa-comments-o"></i>
+                                    <i class="fal fa-comment-alt-lines"></i>
                                 </span>
                             </div>
                         </article><!-- ends -->
@@ -603,8 +611,8 @@
                             <div class="blog-content">
                                 <h3>Consultin Reportin Qounc Arei Could More...</h3>
                                 <div class="blog-meta">
-                                    <a href="#"><i class="fa fa-calendar"></i> Dece 04, 2020</a>
-                                    <a href="#"><i class="fa fa-user"></i> Robot Smith</a>
+                                    <a href="#"><i class="far fa-calendar-alt"></i> Dece 04, 2020</a>
+                                    <a href="#"><i class="fas fa-user"></i> Robot Smith</a>
                                 </div>
                                 <p>Enthusiastically morph magnetic scenarios Uniquelly synthesize strategic theme areas vis parallel customer service.</p>
                             </div>
@@ -612,7 +620,7 @@
                                 <a href="#" class="inline-btn">Read More</a>
                                 <span class="blog-comments position-relative">
                                     <span class="comments-number">2</span>
-                                    <i class="fa fa-comments-o"></i>
+                                    <i class="fal fa-comment-alt-lines"></i>
                                 </span>
                             </div>
                         </article><!-- ends -->
@@ -626,7 +634,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- .blog-area ends -->
 
         <!-- .footer-area starts -->
@@ -666,7 +674,7 @@
                             <div class="subscription-form">
                                 <form action="POST">
                                     <input type="email" placeholder="Enter your email">
-                                    <button type="submit" value="submit" class="boxed-btn"><i class="fa fa-paper-plane"></i> Subscribe Now!</button>
+                                    <button type="submit" value="submit" class="boxed-btn"><i class="fas fa-paper-plane"></i> Subscribe Now!</button>
                                 </form>
                             </div>
                         </div><!-- ends -->
@@ -683,7 +691,7 @@
         </footer>
         <!-- .footer-area ends -->
 
-        <a href="#" class="scrollTop d-none d-lg-block"><i class="fa fa-angle-up"></i></a>
+        <a href="#" class="scrollTop d-none d-lg-block"><i class="fal fa-angle-up"></i></a>
 
         <!--Libraries-->
         <script src="assets/js/bootstrap.bundle.min.js"></script>       

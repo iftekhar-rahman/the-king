@@ -35,19 +35,6 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- search-box-wrap starts -->
-        <div class="search-box-wrap">
-            <span class="close-btn"><i class="fa fa-close"></i></span>
-            <div class="search-overlay"></div>
-            <div class="search-box">
-                <form action="POST">
-                    <input type="text" placeholder="Seach..." name="search" id="search">
-                    <button type="submit" value="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-        </div>
-        <!-- search-box-wrap ends -->
-
         <!-- header starts -->
         <header class="header">
             <!-- .header-top-area starts -->
@@ -57,19 +44,19 @@
                         <div class="col-lg-8">
                             <div class="header-contact-info">
                                 <ul>
-                                    <li><i class="fa fa-clock-o"></i> 9:30am - 6:30pm Mon - Sun</li>
-                                    <li><a href="tel:+80012345676587"><i class="fa fa-phone"></i> +800-123-4567 6587</a></li>
-                                    <li><a href="#"><i class="fa fa-map-marker"></i> Beverley, New York 224 US</a></li>
+                                    <li><i class="far fa-clock"></i> 9:30am - 6:30pm Mon - Sun</li>
+                                    <li><a href="tel:+80012345676587"><i class="far fa-phone-alt"></i> +800-123-4567 6587</a></li>
+                                    <li><a href="#"><i class="far fa-map-marker-alt"></i> Beverley, New York 224 US</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="header-social-icons text-right">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-vimeo"></i></a>
-                                <a href="#"><i class="fa fa-skype"></i></a>
-                                <a href="#"><i class="fa fa-wifi"></i></a>
+                                <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-vimeo"></i></a>
+                                <a href="#"><i class="fab fa-skype"></i></a>
+                                <a href="#"><i class="fas fa-rss"></i></a>
                             </div>
                         </div>
                     </div>
@@ -93,20 +80,41 @@
                                             <li><a href="index-2.html">Home Style 2</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">About <span class="d-none d-lg-inline-block">+</span></a>
+                                        <ul>
+                                            <li><a href="about-1.html">About Style 1</a></li>
+                                            <li><a href="about-2.html">About Style 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Services <span class="d-none d-lg-inline-block">+</span></a>
+                                        <ul>
+                                            <li><a href="services.html">Services</a></li>
+                                            <li><a href="single-service.html">Single service</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="#">Portfolio</a></li>
                                     <li><a href="#">Blog</a></li>
                                     <li><a href="#">Shop</a></li>
                                     <li><a href="#">Contacts</a></li>
                                 </ul>
                             </div>
-                            <div class="header-search d-flex align-items-center justify-content-start justify-content-lg-center h-100">
-                                <span><i class="fa fa-search"></i></span>
+                            <div class="header-search d-flex align-items-center justify-content-start justify-content-lg-center h-100 position-relative">
+                                <span><i class="far fa-search"></i></span>
+                                <!-- search-box-wrap starts -->
+                                <div class="search-box-wrap">
+                                    <div class="close-btn"><i class="fal fa-times"></i></div>
+                                    <div class="search-box">
+                                        <form action="POST">
+                                            <input type="text" placeholder="Seach..." name="search" id="search">
+                                            <button type="submit" value="submit"><i class="fal fa-search"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- search-box-wrap ends -->
                             </div>
                             <div class="header-cart d-flex align-items-center justify-content-center h-100">
                                 <span class="header-cart-icon position-relative">
-                                    <span class="number">02</span> <i class="fa fa-shopping-basket"></i>
+                                    <span class="number">02</span> <i class="fal fa-shopping-basket"></i>
                                 </span>
                             </div>
                         </div>
@@ -117,9 +125,9 @@
         <!-- header ends -->
 
         <!-- .hero-area starts -->
-        <div class="hero-area" style="background-image: url(./assets/img/hero-banner.jpg);">
+        <section class="hero-area" style="background-image: url(./assets/img/hero-banner.jpg);">
             <div class="container">
-                <div class="row my-auto">
+                <div class="row">
                     <div class="col-lg-7 my-auto">
                         <div data-aos="fade-up" class="hero-content">
                             <h3>custom softwore development</h3>
@@ -130,7 +138,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- .hero-area ends -->
 
         <!-- .brand-area starts -->
@@ -138,7 +146,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <div class="clients-logo d-flex flex-wrap flex-md-nowrap justify-content-center justify-content-md-between">
+                        <div class="clients-logo home-2 d-flex flex-wrap flex-md-nowrap justify-content-center justify-content-md-between align-items-center">
                             <div class="single-logo">
                                 <img src="assets/img/clients-logo-1.png" alt="Brand logo">
                             </div>
@@ -162,7 +170,7 @@
         <!-- .brand-area ends -->
 
         <!-- .features-area starts -->
-        <div class="features-area home-2">
+        <section class="features-area home-2">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -211,11 +219,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- .features-area ends -->
 
         <!-- .about-area starts -->
-        <div class="about-area home-2 overflow-hidden" style="background-image: url(./assets/img/shape-banner-2.jpg);">
+        <section class="about-area home-2 overflow-hidden" style="background-image: url(./assets/img/shape-banner-2.jpg);">
             <div class="container">
                 <div class="row">
                     <div data-aos="fade-right" class="col-lg-6 order-1 order-lg-0">
@@ -280,11 +288,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- .about-area ends -->
 
         <!-- .services-area starts -->
-        <div class="services-area home-2 section-padding-115-100">
+        <section class="services-area home-2 section-padding-115-100">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -357,11 +365,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- .services-area ends -->
 
         <!-- .portfolio-area starts -->
-        <div class="portfolio-area home-2 section-padding-115-100">
+        <section class="portfolio-area home-2 section-padding-115-100">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -375,8 +383,8 @@
                                     <div class="image-wrap position-relative">
                                         <img src="assets/img/portfolio-1.jpg" alt="Financial Human">
                                         <div class="portfolio-hover">
-                                            <a href="#"><i class="fa fa-link"></i></a>
-                                            <a class="popup-link1" href="assets/img/portfolio-1.jpg"><i class="fa fa-search"></i></a>
+                                            <a href="#"><i class="fal fa-link"></i></a>
+                                            <a class="popup-link1" href="assets/img/portfolio-1.jpg"><i class="fal fa-search"></i></a>
                                         </div>
                                     </div>
                                     <div class="portfolio-content text-center">
@@ -390,8 +398,8 @@
                                     <div class="image-wrap position-relative">
                                         <img src="assets/img/portfolio-2.jpg" alt="Resources Strategy">
                                         <div class="portfolio-hover">
-                                            <a href="#"><i class="fa fa-link"></i></a>
-                                            <a class="popup-link1" href="assets/img/portfolio-2.jpg"><i class="fa fa-search"></i></a>
+                                            <a href="#"><i class="fal fa-link"></i></a>
+                                            <a class="popup-link1" href="assets/img/portfolio-1.jpg"><i class="fal fa-search"></i></a>
                                         </div>
                                     </div>
                                     <div class="portfolio-content text-center">
@@ -405,8 +413,8 @@
                                     <div class="image-wrap position-relative">
                                         <img src="assets/img/portfolio-3.jpg" alt="Start Ups Resources">
                                         <div class="portfolio-hover">
-                                            <a href="#"><i class="fa fa-link"></i></a>
-                                            <a class="popup-link1" href="assets/img/portfolio-3.jpg"><i class="fa fa-search"></i></a>
+                                            <a href="#"><i class="fal fa-link"></i></a>
+                                            <a class="popup-link1" href="assets/img/portfolio-1.jpg"><i class="fal fa-search"></i></a>
                                         </div>
                                     </div>
                                     <div class="portfolio-content text-center">
@@ -419,11 +427,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- .portfolio-area ends -->
 
         <!-- .team-area starts -->
-        <div class="team-area section-padding-115-100">
+        <section class="team-area section-padding-115-100">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -437,74 +445,74 @@
                     <div data-aos="fade-up" class="col-md-6 col-lg-3">
                         <div class="single-team-item text-center">
                             <div class="member-content">
-                                <img src="assets/img/team-member-1.png" alt="Team member">
+                                <a href="single-team.html"><img src="assets/img/team-member-1.png" alt="Team member"></a>
                                 <h4>Jason Kovalsky</h4>
                                 <h5>Founder of KZJ</h5>
                             </div>
                             <div class="member-social-info">
-                                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
-                                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-                                <a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a>
-                                <a class="vimeo" href="#"><i class="fa fa-vimeo"></i></a>
-                                <a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+                                <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="google-plus" href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="vimeo" href="#"><i class="fab fa-vimeo-v"></i></a>
+                                <a class="pinterest" href="#"><i class="fab fa-pinterest-p"></i></a>
                             </div>
                         </div><!-- ends -->
                     </div>
                     <div data-aos="fade-up" class="col-md-6 col-lg-3">
                         <div class="single-team-item text-center">
                             <div class="member-content">
-                                <img src="assets/img/team-member-2.png" alt="Team member">
+                                <a href="single-team.html"><img src="assets/img/team-member-2.png" alt="Team member"></a>
                                 <h4>Bangile Yusha</h4>
                                 <h5>CEO</h5>
                             </div>
                             <div class="member-social-info">
-                                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
-                                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-                                <a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a>
-                                <a class="vimeo" href="#"><i class="fa fa-vimeo"></i></a>
-                                <a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+                                <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="google-plus" href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="vimeo" href="#"><i class="fab fa-vimeo-v"></i></a>
+                                <a class="pinterest" href="#"><i class="fab fa-pinterest-p"></i></a>
                             </div>
                         </div><!-- ends -->
                     </div>
                     <div data-aos="fade-up" class="col-md-6 col-lg-3">
                         <div class="single-team-item text-center">
                             <div class="member-content">
-                                <img src="assets/img/team-member-3.png" alt="Team member">
+                                <a href="single-team.html"><img src="assets/img/team-member-3.png" alt="Team member"></a>
                                 <h4>Lubna Khanna</h4>
                                 <h5>UI/UX Designer</h5>
                             </div>
                             <div class="member-social-info">
-                                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
-                                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-                                <a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a>
-                                <a class="vimeo" href="#"><i class="fa fa-vimeo"></i></a>
-                                <a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+                                <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="google-plus" href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="vimeo" href="#"><i class="fab fa-vimeo-v"></i></a>
+                                <a class="pinterest" href="#"><i class="fab fa-pinterest-p"></i></a>
                             </div>
                         </div><!-- ends -->
                     </div>
                     <div data-aos="fade-up" class="col-md-6 col-lg-3">
                         <div class="single-team-item text-center">
                             <div class="member-content">
-                                <img src="assets/img/team-member-4.png" alt="Team member">
+                                <a href="single-team.html"><img src="assets/img/team-member-4.png" alt="Team member"></a>
                                 <h4>William Khanna</h4>
                                 <h5>Web Designer</h5>
                             </div>
                             <div class="member-social-info">
-                                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
-                                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-                                <a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a>
-                                <a class="vimeo" href="#"><i class="fa fa-vimeo"></i></a>
-                                <a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+                                <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="google-plus" href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="vimeo" href="#"><i class="fab fa-vimeo-v"></i></a>
+                                <a class="pinterest" href="#"><i class="fab fa-pinterest-p"></i></a>
                             </div>
                         </div><!-- ends -->
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- .team-area starts -->
 
         <!-- .contact-area starts -->
-        <div class="contact-area section-padding-115-100 overflow-hidden" style="background-image: url(./assets/img/contact-banner.jpg);">
+        <section class="contact-area section-padding-115-100 overflow-hidden" style="background-image: url(./assets/img/contact-banner.jpg);">
             <div class="container">
                 <div class="row">
                     <div data-aos="fade-left" class="col-lg-7 offset-lg-5">
@@ -515,7 +523,7 @@
                             </div>
                             <div class="contact-form">
                                 <form action="POST">
-                                    <div class="form-group">
+                                    <div class="single-form-item">
                                         <select name="businessplan" id="businessplan">
                                             <option value="Plan 1">Business Planning</option>
                                             <option value="Plan 1">Plan 2</option>
@@ -524,19 +532,19 @@
                                             <option value="Plan 1">Plan 5</option>
                                         </select>
                                     </div>
-                                    <div class="form-row">
+                                    <div class="single-form-item form-row">
                                         <div class="col">
-                                            <div class="form-group pr-1">
+                                            <div class="single-form-item pr-1">
                                                 <input type="text" placeholder="*Your Name" id="name">
                                             </div>
                                         </div>
                                         <div class="col">
-                                            <div class="from-group pl-1">
+                                            <div class="single-form-item pl-1">
                                                 <input type="email" placeholder="*Your Email" id="email">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-group">
+                                    <div class="single-form-item textarea">
                                         <textarea name="message" id="message" cols="30" rows="10" placeholder="Message:"></textarea>
                                     </div>
                                     <button type="submit" value="submit" class="boxed-btn">Summit Message</button>
@@ -546,11 +554,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- .contact-area ends -->
 
         <!-- .pricing-plan-area starts -->
-        <div class="pricing-plan-area section-padding-115-100">
+        <section class="pricing-plan-area section-padding-115-100">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -571,11 +579,11 @@
                             </div>
                             <div class="pricing-content">
                                 <ul>
-                                    <li class="active"><i class="fa fa-check"></i> Unlimited Bandwidth</li>
-                                    <li class="active"><i class="fa fa-check"></i> All Bronze Features</li>
-                                    <li><i class="fa fa-close"></i> Unlimited Websites</li>
-                                    <li><i class="fa fa-close"></i> Unlimited Storage</li>
-                                    <li><i class="fa fa-close"></i> 2 Monthly SSL</li>
+                                    <li class="active"><i class="fas fa-check-circle"></i> Unlimited Bandwidth</li>
+                                    <li class="active"><i class="fas fa-check-circle"></i> All Bronze Features</li>
+                                    <li><i class="fas fa-times-circle"></i> Unlimited Websites</li>
+                                    <li><i class="fas fa-times-circle"></i> Unlimited Storage</li>
+                                    <li><i class="fas fa-times-circle"></i> 2 Monthly SSL</li>
                                 </ul>
                                 <div class="text-center">
                                     <a href="#" class="boxed-btn">Start Trial</a>
@@ -593,11 +601,11 @@
                             </div>
                             <div class="pricing-content">
                                 <ul>
-                                    <li class="active"><i class="fa fa-check"></i> Unlimited Bandwidth</li>
-                                    <li class="active"><i class="fa fa-check"></i> All Bronze Features</li>
-                                    <li class="active"><i class="fa fa-check"></i> Unlimited Websites</li>
-                                    <li><i class="fa fa-close"></i> Unlimited Storage</li>
-                                    <li><i class="fa fa-close"></i> 2 Monthly SSL</li>
+                                    <li class="active"><i class="fas fa-check-circle"></i> Unlimited Bandwidth</li>
+                                    <li class="active"><i class="fas fa-check-circle"></i> All Bronze Features</li>
+                                    <li class="active"><i class="fas fa-check-circle"></i> Unlimited Websites</li>
+                                    <li><i class="fas fa-times-circle"></i> Unlimited Storage</li>
+                                    <li><i class="fas fa-times-circle"></i> 2 Monthly SSL</li>
                                 </ul>
                                 <div class="text-center">
                                     <a href="#" class="boxed-btn">Start Trial</a>
@@ -615,11 +623,11 @@
                             </div>
                             <div class="pricing-content">
                                 <ul>
-                                    <li class="active"><i class="fa fa-check"></i> Unlimited Bandwidth</li>
-                                    <li class="active"><i class="fa fa-check"></i> All Bronze Features</li>
-                                    <li class="active"><i class="fa fa-check"></i> Unlimited Websites</li>
-                                    <li class="active"><i class="fa fa-check"></i> Unlimited Storage</li>
-                                    <li class="active"><i class="fa fa-check"></i> 2 Monthly SSL</li>
+                                    <li class="active"><i class="fas fa-check-circle"></i> Unlimited Bandwidth</li>
+                                    <li class="active"><i class="fas fa-check-circle"></i> All Bronze Features</li>
+                                    <li class="active"><i class="fas fa-check-circle"></i> Unlimited Websites</li>
+                                    <li class="active"><i class="fas fa-check-circle"></i> Unlimited Storage</li>
+                                    <li class="active"><i class="fas fa-check-circle"></i> 2 Monthly SSL</li>
                                 </ul>
                                 <div class="text-center">
                                     <a href="#" class="boxed-btn">Start Trial</a>
@@ -629,11 +637,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- .pricing-plan-area ends -->
 
         <!-- .testimonial-area starts -->
-        <div class="testimonial-area" style="background-image: url(./assets/img/map-bg-1.png);">
+        <section class="testimonial-area" style="background-image: url(./assets/img/map-bg-1.png);">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -661,11 +669,11 @@
                             <div class="testimonial-content">
                                 <p>Rapidiously buildcollaboration anden deas sharing viaing bleeding and edge nterfaces Energstcally plagiarize team anbuilding and paradgmis whereas goingi forward process mproveents and monetze fully tested ergstcally plariarize team whereas goingi forward process an services whereas going forward process</p>
                                 <div class="stars">
-                                    <span><i class="fa fa-star-o"></i></span>
-                                    <span><i class="fa fa-star-o"></i></span>
-                                    <span><i class="fa fa-star-o"></i></span>
-                                    <span><i class="fa fa-star-o"></i></span>
-                                    <span><i class="fa fa-star-o"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
                                 </div>
                             </div>
                         </div><!-- ends -->
@@ -687,11 +695,11 @@
                             <div class="testimonial-content">
                                 <p>Rapidiously buildcollaboration anden deas sharing viaing bleeding and edge nterfaces Energstcally plagiarize team anbuilding and paradgmis whereas goingi forward process mproveents and monetze fully tested ergstcally plariarize team whereas goingi forward process an services whereas going forward process</p>
                                 <div class="stars">
-                                    <span><i class="fa fa-star-o"></i></span>
-                                    <span><i class="fa fa-star-o"></i></span>
-                                    <span><i class="fa fa-star-o"></i></span>
-                                    <span><i class="fa fa-star-o"></i></span>
-                                    <span><i class="fa fa-star-o"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
                                 </div>
                             </div>
                         </div><!-- ends -->
@@ -703,11 +711,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- .testimonial-area ends -->
 
         <!-- .blog-area starts -->
-        <div class="blog-area section-padding-115-100">
+        <section class="blog-area section-padding-115-100">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -728,8 +736,8 @@
                             <div class="blog-content">
                                 <h3>Business Ueportin Rouncil Them Could Plan...</h3>
                                 <div class="blog-meta">
-                                    <a href="#"><i class="fa fa-calendar"></i> Dece 04, 2020</a>
-                                    <a href="#"><i class="fa fa-user"></i> Robot Smith</a>
+                                    <a href="#"><i class="far fa-calendar-alt"></i> Dece 04, 2020</a>
+                                    <a href="#"><i class="fas fa-user"></i> Robot Smith</a>
                                 </div>
                                 <p>Enthusiastically morph magnetic scenarios Uniquelly synthesize strategic theme areas vis parallel customer service.</p>
                             </div>
@@ -737,7 +745,7 @@
                                 <a href="#" class="inline-btn">Read More</a>
                                 <span class="blog-comments position-relative">
                                     <span class="comments-number">2</span>
-                                    <i class="fa fa-comments-o"></i>
+                                    <i class="fal fa-comment-alt-lines"></i>
                                 </span>
                             </div>
                         </article><!-- ends -->
@@ -752,8 +760,8 @@
                             <div class="blog-content">
                                 <h3>Financial Reportin Qouncil What Could More...</h3>
                                 <div class="blog-meta">
-                                    <a href="#"><i class="fa fa-calendar"></i> Dece 04, 2020</a>
-                                    <a href="#"><i class="fa fa-user"></i> Robot Smith</a>
+                                    <a href="#"><i class="far fa-calendar-alt"></i> Dece 04, 2020</a>
+                                    <a href="#"><i class="fas fa-user"></i> Robot Smith</a>
                                 </div>
                                 <p>Enthusiastically morph magnetic scenarios Uniquelly synthesize strategic theme areas vis parallel customer service.</p>
                             </div>
@@ -761,7 +769,7 @@
                                 <a href="#" class="inline-btn">Read More</a>
                                 <span class="blog-comments position-relative">
                                     <span class="comments-number">2</span>
-                                    <i class="fa fa-comments-o"></i>
+                                    <i class="fal fa-comment-alt-lines"></i>
                                 </span>
                             </div>
                         </article><!-- ends -->
@@ -776,8 +784,8 @@
                             <div class="blog-content">
                                 <h3>Consultin Reportin Qounc Arei Could More...</h3>
                                 <div class="blog-meta">
-                                    <a href="#"><i class="fa fa-calendar"></i> Dece 04, 2020</a>
-                                    <a href="#"><i class="fa fa-user"></i> Robot Smith</a>
+                                    <a href="#"><i class="far fa-calendar-alt"></i> Dece 04, 2020</a>
+                                    <a href="#"><i class="fas fa-user"></i> Robot Smith</a>
                                 </div>
                                 <p>Enthusiastically morph magnetic scenarios Uniquelly synthesize strategic theme areas vis parallel customer service.</p>
                             </div>
@@ -785,7 +793,7 @@
                                 <a href="#" class="inline-btn">Read More</a>
                                 <span class="blog-comments position-relative">
                                     <span class="comments-number">2</span>
-                                    <i class="fa fa-comments-o"></i>
+                                    <i class="fal fa-comment-alt-lines"></i>
                                 </span>
                             </div>
                         </article><!-- ends -->
@@ -799,11 +807,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- .blog-area ends -->
 
         <!-- .map-area starts -->
-        <div class="map-area position-relative">
+        <section class="map-area position-relative">
             <div class="map" id="map"></div>
             <div class="map-content-wrap">
                 <div class="container">
@@ -816,18 +824,18 @@
                                     <p>Come and visit our quarters or simply send us an email anytime you want We are open to all suggestions from our clients.</p>
                                 </div><!-- ends -->
                                 <div class="single-map-content address">
-                                    <span class="icon"><i class="fa fa-map-marker"></i></span>
+                                    <span class="icon"><i class="fal fa-map-marker-alt"></i></span>
                                     <h4>Address</h4>
                                     <p>Suite 02, Level 12, Tropical Center<br/> 218, New Elephant Road</p>
                                 </div><!-- ends -->
                                 <div class="single-map-content phone-number">
-                                    <span class="icon"><i class="fa fa-mobile"></i></span>
+                                    <span class="icon"><i class="fal fa-mobile"></i></span>
                                     <h4>Call us</h4>
                                     <a href="tel:+0207996223">+8801920 7946 020</a>
                                     <a href="tel:+0207996223">+020 7996 223</a>
                                 </div><!-- ends -->
                                 <div class="single-map-content email-address">
-                                    <span class="icon"><i class="fa fa-envelope-o"></i></span>
+                                    <span class="icon"><i class="fal fa-envelope-open-text"></i></span>
                                     <h4>Email us</h4>
                                     <a href="mailto:info@theking.com.uk">info@theking.com.uk</a>
                                     <a href="mailto:office@theking.com.uk">office@theking.com.uk</a>
@@ -837,7 +845,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- .map-area ends -->
 
         <!-- .footer-area starts -->
@@ -877,7 +885,7 @@
                             <div class="subscription-form">
                                 <form action="POST">
                                     <input type="email" placeholder="Enter your email">
-                                    <button type="submit" value="submit" class="boxed-btn"><i class="fa fa-paper-plane"></i> Subscribe Now!</button>
+                                    <button type="submit" value="submit" class="boxed-btn"><i class="fas fa-paper-plane"></i> Subscribe Now!</button>
                                 </form>
                             </div>
                         </div><!-- ends -->
@@ -894,7 +902,7 @@
         </footer>
         <!-- .footer-area ends -->
 
-        <a href="#" class="scrollTop d-none d-lg-block"><i class="fa fa-angle-up"></i></a>
+        <a href="#" class="scrollTop d-none d-lg-block"><i class="fal fa-angle-up"></i></a>
 
         <!--Libraries-->
         <script src="assets/js/bootstrap.bundle.min.js"></script>       

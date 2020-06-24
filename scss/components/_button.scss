@@ -36,6 +36,7 @@
     font-weight: 700;
     padding: 10px 0;
     @extend %uppercase;
+    @extend %basetransition1;
     &:hover {
         @extend %primary-color;
     }

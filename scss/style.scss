@@ -8,6 +8,15 @@
 @import 'helpers/helpers';
 @import 'helpers/mediaquery';
 
+// Font Awesome
+@import "fontawesome/fontawesome.scss";
+@import "fontawesome/solid.scss";
+@import "fontawesome/brands.scss";
+@import "fontawesome/regular.scss";
+@import "fontawesome/light.scss";
+@import "fontawesome/v4-shims.scss";
+@import "fontawesome/duotone.scss";
+
 // Base fonts
 @import 'base/fonts';
 
@@ -26,6 +35,9 @@
 // Pages Styles
 @import 'pages/home';
 @import 'pages/home2';
+@import 'pages/about';
+@import 'pages/services';
+@import 'pages/team';
 
 
 

@@ -41,7 +41,7 @@
             img {
                 @extend %floarleft;
                 margin-right: 20px;
-                max-width: 80px;
+                max-width: 100px;
                 @include mx-desktops{
                     margin-right: 10px;
                     margin-bottom: 15px;
@@ -52,12 +52,14 @@
                 font-weight: 500;
                 margin: -3px 0 10px;
                 line-height: 1.5;
+                @extend %basetransition1;
                 @include mx-desktops{
                     font-size: 15px;
                 }
             }
             a {
                 @extend %white-color;
+                @extend %basetransition1;
             }
             &:hover a, &:hover a h4 {
                 @extend %primary-color;
@@ -66,7 +68,7 @@
         .subscription-form {
             input[type=email] {
                 background: #263238;
-                @extend %section-border-color;
+                border-color: $border-color;
                 @extend %white-color;
                 margin-bottom: 20px;
                 &:focus{
@@ -131,7 +133,7 @@
     @extend %basetransition2;
     @extend %invisible;
     font-size: 25px;
-    line-height: 37px;
+    line-height: 40px;
     @extend %borderradius5;
     &.scrollBtn{
         @extend %visible;

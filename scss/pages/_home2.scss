@@ -27,8 +27,13 @@
 // brand-area
 .brand-area{
     .clients-logo{
+        height: 160px;
         border-top: 0;
-        border-bottom: 1px solid #F0F0F0;
+    }
+    .clients-logo.home-2{
+        border-top: 0;
+        border-bottom: 1px solid $border-color;
+        height: 155px;
     }
 }
 
@@ -66,7 +71,7 @@
             @extend %posabsolute;
             left: 25px;
             top: 23px;
-            font-family: fontawesome;
+            font-family: 'Font Awesome 5 Pro';
             content: "\f067";
             width: 35px;
             height: 35px;
@@ -166,7 +171,7 @@
     .single-team-item{
         @extend %default-box-shadow-2;
         @extend %basetransition1;
-        border: 1px solid #F0F0F0;
+        border: 1px solid $border-color;
         margin-bottom: 30px;
         &:hover{
             @extend %default-box-shadow-hover-2;
@@ -190,7 +195,7 @@
         }
         .member-social-info {
             padding: 7px 0;
-            border-top: 1px solid #F0F0F0;
+            border-top: 1px solid $border-color;
             margin-top: 18px;
             a {
                 font-size: 16px;
@@ -245,24 +250,18 @@
                 li {
                     @extend %body-color;
                     @extend %posrelative;
-                    padding-left: 25px;
+                    padding-left: 22px;
                     margin-bottom: 15px;
                     i {
-                        width: 15px;
-                        height: 15px;
-                        background: #DBDBDB;
-                        font-size: 10px;
-                        @extend %textcenter;
-                        @extend %borderradius50;
-                        line-height: 15px;
                         @extend %posabsolute;
+                        font-size: 14px;
                         left: 0;
-                        top: 4px;
+                        top: 5px;
                         padding-left: 1px;
-                        @extend %white-color;
+                        color: #DBDBDB;;
                     }
                     &.active i {
-                        @extend %primary-bg-color;
+                        @extend %primary-color;
                     }
                 }
             }
@@ -299,6 +298,7 @@
             @extend %default-box-shadow-2;
             @include all-below-med{
                 padding: 40px 0px 20px 0px;
+                box-shadow: none;
             }
             .single-map-content{
                 padding-right: 40px;

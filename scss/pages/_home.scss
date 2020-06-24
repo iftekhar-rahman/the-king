@@ -332,6 +332,7 @@
             padding-left: 15px;
             padding-right: 15px;
             margin-bottom: 30px;
+            float: left;
             @include all-below-med{
                 width: 50%;
             }
@@ -474,7 +475,7 @@
         }
         .testimonial-header {
             padding: 20px 30px;
-            border-bottom: 1px solid #F0F0F0;
+            border-bottom: 1px solid $border-color;
             .reviewer-photo {
                 @extend %posabsolute;
                 left: 0;
@@ -505,7 +506,7 @@
 
 // .clients-logo
 .clients-logo {
-    padding: 55px 0;
+    height: 140px;
     border-top: 1px solid #E76F7A;
     @include all-below-med{
         padding: 40px 0;
@@ -561,6 +562,7 @@
         img {
             border-radius: 5px 5px 0 0;
             @extend %w100;
+            @extend %basetransition1;
         }
         .blog-content {
             padding: 30px 25px 20px 26px;
@@ -574,6 +576,7 @@
                 a {
                     margin-right: 20px;
                     @extend %body-color;
+                    @extend %basetransition1;
                     @include mx-desktops{
                         margin-right: 10px;
                     }
@@ -588,7 +591,7 @@
         }
         .blog-footer {
             padding: 7px 30px;
-            border-top: 1px solid #F7F7F7;
+            border-top: 1px solid $border-color;
             .blog-comments {
                 margin-top: 10px;
                 font-size: 20px;

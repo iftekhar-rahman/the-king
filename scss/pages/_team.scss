@@ -1,0 +1,67 @@
+/*================Team Pages CSS===============*/
+
+.single-team-wrap{
+    @extend %default-box-shadow;
+    padding: 50px 50px 50px 50px;
+    @include all-below-mobile-lg {
+        padding: 20px 20px 30px 20px;
+    }
+    h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    .team-member-photo{
+        img{
+            @extend %w100;
+            margin-bottom: 70px;
+            @include all-below-med{
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .team-member-skills{
+        @include all-below-med{
+            margin-bottom: 30px;
+        }
+    }
+    .team-member-details {
+        padding-left: 10px;
+        @include all-below-med{
+            padding-left: 0;
+        }
+        h5 {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .team-member-meta {
+            @extend %black-color;
+            margin-bottom: 65px;
+            span {
+                @extend %body-color;
+                @extend %displayinline;
+                width: 110px;
+            }
+            .member-social-info {
+                display: inline;
+                width: auto;
+                a{
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+    .award-title {
+        margin-bottom: 20px;
+    }
+    .team-member-awards{
+        .single-award {
+            margin-right: 40px;
+            img {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

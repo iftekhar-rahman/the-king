@@ -1,5 +1,15 @@
 jQuery(document).ready(function($){
 
+    // $(".my-progress-bar").circularProgress({
+    //     line_width: 6,
+    //     height : "90px",
+    //     width : "90px",
+    //     color: "#FF4600",
+    //     starting_position: 0, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
+    //     percent: 0, // percent starts from
+    //     percentage: true,
+    // }).circularProgress('animate', 80, 2000);
+
     // Animate on scroll jQuery plugin
     AOS.init({
         disable: function() {
@@ -114,11 +124,10 @@ jQuery(document).ready(function($){
 
 
     $(".header-search span").on("click", function(){
-        $(".search-box-wrap").addClass("active");
-        return false;
+        $(".search-box, .close-btn, .header-search span").addClass("active");
     });
-    $(".close-btn, .search-overlay").on("click", function(){
-        $(".search-box-wrap").removeClass("active");
+    $(".close-btn").on("click", function(){
+        $(".search-box, .close-btn, .header-search span").removeClass("active");
     });
 
     // PopUp JS
@@ -211,6 +220,14 @@ jQuery(document).ready(function($){
     }
   
 
+    // Services page
+    // single service page sidebar
+    $(".sidebar-open").on("click", function(){
+        $(".sidebar, .close-btn, .sidebar-open").addClass("show-sidebar");
+    });
+    $(".close-btn").on("click", function(){
+        $(".sidebar, .close-btn, .sidebar-open").removeClass("show-sidebar");
+    });
     
     
 

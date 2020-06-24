@@ -1,0 +1,42 @@
+/*================About Pages CSS===============*/
+
+// About Page-1
+.banner-area, .banner-area .row{
+    height: 270px;
+}
+.banner-area{
+    @extend %backgroundimage;
+    .banner-content {
+        h2 {
+            font-size: 36px;
+            @include all-below-mobile-lg{
+                font-size: 30px;
+            }
+        }
+        ul {
+            li {
+                @extend %displayinline;
+                font-weight: 700;
+                color: #0a1f44;
+                a {
+                    color: #0a1f44;
+                    @extend %basetransition1;
+                }
+                &:hover a {
+                    @extend %primary-color;
+                }
+            }
+        }
+    }
+}
+
+// .features-area 
+.features-area {
+    &.about-page-1{
+        margin-top: 0;
+        padding-top: 115px;
+        @include all-below-med{
+            padding-top: 60px;
+        }
+    }
+}

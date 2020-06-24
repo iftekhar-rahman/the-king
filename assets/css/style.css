@@ -15957,14 +15957,12 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
 
 .portfolio-area .portfolio-gallery {
   margin-right: -15px;
-  margin-left: -15px;
-  overflow: hidden; }
+  margin-left: -15px; }
   .portfolio-area .portfolio-gallery .single-portfolio-item {
     width: 33.3333%;
     padding-left: 15px;
     padding-right: 15px;
-    margin-bottom: 30px;
-    float: left; }
+    margin-bottom: 30px; }
     @media (max-width: 991px) {
       .portfolio-area .portfolio-gallery .single-portfolio-item {
         width: 50%; } }

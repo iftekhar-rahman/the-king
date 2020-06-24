@@ -327,13 +327,11 @@
     .portfolio-gallery {
         margin-right: -15px;
         margin-left: -15px;
-        overflow: hidden;
         .single-portfolio-item {
             width: 33.3333%;
             padding-left: 15px;
             padding-right: 15px;
             margin-bottom: 30px;
-            float: left;
             @include all-below-med{
                 width: 50%;
             }

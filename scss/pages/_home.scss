@@ -325,19 +325,20 @@
     }
     // .portfolio-gallery 
     .portfolio-gallery {
-        // margin-right: -15px;
-        // margin-left: -15px;
+        margin-right: -15px;
+        margin-left: -15px;
         .single-portfolio-item {
-            // width: 33.3333%;
-            // padding-left: 15px;
-            // padding-right: 15px;
+            width: 33.3333%;
+            padding-left: 15px;
+            padding-right: 15px;
             margin-bottom: 30px;
-            // @include all-below-med{
-            //     width: 50%;
-            // }
-            // @include all-below-mobile-lg{
-            //     width: 100%;
-            // }
+            // float: left;
+            @include all-below-med{
+                width: 50%;
+            }
+            @include all-below-mobile-lg{
+                width: 100%;
+            }
             .portfolio-inner{
                 border-radius: 5px 5px 0 0;
                 @extend %default-box-shadow;

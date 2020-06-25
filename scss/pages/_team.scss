@@ -2,7 +2,7 @@
 
 .single-team-wrap{
     @extend %default-box-shadow;
-    padding: 50px 50px 50px 50px;
+    padding: 40px 40px 40px 40px;
     @include all-below-mobile-lg {
         padding: 20px 20px 30px 20px;
     }
@@ -14,6 +14,7 @@
         font-size: 18px;
     }
     .team-member-photo{
+        padding-right: 10px;
         img{
             @extend %w100;
             margin-bottom: 70px;
@@ -26,9 +27,11 @@
         @include all-below-med{
             margin-bottom: 30px;
         }
+        @include all-mx-mobile{
+            justify-content: space-between;
+        }
     }
     .team-member-details {
-        padding-left: 10px;
         @include all-below-med{
             padding-left: 0;
         }
@@ -39,10 +42,19 @@
         .team-member-meta {
             @extend %black-color;
             margin-bottom: 65px;
+            @include all-below-med{
+                margin-bottom: 40px;
+            }
+            @include all-mx-mobile{
+                font-size: 15px;
+            }
             span {
                 @extend %body-color;
                 @extend %displayinline;
                 width: 110px;
+                @include all-mx-mobile{
+                    width: 75px;
+                }
             }
             .member-social-info {
                 display: inline;
@@ -57,11 +69,129 @@
         margin-bottom: 20px;
     }
     .team-member-awards{
+        @include all-mx-mobile{
+            justify-content: space-between;
+        }
         .single-award {
             margin-right: 40px;
+            @include all-mx-mobile{
+                margin-right: 0;
+                text-align: center;
+                img{
+                    max-width: 70px;
+                }
+            }
             img {
                 margin-bottom: 20px;
             }
+        }
+    }
+}
+
+
+.box{
+    margin-right: 40px;
+    text-align: center;
+    @include all-mx-mobile{
+        margin-right: 0;
+    }
+    &:last-child{
+        margin-right: 0;
+    }
+    .bar-dec{
+        margin-top: 20px;
+    }
+    .percent{
+        width: 90px;
+        height: 90px;
+        position: relative;
+        svg{
+            width: 90px;
+            height: 90px;
+            position: relative;
+            circle{
+                width: 90px;
+                height: 90px;
+                fill: none;
+                stroke-width: 6;
+                stroke: #FF4600;
+                transform: translate(5px, 5px);
+                stroke-dasharray: 290px;
+                stroke-dashoffset: 290px;
+                &:nth-child(1){
+                    stroke-dashoffset: 0px;
+                    stroke: #F0F0F0;
+                }
+                &:nth-child(2){
+                    stroke-dashoffset: calc(290 - (290 * 96) / 100);
+                    stroke: #FF4600;
+                }
+            }
+        }
+        .number{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ff4600;
+            font-size: 16px;
+            font-weight: 700;
+            padding-left: 7px;
+            padding-top: 5px;
+        }
+        &.2{
+            svg{
+                circle{
+                    &:nth-child(2){
+                        stroke-dashoffset: calc(290 - (290 * 55) / 100);
+                        stroke: #FF4600;
+                    }
+                }
+            }
+        }
+    }
+}
+.box.box2{
+    .percent{
+        svg{
+            circle{
+                stroke: #1ABC80;
+                &:nth-child(1){
+                    stroke-dashoffset: 0px;
+                    stroke: #F0F0F0;
+                }
+                &:nth-child(2){
+                    stroke-dashoffset: calc(290 - (290 * 95) / 100);
+                    stroke: #1ABC80;
+                }
+            }
+        }
+        .number{
+            color: #1ABC80;
+        }
+    }
+}
+.box.box3{
+    .percent{
+        svg{
+            circle{
+                stroke: #1BA1D2;
+                &:nth-child(1){
+                    stroke-dashoffset: 0px;
+                    stroke: #F0F0F0;
+                }
+                &:nth-child(2){
+                    stroke-dashoffset: calc(290 - (290 * 80) / 100);
+                    stroke: #1BA1D2;
+                }
+            }
+        }
+        .number{
+            color: #1BA1D2;
         }
     }
 }

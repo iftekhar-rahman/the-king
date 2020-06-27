@@ -1,0 +1,141 @@
+
+/*================Recent Blog CSS===============*/
+.blog-area {
+    &.blog-page{
+        .single-blog-item {
+            margin-bottom: 30px;
+            .blog-content {
+                padding: 30px 30px 40px 30px;
+                h3{
+                    font-size: 30px;
+                    margin-bottom: 12px;
+                }
+                .blog-meta{
+                    margin-bottom: 15px;
+                }
+                .boxed-btn{
+                    margin-top: 10px;
+                }
+            }
+            &:hover{
+                @extend %default-box-shadow;
+                .blog-thumb img{
+                    @extend %basetransition2;
+                }
+            }
+            .blog-quote {
+                background: #E8505B;
+                color: #fff;
+                padding: 50px;
+                font-size: 22px;
+                font-style: italic;
+                i {
+                    font-size: 60px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        // blog-sidebar
+        .sidebar.blog-sidebar {
+            .single-sidebar-item {
+                margin-bottom: 30px;
+                h3{
+                    font-size: 18px;
+                    padding: 24px 30px 23px;
+                }
+                ul{
+                    li{
+                        position: relative;
+                        a{
+                            .ab-num {
+                                position: absolute;
+                                right: 30px;
+                                top: 23px;
+                            }
+                        }
+                    }
+                }
+                // .search-box
+                .search-box {
+                    padding: 25px 30px;
+                    position: relative;
+                    [type=submit] {
+                        position: absolute;
+                        right: 29px;
+                        top: 25px;
+                        border: 0;
+                        background: none;
+                        font-size: 20px;
+                        height: 50px;
+                        width: 60px;
+                        z-index: 2;
+                        background: #FAFAFA;
+                        border-radius: 5px;
+                    }
+                    input[type=text] {
+                        background: #FAFAFA;
+                        height: 50px;
+                        padding: 12px 20px;
+                        border: 0;
+                    }
+                }
+                &.popular-posts{
+                    ul{
+                        li{
+                            position: relative;
+                            a{
+                                padding: 28px 140px 29px 30px;
+                                font-weight: 500;
+                                font-size: 14px;
+                            }
+                            .date{
+                                font-weight: 400;
+                            }
+                            p{
+                                margin-bottom: 10px;
+                            }
+                            img{
+                                position: absolute;
+                                right: 30px;
+                                top: 27px;   
+                                max-width: 100px;                            
+                            }
+                        }
+                    }
+                }
+                // .photo-gallery 
+                .photo-gallery {
+                    padding: 25px 25px 20px;
+                    .single-photo-gallery {
+                        padding-left: 5px;
+                        padding-right: 5px;
+                        margin-bottom: 10px;
+                        flex-basis: 33.3333%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                // .tag-list
+                .tag-list {
+                    padding: 20px 20px 20px 20px;
+                    a {
+                        border: 1px solid #EBEBEB;
+                        padding: 5px 10px;
+                        margin: 0 2px;
+                        display: inline-block;
+                        margin-bottom: 10px;
+                        color: #555555;
+                        transition: .3s;
+                        border-radius: 3px;
+                        &:hover {
+                            background: #E8505B;
+                            border-color: #E8505B;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

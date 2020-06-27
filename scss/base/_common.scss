@@ -113,34 +113,83 @@ textarea {
 // }
     
 /*=====owl nav customization======*/
-// .owl-nav div {
-//     @extend %displayinline;
-//     @extend %posabsolute;
-//     left: -10px;
-//     top: 50%;
-//     color: #2A7D2E;
-//     background-color: #fff;
-//     line-height: 60px;
-//     margin-top: -30px;
-//     width: 60px;
-//     height: 60px;
-//     font-size: 45px;
-//     padding-right: 5px;
-//     @extend %borderradius50;
-//     @extend %textcenter;
-//     @extend %basetransition1;
-//     &.owl-next {
-//         left: auto;
-//         right: -10px;
-//         padding-left: 5px;
-//         padding-right: 0;
-//     }
-//     &:hover {
-//         color: #ffffff;
-//         background-color: #2A7D2E;
-//     }
-// }
+.owl-nav div {
+    left: 20px;
+    top: 50%;
+    line-height: 54px;
+    margin-top: -25px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    padding-right: 2px;
+    @extend %displayinline;
+    @extend %posabsolute;
+    @extend %white-bg-color;
+    @extend %body-color;
+    @extend %borderradius50;
+    @extend %textcenter;
+    @extend %basetransition1;
+    &.owl-next {
+        left: auto;
+        right: 20px;
+        padding-right: 0;
+        padding-left: 5px;
+    }
+    &:hover {
+        color: #ffffff;
+        @extend %primary-bg-color;
+    }
+}
+// .video-btn 
+.video-btn {
+    width: 80px;
+    height: 80px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    font-size: 25px;
+    line-height: 80px;
+    padding-left: 8px;
+    margin-top: -40px;
+    @extend %white-bg-color;
+    @extend %primary-color;
+    @extend %posabsolute;
+    @extend %basetransition2;
+    @extend %textcenter;
+    @extend %borderradius50;
+    &:hover {
+        @extend %primary-bg-color;
+        @extend %white-color;
+    }
+}
 
+//.pagination-wrap
+.pagination-wrap {
+    padding: 30px 0 40px;
+    ul {
+        li {
+            @extend %displayinline;
+            margin: 0 5px;
+            a {
+                color: #2f2838;
+                font-weight: 700;
+                border: 1px solid #F0F7FF;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                @extend %borderradius50;
+                @extend %displayblock;
+                @extend %basetransition1;
+            }
+            &:hover a {
+                @extend %primary-border-color;
+                @extend %primary-bg-color;
+                @extend %white-color;
+            }
+        }
+    }
+}
 
 /*========.nice-select=============*/ 
 .nice-select {

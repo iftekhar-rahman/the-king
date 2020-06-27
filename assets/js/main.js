@@ -137,6 +137,35 @@ jQuery(document).ready(function($){
             enabled: true
         }
     });
+    // magnificPopup for video
+    $('.video-btn').magnificPopup({
+        type : 'iframe',
+        autoPlay: true,
+        iframe: {
+            markup: '<div class="mfp-iframe-scaler">'+
+                      '<div class="mfp-close"></div>'+
+                      '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                    '</div>', 
+            patterns: {
+              youtube: {
+                index: 'youtube.com/',
+                id: 'v=', 
+                src: 'https://www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe.
+              },
+              vimeo: {
+                index: 'vimeo.com/',
+                id: '/',
+                src: 'https://player.vimeo.com/video/%id%?autoplay=1'
+              },
+              gmaps: {
+                index: 'https://maps.google.',
+                src: '%id%&output=embed'
+              }
+              // you may add here more sources
+            },
+            srcAction: 'iframe_src',
+          }
+    });
     
     // Sticky Header with smooth animation
     $(window).on('scroll', function() {
@@ -246,6 +275,17 @@ jQuery(document).ready(function($){
     $(".close-btn").on("click", function(){
         $(".sidebar, .close-btn, .sidebar-open").removeClass("show-sidebar");
     });
+
+    // Blog Page
+    // homepage-slides
+	$(".blog-carousel").owlCarousel({
+		items: 1,
+		loop: true,
+		nav: true,
+		dots: false,
+        autoplay: false,
+        navText: ["<i class='fal fa-caret-left'></i>", "<i class='fal fa-caret-right'></i>"]
+	});
     
     
 

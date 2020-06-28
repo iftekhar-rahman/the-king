@@ -232,7 +232,7 @@
 
 
 // Sidebar below 991px viewport
-.service-single-page-content-area{
+.sidebar-trigger{
     @include all-below-med{
         .sidebar-open {
             background: #e8505b;

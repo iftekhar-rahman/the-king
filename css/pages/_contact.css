@@ -1,0 +1,36 @@
+/*---------Contact Page------------*/
+.single-contact-info i {
+  font-size: 40px;
+  color: #E8505B;
+  margin-bottom: 13px; }
+
+.single-contact-info h5 {
+  font-size: 16px;
+  margin-bottom: 5px; }
+
+.single-contact-info {
+  margin-bottom: 23px; }
+
+section.contact-page-area .comments-form {
+  margin-bottom: 0; }
+
+.single-contact-info:last-child {
+  margin-bottom: 0; }
+
+.contact-page-area .comments-form .form-title h4 {
+  font-size: 24px; }
+
+section.contact-page-area .comments-form .form-title {
+  border: 0;
+  padding: 0 0 35px; }
+
+.comments-form .comment-form-inner {
+  padding: 0; }
+
+.comments-form .comment-form-inner input[type=text], .comments-form .comment-form-inner input[type=email], .comments-form .comment-form-inner input[type=password], .comments-form .comment-form-inner input[type=tel], .comments-form .comment-form-inner input[type=url], .comments-form .comment-form-inner textarea {
+  height: 55px;
+  border-radius: 3px;
+  padding: 15px 20px; }
+
+.comments-form .comment-form-inner textarea {
+  height: 150px; }

@@ -1,0 +1,56 @@
+/*---------Contact Page------------*/ 
+
+.contact-page{
+    @extend %default-box-shadow-2;
+    @extend %borderradius5;
+    padding: 60px 30px 60px 50px;
+    @include all-below-med{
+        padding: 50px;
+    }
+    @include all-below-mobile-lg{
+        padding: 30px 20px;
+    }
+    .single-contact-info {
+        margin-bottom: 27px;
+        a{
+            @extend %basetransition1;
+            &:hover{
+                @extend %primary-color;
+            }
+        }
+        i {
+            font-size: 35px;
+            @extend %primary-color;
+            margin-bottom: 15px;
+        }
+        h5 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .comments-form {
+        margin-bottom: 0;
+        box-shadow: none;
+        .form-title {
+            border: 0;
+            padding: 0 0 35px;
+            h4 {
+                font-size: 24px;
+            }
+        }
+        .comment-form-inner {
+            padding: 0;
+        }
+    }
+    .comments-form .comment-form-inner input[type=text], .comments-form .comment-form-inner input[type=email], .comments-form .comment-form-inner input[type=password], .comments-form .comment-form-inner input[type=tel], .comments-form .comment-form-inner input[type=url], .comments-form .comment-form-inner textarea {
+        height: 55px;
+        border-radius: 3px;
+        padding: 15px 20px;
+    }
+    .comments-form .comment-form-inner textarea {
+        height: 150px;
+    }
+}

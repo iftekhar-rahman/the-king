@@ -285,7 +285,13 @@ jQuery(document).ready(function($){
 		dots: false,
         autoplay: false,
         navText: ["<i class='fal fa-caret-left'></i>", "<i class='fal fa-caret-right'></i>"]
-	});
+    });
+    
+    // Shop page
+    $(".shop-sort span").on("click", function(){
+        $(".shop-sort span").removeClass("active");
+        $(this).addClass("active");
+    });
     
     
 

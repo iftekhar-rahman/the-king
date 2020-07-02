@@ -1,0 +1,202 @@
+/*================Shop Page CSS===============*/
+// .bar-content
+.bar-content {
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    @extend %default-box-shadow-2;
+    h6 {
+        font-weight: 400;
+        color: #0b185f;
+        margin: 6px 0 0 0;
+    }
+    span {
+        color: #0B185F;
+        font-size: 20px;
+        margin-left: 8px;
+        cursor: pointer;
+        &.active {
+            color: #E8505B;
+        }
+    }
+}
+
+// .single-shop-item
+.single-shop-item {
+    padding: 10px;
+    margin-bottom: 30px;
+    @extend %basetransition1;
+    @extend %default-box-shadow-2;
+    &:hover{
+        @extend %default-box-shadow-hover-2;
+    }
+    .product-img {
+        position: relative;
+        .product-action {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 20px;
+            opacity: 0;
+            visibility: hidden;
+            transition: .3s;
+            &:hover {
+                .product-action a {
+                    margin: 0 3px;
+                }
+            }
+            a {
+                width: 30px;
+                height: 30px;
+                background: #E8505B;
+                color: #fff;
+                text-align: center;
+                font-size: 13px;
+                line-height: 32px;
+                margin: 0 5px;
+                transition: .3s;
+                border-radius: 3px;
+                &:hover {
+                    background: #333;
+                }
+            }
+        }
+    }
+    .product-content {
+        text-align: center;
+        padding: 20px;
+        h4 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        .stars {
+            margin-bottom: 8px;
+            span {
+                color: #FFB432;
+            }
+        }
+        .price{
+            font-weight: 700;
+        }
+    }
+    &:hover .product-action {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+
+.shop-page-area{
+    // sidebar
+    .sidebar{
+        &.shop-sidebar {
+            .single-sidebar-item {
+                h3 {
+                    font-size: 18px;
+                    padding: 19px 20px 19px;
+                    border: 0;
+                    border-bottom: 1px solid #F0F0F0;
+                }
+                &.shop-page-accor h3 {
+                    border-bottom: 0;
+                }
+                // .search-box
+                .search-box {
+                    padding: 20px;
+                    input[type=text] {
+                        border-color: #F0F0F0;
+                    }
+                }
+                // .search-box
+                .search-box {
+                    // padding: 25px 30px;
+                    @extend %posrelative;
+                    [type=submit] {
+                        @extend %posabsolute;
+                        right: 21px;
+                        top: 21px;
+                        border: 0;
+                        height: 48px;
+                        width: 45px;
+                        background: #fff;
+                        border-radius: 0 5px 5px 0;
+                    }
+                    input[type=text] {
+                        height: 50px;
+                        padding: 12px 15px;
+                    }
+                }
+                // .accordion-wrap
+                .accordion-wrap {
+                    .single-accordion {
+                        box-shadow: none;
+                        margin: 0;
+                        &:after {
+                            right: 13px;
+                            left: auto;
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 0;
+                            line-height: 22px;
+                            font-size: 23px;
+                            padding: 0;
+                            top: 14px;
+                            color: #D7D7D7;
+                            background: none;
+                        }
+                        .accordion-header {
+                            .btn {
+                                padding: 12px 20px 12px 20px;
+                                font-size: 16px;
+                                font-weight: 400;
+                                color: #555555;
+                                border-top: 1px solid #F0F0F0;
+                            }
+                        }
+                        .accordion-body {
+                            padding: 10px 20px;
+                            a {
+                                color: #555;
+                                padding: 5px 0;
+                            }
+                        }
+                        .show {
+                            .accordion-body {
+                                border-top: 1px solid #F0F0F0;
+                            }
+                        }
+                    }
+                }
+                // latests-products
+                &.latests-products{
+                    ul {
+                        li {
+                            a {
+                                padding: 20px 20px 20px 100px;
+                                line-height: 1;
+                                img {
+                                    position: absolute;
+                                    left: 20px;
+                                    top: 20px;
+                                    max-width: 70px;
+                                }
+                                p {
+                                    margin: 0 0 10px;
+                                }
+                                .stars {
+                                    margin-bottom: 10px;
+                                    span {
+                                        color: #FFB432;
+                                    }
+                                }
+                                .price {
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

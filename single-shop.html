@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Required meta tags-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Title-->
+        <title>Single Shop</title>
+
+        <!--Favicon-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="images/x-icon" />
+        
+        <!--Libraries-->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+        <!--Plugins-->
+        <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+        <link href="assets/css/nice-select.css" rel="stylesheet">
+        <link href="assets/css/magnific-popup.css" rel="stylesheet">
+        <link href="assets/css/slicknav.min.css" rel="stylesheet">
+        <link href="assets/css/aos.css" rel="stylesheet">
+
+        <!--Theme specific styles-->
+        <link href="assets/css/style.css" rel="stylesheet">
+        
+        <!--Core jQuery-->
+        <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="assets/js/jquery-migrate-1.4.1.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- header starts -->
+        <header class="header">
+            <!-- .header-top-area starts -->
+            <div class="header-top-area d-none d-lg-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="header-contact-info">
+                                <ul>
+                                    <li><i class="far fa-clock"></i> 9:30am - 6:30pm Mon - Sun</li>
+                                    <li><a href="tel:+80012345676587"><i class="far fa-phone-alt"></i> +800-123-4567 6587</a></li>
+                                    <li><a href="#"><i class="far fa-map-marker-alt"></i> Beverley, New York 224 US</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="header-social-icons text-right">
+                                <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-vimeo"></i></a>
+                                <a href="#"><i class="fab fa-skype"></i></a>
+                                <a href="#"><i class="fas fa-rss"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .header-top-area ends -->
+            <!-- .header-area starts -->
+            <div class="header-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-auto d-flex align-items-center">
+                            <div class="site-logo">
+                                <a href="index.html"><img src="assets/img/logo.png" alt="Site logo"></a>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-center justify-content-star  justify-content-lg-end">
+                            <div class="mainmenu d-none d-lg-block">
+                                <ul id="menu">
+                                    <li><a href="#">Home <span class="d-none d-lg-inline-block">+</span></a>
+                                        <ul>
+                                            <li><a href="index.html">Home Style 1</a></li>
+                                            <li><a href="index-2.html">Home Style 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">About <span class="d-none d-lg-inline-block">+</span></a>
+                                        <ul>
+                                            <li><a href="about-1.html">About Style 1</a></li>
+                                            <li><a href="about-2.html">About Style 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Services <span class="d-none d-lg-inline-block">+</span></a>
+                                        <ul>
+                                            <li><a href="services.html">Services</a></li>
+                                            <li><a href="single-service.html">Single service</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Portfolio <span class="d-none d-lg-inline-block">+</span></a>
+                                        <ul>
+                                            <li><a href="portfolio-1.html">Portfolio Style 1</a></li>
+                                            <li><a href="portfolio-2.html">Portfolio Style 2</a></li>
+                                            <li><a href="portfolio-3.html">Portfolio Style 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Blog <span class="d-none d-lg-inline-block">+</span></a>
+                                        <ul>
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="single-blog.html">Single blog</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Shop</a>
+                                        <ul>
+                                            <li><a href="shop.html">Shop</a></li>
+                                            <li><a href="single-shop.html">Single Shop</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                            <div class="header-search d-flex align-items-center justify-content-start justify-content-lg-center h-100 position-relative">
+                                <span><i class="far fa-search"></i></span>
+                                <!-- search-box-wrap starts -->
+                                <div class="search-box-wrap">
+                                    <div class="close-btn"><i class="fal fa-times"></i></div>
+                                    <div class="search-box">
+                                        <form action="POST">
+                                            <input type="text" placeholder="Seach..." name="search" id="search">
+                                            <button type="submit" value="submit"><i class="fal fa-search"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- search-box-wrap ends -->
+                            </div>
+                            <div class="header-cart d-flex align-items-center justify-content-center h-100">
+                                <span class="header-cart-icon position-relative">
+                                    <span class="number">02</span> <i class="fal fa-shopping-basket"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .header-area ends -->
+        </header>
+        <!-- header ends -->
+
+        <!-- .banner-area starts -->
+        <section class="banner-area" style="background-image: url(./assets/img/banner-1.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 my-auto">
+                        <div data-aos="fade-up" class="banner-content">
+                            <h2>Shopping Page</h2>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li>- Shop</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- .banner-area ends -->
+
+        <!-- .shop-page-area starts -->
+        <section class="shop-page-area blog-area section-padding-115-100">
+            <div class="sidebar-trigger">
+                <div class="close-btn d-block d-lg-none"><i class="fa fa-close"></i></div>
+                <div class="sidebar-open d-block d-lg-none">
+                    <span>Sidebar <i class="fa fa-arrow-circle-o-down"></i></span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-9">
+                        <div class="product-details">
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>Product Title Here</h3>
+                                    <div class="d-flex">
+                                        <div class="stars">
+                                            <span><i class="far fa-star"></i></span>
+                                            <span><i class="far fa-star"></i></span>
+                                            <span><i class="far fa-star"></i></span>
+                                            <span><i class="far fa-star"></i></span>
+                                            <span><i class="far fa-star"></i></span>
+                                        </div>
+                                        <span class="ml-1">(2 review)</span>
+                                    </div>
+                                    <h4 class="price">$299.99 <span class="old-price">$120.00</span></h4>
+                                    <h4>Product Description</h4>
+                                    <p>Eneristica deliver atactica metrics after avsionar Apropriate trnsition enterprise sources apcatons Qneristica delver atactical metrcs after avsionar Emerging psd template communities.</p>
+                                    <div class="d-flex">
+                                        <div class="single-select-item w-50 pr-2">
+                                            <select name="size" id="size">
+                                                <option value="Select Size">Select Size</option>
+                                                <option value="S Size">S Size</option>
+                                                <option value="M Size">M Size</option>
+                                                <option value="L Size">L Size</option>
+                                                <option value="XL Size">XL Size</option>
+                                            </select>
+                                        </div>
+                                        <div class="single-select-item w-50 pl-2">
+                                            <select name="size" id="size">
+                                                <option value="Select Size">Select Color</option>
+                                                <option value="Red">Red</option>
+                                                <option value="Green">Green</option>
+                                                <option value="Yellow">Yellow</option>
+                                                <option value="Pink">Pink</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="cart-plus-minus">
+                                            <input type="text" value="1">
+                                        </div>
+                                        <div class="coupon-code">
+                                            <input type="text" placeholder="Enter Discount Code" name="couponcode">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="boxed-btn cart-btn">add to cart product</a>
+                                </div>
+                            </div>
+                        </div><!-- ends -->
+                        <div class="product-description-reviews">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Description</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Reviews</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                                    <div class="reviews">
+                                        <ul>
+                                            <li>
+                                                <img src="assets/img/shop/reviewer-1.jpg" alt="reviewer">
+                                                <div class="d-flex justify-content-between">
+                                                    <h6>Britney Doe</h6>
+                                                    <div class="stars">
+                                                        <span><i class="far fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                    </div>
+                                                </div>
+                                                <p>Enthusiasticay build innovative initiatives before lonterm impact awesome theme seo psd portals covalent leadership after distributed interfaces without resource</p>
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/shop/reviewer-2.jpg" alt="reviewer">
+                                                <div class="d-flex justify-content-between">
+                                                    <h6>Jonathan Doe</h6>
+                                                    <div class="stars">
+                                                        <span><i class="far fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                    </div>
+                                                </div>
+                                                <p>Enthusiasticay build innovative initiatives before lonterm impact awesome theme seo psd portals covalent leadership after distributed interfaces without resource</p>
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/shop/reviewer-3.jpg" alt="reviewer">
+                                                <div class="d-flex justify-content-between">
+                                                    <h6>Britney Doe</h6>
+                                                    <div class="stars">
+                                                        <span><i class="far fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                    </div>
+                                                </div>
+                                                <p>Enthusiasticay build innovative initiatives before lonterm impact awesome theme seo psd portals covalent leadership after distributed interfaces without resource</p>
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/shop/reviewer-4.jpg" alt="reviewer">
+                                                <div class="d-flex justify-content-between">
+                                                    <h6>Jonathan Doe</h6>
+                                                    <div class="stars">
+                                                        <span><i class="far fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                    </div>
+                                                </div>
+                                                <p>Enthusiasticay build innovative initiatives before lonterm impact awesome theme seo psd portals covalent leadership after distributed interfaces without resource</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- ends -->
+                        <div class="add-reviews-form">
+                            <h4>Add A Review</h4>
+                            <div class="review-form">
+                                <form action="POST">
+                                    <div class="d-flex">
+                                        <div class="form-item">
+                                            <input type="text" id="fullname" placeholder="Full Name" name="fullname">
+                                        </div>
+                                        <div class="form-item">
+                                            <input type="text" id="email" placeholder="Email Address" name="email">
+                                        </div>
+                                        <div class="form-item d-flex justify-content-lg-end align-items-center">
+                                            <span>Your Rating:</span>
+                                            <div class="stars">
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-item">
+                                        <textarea name="message" id="" cols="30" rows="10" placeholder="Type Here Message"></textarea>
+                                    </div>
+                                    <button type="submit" value="submit" class="boxed-btn">Submit review</button>
+                                </form>
+                            </div>
+                        </div><!-- ends -->
+                    </div>
+                    <div class="col-md-0 col-lg-3">
+                        <!-- .sidebar starts -->
+                        <aside class="sidebar shop-sidebar">
+                            <div class="single-sidebar-item">
+                                <h3>Search keywords</h3>
+                                <div class="search-box">
+                                    <form action="POST">
+                                        <input type="text" placeholder="Search for text.." name="search" id="search">
+                                        <button type="submit" value="submit"><i class="fal fa-search"></i></button>
+                                    </form>
+                                </div>
+                            </div><!-- ends -->
+                            <div class="single-sidebar-item shop-page-accor">
+                                <h3>All Categories</h3>
+                                <div class="accordion-wrap">
+                                    <div class="accordion" id="accordionId">
+                                        <div class="single-accordion active">
+                                            <div class="accordion-header" id="headingOne">
+                                                <h2 class="mb-0">
+                                                    <button class="btn w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    Code Optimization
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionId">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li><a href="#">Monitoring Ranking</a></li>
+                                                        <li><a href="#">All Products</a></li>
+                                                        <li><a href="#">SEO</a></li>
+                                                        <li><a href="#">Marketing</a></li>
+                                                        <li><a href="#">Email Marketing</a></li>
+                                                        <li><a href="#">Seo Support</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div><!-- ends -->
+                                        <div class="single-accordion">
+                                            <div class="accordion-header" id="headingTwo">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Target Strategy
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionId">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li><a href="#">Monitoring Ranking</a></li>
+                                                        <li><a href="#">All Products</a></li>
+                                                        <li><a href="#">SEO</a></li>
+                                                        <li><a href="#">Marketing</a></li>
+                                                        <li><a href="#">Email Marketing</a></li>
+                                                        <li><a href="#">Seo Support</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div><!-- ends -->
+                                        <div class="single-accordion">
+                                            <div class="accordion-header" id="headingThree">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Nap Syndication
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionId">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li><a href="#">Monitoring Ranking</a></li>
+                                                        <li><a href="#">All Products</a></li>
+                                                        <li><a href="#">SEO</a></li>
+                                                        <li><a href="#">Marketing</a></li>
+                                                        <li><a href="#">Email Marketing</a></li>
+                                                        <li><a href="#">Seo Support</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div><!-- ends -->
+                                        <div class="single-accordion">
+                                            <div class="accordion-header" id="headingFour">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                    SEO Support
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionId">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li><a href="#">Monitoring Ranking</a></li>
+                                                        <li><a href="#">All Products</a></li>
+                                                        <li><a href="#">SEO</a></li>
+                                                        <li><a href="#">Marketing</a></li>
+                                                        <li><a href="#">Email Marketing</a></li>
+                                                        <li><a href="#">Seo Support</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div><!-- ends -->
+                                        <div class="single-accordion">
+                                            <div class="accordion-header" id="headingFive">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                    Email Marketing
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionId">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li><a href="#">Monitoring Ranking</a></li>
+                                                        <li><a href="#">All Products</a></li>
+                                                        <li><a href="#">SEO</a></li>
+                                                        <li><a href="#">Marketing</a></li>
+                                                        <li><a href="#">Email Marketing</a></li>
+                                                        <li><a href="#">Seo Support</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div><!-- ends -->
+                                        <div class="single-accordion">
+                                            <div class="accordion-header" id="headingSix">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                    Engine Marketing
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionId">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li><a href="#">Monitoring Ranking</a></li>
+                                                        <li><a href="#">All Products</a></li>
+                                                        <li><a href="#">SEO</a></li>
+                                                        <li><a href="#">Marketing</a></li>
+                                                        <li><a href="#">Email Marketing</a></li>
+                                                        <li><a href="#">Seo Support</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div><!-- ends -->
+                                    </div>
+                                </div>
+                            </div><!-- ends -->
+                            <div class="single-sidebar-item latests-products">
+                                <h3>Latests Products</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/shop/product-thumb-1.jpg" alt="">
+                                            <p>Product Title Here</p>
+                                            <div class="stars">
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                            </div>
+                                            <span class="price">$200.00</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/shop/product-thumb-2.jpg" alt="">
+                                            <p>Product Title Here</p>
+                                            <div class="stars">
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                            </div>
+                                            <span class="price">$200.00</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/shop/product-thumb-3.jpg" alt="">
+                                            <p>Product Title Here</p>
+                                            <div class="stars">
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                            </div>
+                                            <span class="price">$200.00</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/shop/product-thumb-4.jpg" alt="">
+                                            <p>Product Title Here</p>
+                                            <div class="stars">
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                            </div>
+                                            <span class="price">$200.00</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/shop/product-thumb-5.jpg" alt="">
+                                            <p>Product Title Here</p>
+                                            <div class="stars">
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                            </div>
+                                            <span class="price">$200.00</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div><!-- ends -->
+                        </aside>
+                        <!-- .sidebar ends -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- .shop-page-area ends -->
+
+        <!-- .footer-area starts -->
+        <footer class="footer-area" style="background-image: url(./assets/img/map-bg-2.png);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="single-footer-widget-item">
+                            <h4>About Company</h4>
+                            <p>Assertively develop team driven niche marketis and revolutionary servicesre Synergistically parallel task tactical systems without future-proof innovation am Credibly communicate low-risk high-yield processes rather thaneri process-centric outsourcing eficiently actualize premium benefits thati market positioning Intrinsicly reintermediate credibly.</p>
+                            <a href="#" class="inline-btn">Read More</a>
+                        </div><!-- ends -->
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-footer-widget-item">
+                            <h4>Recent Blog Posts</h4>
+                            <div class="single-recent-blog">
+                                <a href="#">
+                                    <img src="assets/img/recent-blog-1.jpg" alt="Recent blog">
+                                    <h4>Remo Suppor Center What For Semiconductor Provider</h4>
+                                    <p>April 08,2020</p>
+                                </a>
+                            </div>
+                            <div class="single-recent-blog">
+                                <a href="#">
+                                    <img src="assets/img/recent-blog-2.jpg" alt="Recent blog">
+                                    <h4>Remo Suppor Center What For Semiconductor Provider</h4>
+                                    <p>April 09,2020</p>
+                                </a>
+                            </div>
+                        </div><!-- ends -->
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-footer-widget-item pl-3">
+                            <h4>Newsletter Subscription</h4>
+                            <p>Enter your email and get latest updates and offers subscribe us</p>
+                            <div class="subscription-form">
+                                <form action="POST">
+                                    <input type="email" placeholder="Enter your email">
+                                    <button type="submit" value="submit" class="boxed-btn"><i class="fas fa-paper-plane"></i> Subscribe Now!</button>
+                                </form>
+                            </div>
+                        </div><!-- ends -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="copyright-text text-center">
+                            <p>&copy; 2020 All Rights Reserved. Designed by UniqueThemeZone</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- .footer-area ends -->
+
+        <a href="#" class="scrollTop d-none d-lg-block"><i class="fal fa-angle-up"></i></a>
+
+        <!--Libraries-->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>       
+
+        <!--Plugins-->
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <script src="assets/js/jquery-isotope-pkgd.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/jquery.slicknav.min.js"></script>
+        <script src="assets/js/aos.js"></script>
+        
+        <!--Active & Custom JS-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

@@ -288,10 +288,10 @@ jQuery(document).ready(function($){
     });
     
     // Shop page
-    $(".shop-sort span").on("click", function(){
-        $(".shop-sort span").removeClass("active");
-        $(this).addClass("active");
-    });
+    // $(".shop-sort span").on("click", function(){
+    //     $(".shop-sort span").removeClass("active");
+    //     $(this).addClass("active");
+    // });
     
     
 

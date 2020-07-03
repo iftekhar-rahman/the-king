@@ -26,10 +26,10 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
 .owl-nav div, .pagination-wrap ul li, .header-top-area .header-contact-info ul li, .header-top-area .header-social-icons a, .mainmenu ul li, .portfolio-area .portfolio-filter button, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .banner-area .banner-content ul li, .single-team-wrap .team-member-details .team-member-meta span, .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item .tag-list a {
   display: inline-block; }
 
-.mainmenu ul li, .boxed-btn, .single-box .box-icon, .single-box.wide-box, .portfolio-area .portfolio-filter button, .accordion-wrap .single-accordion, .accordion-wrap .single-accordion .accordion-header .btn, .pricing-plan-area .single-pricing-plan .pricing-content ul li, .sidebar .single-sidebar-item > ul > li, .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item ul li, .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item .search-box, .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item.popular-posts ul li, .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .search-box {
+.mainmenu ul li, .boxed-btn, .single-box .box-icon, .single-box.wide-box, .portfolio-area .portfolio-filter button, .accordion-wrap .single-accordion, .accordion-wrap .single-accordion .accordion-header .btn, .pricing-plan-area .single-pricing-plan .pricing-content ul li, .sidebar .single-sidebar-item > ul > li, .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item ul li, .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item .search-box, .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item.popular-posts ul li, .single-shop-item .product-img, .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .search-box {
   position: relative; }
 
-.owl-nav div, .video-btn, .header-area .header-cart .number, .mainmenu ul li ul, .search-box-wrap .close-btn, .search-box-wrap .search-box, .search-box-wrap .search-box button, .single-box.wide-box .box-icon, .about-area .about-content .single-about-item i, .portfolio-area .portfolio-filter button .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner.hover-style-2 .portfolio-content, .testimonial-area .single-testimonial-item .testimonial-header .reviewer-photo, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number, .accordion-wrap .single-accordion:after, .pricing-plan-area .single-pricing-plan .pricing-content ul li i, .map-area .map-content-wrap, .sidebar .single-sidebar-item.contact-info ul li a span, .service-single-page-content .service-page-content-inner .single-team-item span, .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item ul li a .ab-num, .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item .search-box [type=submit], .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item.popular-posts ul li img, .blog-area.blog-page.single-blog-page .single-blog-item .blog-quote.single-blog i, .admin-box img, .comments-box .single-comment img, .comments-box .single-comment .reply-btn, .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .search-box [type=submit] {
+.owl-nav div, .video-btn, .header-area .header-cart .number, .mainmenu ul li ul, .search-box-wrap .close-btn, .search-box-wrap .search-box, .search-box-wrap .search-box button, .single-box.wide-box .box-icon, .about-area .about-content .single-about-item i, .portfolio-area .portfolio-filter button .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner.hover-style-2 .portfolio-content, .testimonial-area .single-testimonial-item .testimonial-header .reviewer-photo, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number, .accordion-wrap .single-accordion:after, .pricing-plan-area .single-pricing-plan .pricing-content ul li i, .map-area .map-content-wrap, .sidebar .single-sidebar-item.contact-info ul li a span, .service-single-page-content .service-page-content-inner .single-team-item span, .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item ul li a .ab-num, .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item .search-box [type=submit], .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item.popular-posts ul li img, .blog-area.blog-page.single-blog-page .single-blog-item .blog-quote.single-blog i, .admin-box img, .comments-box .single-comment img, .comments-box .single-comment .reply-btn, .single-shop-item .product-img .product-action, .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .search-box [type=submit], .shop-page-area .sidebar.shop-sidebar .single-sidebar-item.latests-products ul li a img {
   position: absolute; }
 
 .scrollTop {
@@ -53,7 +53,7 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
   position: absolute;
   content: ""; }
 
-input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea, .owl-nav div, .pagination-wrap ul li a, .header-top-area .header-contact-info ul li a, .header-top-area .header-social-icons a, .mainmenu ul li a, .footer-area .single-footer-widget-item .single-recent-blog h4, .footer-area .single-footer-widget-item .single-recent-blog a, .boxed-btn:after, .inline-btn, .single-box, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .portfolio-content a, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner.hover-style-2 .portfolio-content, .blog-area .single-blog-item, .blog-area .single-blog-item img, .blog-area .single-blog-item .blog-content .blog-meta a, .features-area.home-2 .single-feature-item, .team-area .single-team-item, .pricing-plan-area .single-pricing-plan, .banner-area .banner-content ul li a, .sidebar .single-sidebar-item > ul > li a, .service-single-page-content .service-page-content-inner .single-service-item, .service-single-page-content .service-page-content-inner .single-service-item .service-thumb img, .service-single-page-content .service-page-content-inner .single-team-item, .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item .tag-list a, .article-footer .left a, .posts-pagination a, .comments-box .single-comment .reply-btn, .contact-page .single-contact-info a, .single-shop-item {
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea, .owl-nav div, .pagination-wrap ul li a, .header-top-area .header-contact-info ul li a, .header-top-area .header-social-icons a, .mainmenu ul li a, .footer-area .single-footer-widget-item .single-recent-blog h4, .footer-area .single-footer-widget-item .single-recent-blog a, .boxed-btn:after, .inline-btn, .single-box, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .portfolio-content a, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner.hover-style-2 .portfolio-content, .blog-area .single-blog-item, .blog-area .single-blog-item img, .blog-area .single-blog-item .blog-content .blog-meta a, .features-area.home-2 .single-feature-item, .team-area .single-team-item, .pricing-plan-area .single-pricing-plan, .banner-area .banner-content ul li a, .sidebar .single-sidebar-item > ul > li a, .service-single-page-content .service-page-content-inner .single-service-item, .service-single-page-content .service-page-content-inner .single-service-item .service-thumb img, .service-single-page-content .service-page-content-inner .single-team-item, .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item .tag-list a, .article-footer .left a, .posts-pagination a, .comments-box .single-comment .reply-btn, .contact-page .single-contact-info a, .single-shop-item, .single-shop-item .product-img .product-action, .single-shop-item .product-action a, .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .accordion-wrap .single-accordion .accordion-body a {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -74,11 +74,11 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
   -o-transition: all 0.7s ease;
   transition: all 0.7s ease; }
 
-.header-area .header-search span.active i, .mainmenu ul li ul, .mainmenu ul li ul ul, .search-box-wrap .close-btn, .scrollTop, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner.hover-style-2 .portfolio-content {
+.header-area .header-search span.active i, .mainmenu ul li ul, .mainmenu ul li ul ul, .search-box-wrap .close-btn, .scrollTop, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner.hover-style-2 .portfolio-content, .single-shop-item .product-img .product-action {
   visibility: hidden;
   opacity: 0; }
 
-.header-area .header-search span i, .mainmenu ul li:hover > ul, .search-box-wrap .close-btn.active, .search-box-wrap .search-box.active, .scrollTop.scrollBtn, .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner .portfolio-hover, .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner.hover-style-2 .portfolio-content {
+.header-area .header-search span i, .mainmenu ul li:hover > ul, .search-box-wrap .close-btn.active, .search-box-wrap .search-box.active, .scrollTop.scrollBtn, .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner .portfolio-hover, .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner.hover-style-2 .portfolio-content, .single-shop-item:hover .product-action {
   visibility: visible;
   opacity: 1; }
 
@@ -88,10 +88,13 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
 .section-title h2 {
   text-transform: capitalize; }
 
-.nice-select, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap img, .blog-area .single-blog-item img, .service-single-page-content .service-page-content-inner .service-thumb img, .single-team-wrap .team-member-photo img, .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item .photo-gallery .single-photo-gallery img {
+.nice-select, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap img, .blog-area .single-blog-item img, .service-single-page-content .service-page-content-inner .service-thumb img, .single-team-wrap .team-member-photo img, .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item .photo-gallery .single-photo-gallery img, .single-shop-item .product-img img {
   width: 100%; }
 
-.owl-nav div, .video-btn, .header-top-area .header-social-icons a, .header-area .header-search span, .header-area .header-cart .number, .search-box-wrap .close-btn, .search-box-wrap .search-box, .scrollTop, .single-box .box-icon, .about-area .about-content .single-about-item i, .portfolio-area .portfolio-filter button .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number, .accordion-wrap .single-accordion:after, .sidebar .single-sidebar-item.contact-info ul li a span, .article-footer .right a {
+.single-shop-item.large .product-content {
+  text-align: left; }
+
+.owl-nav div, .video-btn, .header-top-area .header-social-icons a, .header-area .header-search span, .header-area .header-cart .number, .search-box-wrap .close-btn, .search-box-wrap .search-box, .scrollTop, .single-box .box-icon, .about-area .about-content .single-about-item i, .portfolio-area .portfolio-filter button .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number, .accordion-wrap .single-accordion:after, .sidebar .single-sidebar-item.contact-info ul li a span, .article-footer .right a, .single-shop-item .product-action a, .single-shop-item .product-content {
   text-align: center; }
 
 .footer-area .single-footer-widget-item .single-recent-blog img {
@@ -15214,6 +15217,9 @@ textarea {
   padding: 30px 0 40px; }
   .pagination-wrap ul li {
     margin: 0 5px; }
+    @media (max-width: 575px) {
+      .pagination-wrap ul li {
+        margin: 0 3px; } }
     .pagination-wrap ul li a {
       color: #2f2838;
       font-weight: 700;
@@ -15221,6 +15227,11 @@ textarea {
       width: 45px;
       height: 45px;
       line-height: 45px; }
+      @media (max-width: 575px) {
+        .pagination-wrap ul li a {
+          width: 40px;
+          height: 40px;
+          line-height: 40px; } }
 
 /*========.nice-select=============*/
 .nice-select {
@@ -15727,31 +15738,31 @@ textarea {
   font-weight: 700;
   padding: 10px 0; }
 
-.stars, .section-title h4, .video-btn, .header-area .header-search, .mainmenu ul li:hover > a, .search-box-wrap .close-btn, .footer-area .single-footer-widget-item .inline-btn:hover, .footer-area .single-footer-widget-item .single-recent-blog:hover a, .footer-area .single-footer-widget-item .single-recent-blog:hover a h4, .footer-area .single-footer-widget-item .subscription-form .boxed-btn, .inline-btn:hover, .hero-area .hero-content h2 span, .portfolio-area .portfolio-filter button.is-checked, .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner .portfolio-content a, .blog-area .single-blog-item .blog-content .blog-meta a:hover, .services-area.home-2 .section-title h4, .pricing-plan-area .single-pricing-plan .pricing-content ul li.active i, .map-area .map-content-wrap .map-content .single-map-content .icon i, .map-area .map-content-wrap .map-content .single-map-content a:hover, .banner-area .banner-content ul li:hover a, .sidebar .single-sidebar-item > ul > li:hover a, .sidebar .single-sidebar-item .about-company a:last-child, .sidebar .single-sidebar-item.contact-info ul li a span, .sidebar .single-sidebar-item.contact-info ul li:hover a, .posts-pagination a:hover, .comments-box .single-comment .reply-btn:hover, .contact-page .single-contact-info a:hover, .contact-page .single-contact-info i {
+.stars, .section-title h4, .video-btn, .header-area .header-search, .mainmenu ul li:hover > a, .search-box-wrap .close-btn, .footer-area .single-footer-widget-item .inline-btn:hover, .footer-area .single-footer-widget-item .single-recent-blog:hover a, .footer-area .single-footer-widget-item .single-recent-blog:hover a h4, .footer-area .single-footer-widget-item .subscription-form .boxed-btn, .inline-btn:hover, .hero-area .hero-content h2 span, .portfolio-area .portfolio-filter button.is-checked, .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner .portfolio-content a, .blog-area .single-blog-item .blog-content .blog-meta a:hover, .services-area.home-2 .section-title h4, .pricing-plan-area .single-pricing-plan .pricing-content ul li.active i, .map-area .map-content-wrap .map-content .single-map-content .icon i, .map-area .map-content-wrap .map-content .single-map-content a:hover, .banner-area .banner-content ul li:hover a, .sidebar .single-sidebar-item > ul > li:hover a, .sidebar .single-sidebar-item .about-company a:last-child, .sidebar .single-sidebar-item.contact-info ul li a span, .sidebar .single-sidebar-item.contact-info ul li:hover a, .posts-pagination a:hover, .comments-box .single-comment .reply-btn:hover, .contact-page .single-contact-info a:hover, .contact-page .single-contact-info i, .bar-content ul li a.active, .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .accordion-wrap .single-accordion .accordion-body a:hover {
   color: #e8505b; }
 
-.owl-nav div:hover, .video-btn:hover, .pagination-wrap ul li:hover a, .header-top-area, .header-area .header-cart .number, .mainmenu ul li ul li:hover > a, .search-box-wrap .search-box button, .footer-area .single-footer-widget-item .subscription-form .boxed-btn:hover:after, .scrollTop:hover, .boxed-btn, .single-box .box-icon, .about-area .about-content .single-about-item i, .services-area, .portfolio-area .portfolio-filter button.is-checked .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .testimonial-area, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number, .accordion-wrap .single-accordion:after, .portfolio-area.home-2, .pricing-plan-area .single-pricing-plan .pricing-tag, .sidebar .single-sidebar-item .about-company a:hover, .blog-area.blog-page .single-blog-item .blog-quote, .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item .tag-list a:hover, .article-footer .left a:hover {
+.owl-nav div:hover, .video-btn:hover, .pagination-wrap ul li:hover a, .header-top-area, .header-area .header-cart .number, .mainmenu ul li ul li:hover > a, .search-box-wrap .search-box button, .footer-area .single-footer-widget-item .subscription-form .boxed-btn:hover:after, .scrollTop:hover, .boxed-btn, .single-box .box-icon, .about-area .about-content .single-about-item i, .services-area, .portfolio-area .portfolio-filter button.is-checked .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .testimonial-area, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number, .accordion-wrap .single-accordion:after, .portfolio-area.home-2, .pricing-plan-area .single-pricing-plan .pricing-tag, .sidebar .single-sidebar-item .about-company a:hover, .blog-area.blog-page .single-blog-item .blog-quote, .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item .tag-list a:hover, .article-footer .left a:hover, .single-shop-item .product-action a {
   background-color: #e8505b; }
 
 input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=url]:focus, textarea:focus, .pagination-wrap ul li:hover a, .nice-select:focus, .nice-select:hover:after, .footer-area .single-footer-widget-item .subscription-form input[type=email]:focus, .sidebar .single-sidebar-item .sidebar-form input[type=text]:focus, .sidebar .single-sidebar-item .sidebar-form input[type=email]:focus, .sidebar .single-sidebar-item .sidebar-form input[type=tel]:focus, .sidebar .single-sidebar-item .sidebar-form textarea:focus, .sidebar .single-sidebar-item .sidebar-form .nice-select:focus, .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item .tag-list a:hover, .comments-form .comment-form-inner input[type=text]:focus, .comments-form .comment-form-inner input[type=email]:focus, .comments-form .comment-form-inner input[type=password]:focus, .comments-form .comment-form-inner input[type=tel]:focus, .comments-form .comment-form-inner input[type=url]:focus, .comments-form .comment-form-inner textarea:focus {
   border-color: #e8505b; }
 
-.header-top-area .header-contact-info ul li:hover a, .header-top-area .header-social-icons a:hover, .accordion-wrap .single-accordion .accordion-header .btn, .article-footer .left a {
+.header-top-area .header-contact-info ul li:hover a, .header-top-area .header-social-icons a:hover, .accordion-wrap .single-accordion .accordion-header .btn, .article-footer .left a, .bar-content ul li a, .single-shop-item .product-content .price {
   color: #0b185f; }
 
-.scrollTop, .boxed-btn:after, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a:hover {
+.scrollTop, .boxed-btn:after, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a:hover, .single-shop-item .product-action a:hover {
   background-color: #0b185f; }
 
-.video-btn:hover, .pagination-wrap ul li:hover a, .header-top-area, .header-top-area .header-contact-info ul li a, .header-top-area .header-social-icons a, .header-area .header-cart .number, .mainmenu ul li ul li:hover > a, .search-box-wrap .search-box button, .footer-area .single-footer-widget-item, .footer-area .single-footer-widget-item h4, .footer-area .single-footer-widget-item .inline-btn, .footer-area .single-footer-widget-item .single-recent-blog a, .footer-area .single-footer-widget-item .subscription-form input[type=email], .footer-area .single-footer-widget-item .subscription-form .boxed-btn:hover, .footer-area .copyright-text, .scrollTop, .scrollTop:hover, .boxed-btn, .boxed-btn:hover, .single-box .box-icon, .single-box.wide-box .box-icon i, .about-area .about-content .single-about-item i, .services-area .section-title h4, .services-area .section-title h2, .portfolio-area .portfolio-filter button.is-checked .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .testimonial-area .section-title h4, .testimonial-area .section-title h2, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number, .accordion-wrap .single-accordion:after, .portfolio-area.home-2 .section-title h4, .portfolio-area.home-2 .section-title h2, .pricing-plan-area .single-pricing-plan .pricing-tag, .sidebar .single-sidebar-item .about-company a:hover, .blog-area.blog-page .single-blog-item .blog-quote, .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item .tag-list a:hover, .article-footer .left a:hover, .article-footer .right a, .article-footer .right a.facebook:hover, .article-footer .right a.dribble:hover, .article-footer .right a.twitter:hover, .article-footer .right a.google-plus:hover, .blog-area.blog-page.single-blog-page .single-blog-item .blog-quote.single-blog h6 {
+.video-btn:hover, .pagination-wrap ul li:hover a, .header-top-area, .header-top-area .header-contact-info ul li a, .header-top-area .header-social-icons a, .header-area .header-cart .number, .mainmenu ul li ul li:hover > a, .search-box-wrap .search-box button, .footer-area .single-footer-widget-item, .footer-area .single-footer-widget-item h4, .footer-area .single-footer-widget-item .inline-btn, .footer-area .single-footer-widget-item .single-recent-blog a, .footer-area .single-footer-widget-item .subscription-form input[type=email], .footer-area .single-footer-widget-item .subscription-form .boxed-btn:hover, .footer-area .copyright-text, .scrollTop, .scrollTop:hover, .boxed-btn, .boxed-btn:hover, .single-box .box-icon, .single-box.wide-box .box-icon i, .about-area .about-content .single-about-item i, .services-area .section-title h4, .services-area .section-title h2, .portfolio-area .portfolio-filter button.is-checked .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a, .testimonial-area .section-title h4, .testimonial-area .section-title h2, .blog-area .single-blog-item .blog-footer .blog-comments .comments-number, .accordion-wrap .single-accordion:after, .portfolio-area.home-2 .section-title h4, .portfolio-area.home-2 .section-title h2, .pricing-plan-area .single-pricing-plan .pricing-tag, .sidebar .single-sidebar-item .about-company a:hover, .blog-area.blog-page .single-blog-item .blog-quote, .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item .tag-list a:hover, .article-footer .left a:hover, .article-footer .right a, .article-footer .right a.facebook:hover, .article-footer .right a.dribble:hover, .article-footer .right a.twitter:hover, .article-footer .right a.google-plus:hover, .blog-area.blog-page.single-blog-page .single-blog-item .blog-quote.single-blog h6, .single-shop-item .product-action a {
   color: #ffffff; }
 
-input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea, .owl-nav div, .video-btn, .header-area, .mainmenu ul li ul, .footer-area .single-footer-widget-item .subscription-form .boxed-btn, .single-box, .portfolio-area .portfolio-filter button, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after, .testimonial-area .single-testimonial-item, .blog-area .single-blog-item, .accordion-wrap .single-accordion, .services-area.home-2, .pricing-plan-area .single-pricing-plan, .map-area .map-content-wrap .map-content {
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea, .owl-nav div, .video-btn, .header-area, .mainmenu ul li ul, .footer-area .single-footer-widget-item .subscription-form .boxed-btn, .single-box, .portfolio-area .portfolio-filter button, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after, .testimonial-area .single-testimonial-item, .blog-area .single-blog-item, .accordion-wrap .single-accordion, .services-area.home-2, .pricing-plan-area .single-pricing-plan, .map-area .map-content-wrap .map-content, .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .search-box [type=submit] {
   background-color: #ffffff; }
 
 .single-team-wrap .team-member-details .team-member-meta {
   color: #000000; }
 
-.owl-nav div, .testimonial-area .single-testimonial-item .testimonial-header .left h4, .blog-area .single-blog-item .blog-content .blog-meta a, .team-area .single-team-item h5, .pricing-plan-area .single-pricing-plan .pricing-content ul li, .map-area .map-content-wrap .map-content .single-map-content a, .sidebar .single-sidebar-item.contact-info ul li a, .single-team-wrap .team-member-details .team-member-meta span, .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item .tag-list a, .posts-pagination a {
+.owl-nav div, .testimonial-area .single-testimonial-item .testimonial-header .left h4, .blog-area .single-blog-item .blog-content .blog-meta a, .team-area .single-team-item h5, .pricing-plan-area .single-pricing-plan .pricing-content ul li, .map-area .map-content-wrap .map-content .single-map-content a, .sidebar .single-sidebar-item.contact-info ul li a, .single-team-wrap .team-member-details .team-member-meta span, .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item .tag-list a, .posts-pagination a, .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .accordion-wrap .single-accordion .accordion-header .btn, .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .accordion-wrap .single-accordion .accordion-body a {
   color: #555555; }
 
 .portfolio-area .portfolio-filter button .filter-count, .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap img, .map-area, .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item .search-box [type=submit], .blog-area.blog-page .sidebar.blog-sidebar .single-sidebar-item .search-box input[type=text] {
@@ -17201,51 +17212,35 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
   margin-bottom: 30px; }
   .bar-content h6 {
     font-weight: 400;
-    color: #0b185f;
     margin: 6px 0 0 0; }
-  .bar-content span {
-    color: #0B185F;
+  .bar-content ul.nav-tabs {
+    border: 0; }
+  .bar-content ul li a {
     font-size: 20px;
-    margin-left: 8px;
-    cursor: pointer; }
-    .bar-content span.active {
-      color: #E8505B; }
+    margin-left: 8px; }
 
 .single-shop-item {
   padding: 10px;
   margin-bottom: 30px; }
-  .single-shop-item .product-img {
-    position: relative; }
-    .single-shop-item .product-img .product-action {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 20px;
-      opacity: 0;
-      visibility: hidden;
-      -webkit-transition: .3s;
-      -o-transition: .3s;
-      transition: .3s; }
-      .single-shop-item .product-img .product-action:hover .product-action a {
-        margin: 0 3px; }
-      .single-shop-item .product-img .product-action a {
-        width: 30px;
-        height: 30px;
-        background: #E8505B;
-        color: #fff;
-        text-align: center;
-        font-size: 13px;
-        line-height: 32px;
-        margin: 0 5px;
-        -webkit-transition: .3s;
-        -o-transition: .3s;
-        transition: .3s;
-        border-radius: 3px; }
-        .single-shop-item .product-img .product-action a:hover {
-          background: #333; }
+  .single-shop-item .product-img > a {
+    display: block; }
+  .single-shop-item .product-img .product-action {
+    left: 0;
+    right: 0;
+    bottom: 20px; }
+    .single-shop-item .product-img .product-action:hover .product-action a {
+      margin: 0 3px; }
+  .single-shop-item .product-action a {
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+    line-height: 32px;
+    margin: 0 5px;
+    border-radius: 3px; }
+    .single-shop-item .product-action a .fa-shopping-cart {
+      padding-right: 2px; }
   .single-shop-item .product-content {
-    text-align: center;
-    padding: 20px; }
+    padding: 22px 20px 20px 20px; }
     .single-shop-item .product-content h4 {
       font-size: 18px;
       margin-bottom: 8px; }
@@ -17254,83 +17249,131 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
       .single-shop-item .product-content .stars span {
         color: #FFB432; }
     .single-shop-item .product-content .price {
-      font-weight: 700; }
-  .single-shop-item:hover .product-action {
-    opacity: 1;
-    visibility: visible; }
+      font-weight: 700;
+      font-size: 14px; }
+      .single-shop-item .product-content .price .old-price {
+        text-decoration: line-through; }
+  .single-shop-item.large {
+    padding: 15px 30px 15px 15px; }
+    @media (max-width: 767px) {
+      .single-shop-item.large {
+        padding: 20px; } }
+    @media (max-width: 767px) {
+      .single-shop-item.large .product-img {
+        margin-bottom: 15px; } }
+    .single-shop-item.large .product-action a {
+      margin: 0;
+      margin-right: 10px; }
+    .single-shop-item.large .product-content {
+      padding: 0; }
+      .single-shop-item.large .product-content h4 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        margin-top: 3px; }
+      .single-shop-item.large .product-content .price {
+        margin-bottom: 15px;
+        font-size: 16px; }
+      .single-shop-item.large .product-content .stars {
+        margin-bottom: 0; }
 
-.shop-page-area .sidebar.shop-sidebar .single-sidebar-item h3 {
-  font-size: 18px;
-  padding: 19px 20px 19px;
-  border: 0;
-  border-bottom: 1px solid #F0F0F0; }
-
-.shop-page-area .sidebar.shop-sidebar .single-sidebar-item.shop-page-accor h3 {
-  border-bottom: 0; }
-
-.shop-page-area .sidebar.shop-sidebar .single-sidebar-item .search-box {
-  padding: 20px; }
+.shop-page-area .sidebar.shop-sidebar .single-sidebar-item {
+  margin-bottom: 30px; }
+  .shop-page-area .sidebar.shop-sidebar .single-sidebar-item:last-child {
+    margin-bottom: 0; }
+  .shop-page-area .sidebar.shop-sidebar .single-sidebar-item h3 {
+    font-size: 18px;
+    padding: 16px 20px 15px;
+    border: 0;
+    border-bottom: 1px solid #F0F0F0; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .shop-page-area .sidebar.shop-sidebar .single-sidebar-item h3 {
+        padding: 19px 10px 19px; } }
+  .shop-page-area .sidebar.shop-sidebar .single-sidebar-item.shop-page-accor h3 {
+    border-bottom: 0; }
+  .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .search-box {
+    padding: 15px 20px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .search-box {
+        padding: 20px 10px; } }
+    .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .search-box input[type=text] {
+      border-color: #F0F0F0; }
+  .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .search-box [type=submit] {
+    right: 21px;
+    top: 21px;
+    border: 0;
+    height: 48px;
+    width: 45px;
+    border-radius: 0 5px 5px 0; }
   .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .search-box input[type=text] {
-    border-color: #F0F0F0; }
-
-.shop-page-area .sidebar.shop-sidebar .single-sidebar-item .search-box [type=submit] {
-  right: 21px;
-  top: 21px;
-  border: 0;
-  height: 48px;
-  width: 45px;
-  background: #fff;
-  border-radius: 0 5px 5px 0; }
-
-.shop-page-area .sidebar.shop-sidebar .single-sidebar-item .search-box input[type=text] {
-  height: 50px;
-  padding: 12px 15px; }
-
-.shop-page-area .sidebar.shop-sidebar .single-sidebar-item .accordion-wrap .single-accordion {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  margin: 0; }
-  .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .accordion-wrap .single-accordion:after {
-    right: 13px;
-    left: auto;
-    width: 20px;
-    height: 20px;
-    border-radius: 0;
-    line-height: 22px;
-    font-size: 23px;
-    padding: 0;
-    top: 14px;
-    color: #D7D7D7;
-    background: none; }
-  .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .accordion-wrap .single-accordion .accordion-header .btn {
-    padding: 12px 20px 12px 20px;
-    font-size: 16px;
-    font-weight: 400;
-    color: #555555;
-    border-top: 1px solid #F0F0F0; }
-  .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .accordion-wrap .single-accordion .accordion-body {
-    padding: 10px 20px; }
-    .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .accordion-wrap .single-accordion .accordion-body a {
-      color: #555;
-      padding: 5px 0; }
-  .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .accordion-wrap .single-accordion .show .accordion-body {
-    border-top: 1px solid #F0F0F0; }
-
-.shop-page-area .sidebar.shop-sidebar .single-sidebar-item.latests-products ul li a {
-  padding: 20px 20px 20px 100px;
-  line-height: 1; }
-  .shop-page-area .sidebar.shop-sidebar .single-sidebar-item.latests-products ul li a img {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    max-width: 70px; }
-  .shop-page-area .sidebar.shop-sidebar .single-sidebar-item.latests-products ul li a p {
-    margin: 0 0 10px; }
-  .shop-page-area .sidebar.shop-sidebar .single-sidebar-item.latests-products ul li a .stars {
-    margin-bottom: 10px; }
-    .shop-page-area .sidebar.shop-sidebar .single-sidebar-item.latests-products ul li a .stars span {
-      color: #FFB432; }
-  .shop-page-area .sidebar.shop-sidebar .single-sidebar-item.latests-products ul li a .price {
-    font-weight: 500; }
+    height: 50px;
+    padding: 12px 15px; }
+  .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .accordion-wrap .single-accordion {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin: 0; }
+    .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .accordion-wrap .single-accordion:after {
+      right: 13px;
+      left: auto;
+      width: 20px;
+      height: 20px;
+      border-radius: 0;
+      line-height: 22px;
+      font-size: 23px;
+      padding: 0;
+      top: 14px;
+      color: #D7D7D7;
+      background: none; }
+    .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .accordion-wrap .single-accordion .accordion-header .btn {
+      padding: 12px 20px 12px 20px;
+      font-size: 16px;
+      font-weight: 400;
+      border-top: 1px solid #F0F0F0; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .accordion-wrap .single-accordion .accordion-header .btn {
+          padding: 12px 10px 12px 10px; } }
+    .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .accordion-wrap .single-accordion .accordion-body {
+      padding: 10px 20px; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .accordion-wrap .single-accordion .accordion-body {
+          padding: 10px 10px; } }
+      .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .accordion-wrap .single-accordion .accordion-body a {
+        padding: 2px 0; }
+    .shop-page-area .sidebar.shop-sidebar .single-sidebar-item .accordion-wrap .single-accordion .show .accordion-body {
+      border-top: 1px solid #F0F0F0; }
+  .shop-page-area .sidebar.shop-sidebar .single-sidebar-item.latests-products ul li a {
+    padding: 15px 20px 15px 100px;
+    line-height: 1; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .shop-page-area .sidebar.shop-sidebar .single-sidebar-item.latests-products ul li a {
+        padding: 15px 10px 15px 90px;
+        font-size: 15px; } }
+    .shop-page-area .sidebar.shop-sidebar .single-sidebar-item.latests-products ul li a img {
+      left: 20px;
+      top: 15px;
+      max-width: 70px; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .shop-page-area .sidebar.shop-sidebar .single-sidebar-item.latests-products ul li a img {
+          left: 10px; } }
+    .shop-page-area .sidebar.shop-sidebar .single-sidebar-item.latests-products ul li a p {
+      margin: 0 0 10px; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .shop-page-area .sidebar.shop-sidebar .single-sidebar-item.latests-products ul li a p {
+          margin-bottom: 5px; } }
+    .shop-page-area .sidebar.shop-sidebar .single-sidebar-item.latests-products ul li a .stars {
+      margin-bottom: 10px; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .shop-page-area .sidebar.shop-sidebar .single-sidebar-item.latests-products ul li a .stars {
+          margin-bottom: 5px; } }
+      .shop-page-area .sidebar.shop-sidebar .single-sidebar-item.latests-products ul li a .stars span {
+        color: #FFB432; }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          .shop-page-area .sidebar.shop-sidebar .single-sidebar-item.latests-products ul li a .stars span {
+            font-size: 12px;
+            margin-right: 0; } }
+    .shop-page-area .sidebar.shop-sidebar .single-sidebar-item.latests-products ul li a .price {
+      font-weight: 500; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .shop-page-area .sidebar.shop-sidebar .single-sidebar-item.latests-products ul li a .price {
+          font-size: 12px; } }
 
 /*# sourceMappingURL=style.css.map */

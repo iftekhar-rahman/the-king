@@ -6,16 +6,21 @@
     @extend %default-box-shadow-2;
     h6 {
         font-weight: 400;
-        color: #0b185f;
         margin: 6px 0 0 0;
     }
-    span {
-        color: #0B185F;
-        font-size: 20px;
-        margin-left: 8px;
-        cursor: pointer;
-        &.active {
-            color: #E8505B;
+    ul{
+        &.nav-tabs{
+            border: 0;
+        }
+        li{
+            a{
+                @extend %secondary-color;
+                font-size: 20px;
+                margin-left: 8px;
+                &.active{
+                    @extend %primary-color;
+                }
+            }
         }
     }
 }
@@ -30,40 +35,50 @@
         @extend %default-box-shadow-hover-2;
     }
     .product-img {
-        position: relative;
-        .product-action {
-            position: absolute;
+        @extend %posrelative;
+        > a{
+            display: block;
+        }
+        img{
+            @extend %w100;
+        }
+        .product-action{
+            @extend %posabsolute;
             left: 0;
             right: 0;
             bottom: 20px;
-            opacity: 0;
-            visibility: hidden;
-            transition: .3s;
+            @extend %invisible;
+            @extend %basetransition1;
             &:hover {
                 .product-action a {
                     margin: 0 3px;
                 }
             }
-            a {
-                width: 30px;
-                height: 30px;
-                background: #E8505B;
-                color: #fff;
-                text-align: center;
-                font-size: 13px;
-                line-height: 32px;
-                margin: 0 5px;
-                transition: .3s;
-                border-radius: 3px;
-                &:hover {
-                    background: #333;
-                }
+        }
+    }
+    .product-action {
+        a {
+            width: 30px;
+            height: 30px;
+            @extend %primary-bg-color;
+            @extend %textcenter;
+            @extend %white-color;
+            font-size: 13px;
+            line-height: 32px;
+            margin: 0 5px;
+            @extend %basetransition1;
+            border-radius: 3px;
+            &:hover {
+                @extend %secondary-bg-color;
+            }
+            .fa-shopping-cart {
+                padding-right: 2px;
             }
         }
     }
     .product-content {
-        text-align: center;
-        padding: 20px;
+        @extend %textcenter;
+        padding: 22px 20px 20px 20px;
         h4 {
             font-size: 18px;
             margin-bottom: 8px;
@@ -76,11 +91,48 @@
         }
         .price{
             font-weight: 700;
+            font-size: 14px;
+            @extend %secondary-color;
+            .old-price {
+                text-decoration: line-through;
+            }
         }
     }
     &:hover .product-action {
-        opacity: 1;
-        visibility: visible;
+        @extend %visible;
+    }
+    &.large {
+        padding: 15px 30px 15px 15px;
+        @include all-below-mobile-lg{
+            padding: 20px;
+        }
+        .product-img{
+            @include all-below-mobile-lg{
+                margin-bottom: 15px;
+            }  
+        }
+        .product-action{
+            a{
+                margin: 0;
+                margin-right: 10px;
+            }
+        }
+        .product-content {
+            @extend %textleft;
+            padding: 0;
+            h4 {
+                font-size: 24px;
+                margin-bottom: 10px;
+                margin-top: 3px;
+            }
+            .price{
+                margin-bottom: 15px;
+                font-size: 16px;
+            }
+            .stars {
+                margin-bottom: 0;
+            }
+        }
     }
 }
 
@@ -91,20 +143,30 @@
     .sidebar{
         &.shop-sidebar {
             .single-sidebar-item {
+                margin-bottom: 30px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
                 h3 {
                     font-size: 18px;
-                    padding: 19px 20px 19px;
+                    padding: 16px 20px 15px;
                     border: 0;
-                    border-bottom: 1px solid #F0F0F0;
+                    border-bottom: 1px solid $border-color;
+                    @include mx-desktops{
+                        padding: 19px 10px 19px;
+                    }
                 }
                 &.shop-page-accor h3 {
                     border-bottom: 0;
                 }
                 // .search-box
                 .search-box {
-                    padding: 20px;
+                    padding: 15px 20px;
+                    @include mx-desktops{
+                        padding: 20px 10px;
+                    }
                     input[type=text] {
-                        border-color: #F0F0F0;
+                        border-color: $border-color;
                     }
                 }
                 // .search-box
@@ -113,12 +175,12 @@
                     @extend %posrelative;
                     [type=submit] {
                         @extend %posabsolute;
+                        @extend %white-bg-color;
                         right: 21px;
                         top: 21px;
                         border: 0;
                         height: 48px;
                         width: 45px;
-                        background: #fff;
                         border-radius: 0 5px 5px 0;
                     }
                     input[type=text] {
@@ -149,20 +211,30 @@
                                 padding: 12px 20px 12px 20px;
                                 font-size: 16px;
                                 font-weight: 400;
-                                color: #555555;
-                                border-top: 1px solid #F0F0F0;
+                                @extend %body-color;
+                                border-top: 1px solid $border-color;
+                                @include mx-desktops{
+                                    padding: 12px 10px 12px 10px;
+                                }
                             }
                         }
                         .accordion-body {
                             padding: 10px 20px;
+                            @include mx-desktops{
+                                padding: 10px 10px;
+                            }
                             a {
-                                color: #555;
-                                padding: 5px 0;
+                                @extend %body-color;
+                                @extend %basetransition1;
+                                padding: 2px 0;
+                                &:hover{
+                                    @extend %primary-color; 
+                                }
                             }
                         }
                         .show {
                             .accordion-body {
-                                border-top: 1px solid #F0F0F0;
+                                border-top: 1px solid $border-color;
                             }
                         }
                     }
@@ -172,25 +244,45 @@
                     ul {
                         li {
                             a {
-                                padding: 20px 20px 20px 100px;
+                                padding: 15px 20px 15px 100px;
                                 line-height: 1;
+                                @include mx-desktops{
+                                    padding: 15px 10px 15px 90px;
+                                    font-size: 15px;
+                                }
                                 img {
-                                    position: absolute;
+                                    @extend %posabsolute;
                                     left: 20px;
-                                    top: 20px;
+                                    top: 15px;
                                     max-width: 70px;
+                                    @include mx-desktops{
+                                       left: 10px;
+                                    }
                                 }
                                 p {
                                     margin: 0 0 10px;
+                                    @include mx-desktops{
+                                        margin-bottom: 5px;
+                                    }
                                 }
                                 .stars {
                                     margin-bottom: 10px;
+                                    @include mx-desktops{
+                                       margin-bottom: 5px;
+                                    }
                                     span {
                                         color: #FFB432;
+                                        @include mx-desktops{
+                                            font-size: 12px;
+                                            margin-right: 0;
+                                        }
                                     }
                                 }
                                 .price {
                                     font-weight: 500;
+                                    @include mx-desktops{
+                                        font-size: 12px;
+                                    }
                                 }
                             }
                         }

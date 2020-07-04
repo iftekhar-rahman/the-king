@@ -288,10 +288,73 @@ jQuery(document).ready(function($){
     });
     
     // Shop page
-    // $(".shop-sort span").on("click", function(){
-    //     $(".shop-sort span").removeClass("active");
-    //     $(this).addClass("active");
-    // });
+    // slick slider
+    $('.slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: '<span class="arrow-left"><i class="fal fa-angle-up"></i></span>',
+        nextArrow: '<span class="arrow-right"><i class="fal fa-angle-down"></i></span>',
+        vertical:false,
+        fade: false,
+        asNavFor: '.slider-nav-thumbnails',
+        responsive: [
+            {
+                breakpoint: 750,
+                settings: {
+                    vertical:false,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    vertical:false,
+                }
+            }
+        ]
+    });
+    $('.slider-nav-thumbnails').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        vertical:false,
+        arrows: false,
+        slidesToScroll: 1,
+        asNavFor: '.slider',
+        prevArrow: '<span class="arrow-left"><i class="fal fa-angle-up"></i></span>',
+        nextArrow: '<span class="arrow-right"><i class="fal fa-angle-down"></i></span>',
+        focusOnSelect: true,
+        verticalSwiping:true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+            {
+                breakpoint: 960,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 750,
+                settings: {
+                    slidesToShow: 4,
+                    vertical:false,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 3,
+                    vertical:false,
+                }
+            }
+        ]
+    });
     
     
 

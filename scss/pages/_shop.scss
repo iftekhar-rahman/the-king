@@ -292,3 +292,201 @@
         }
     }
 }
+
+// .slick-slider-wrap
+.slick-slider-wrap {
+    width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    // @include mx-desktops{
+    //     width: 380px;
+    // }
+    @include all-below-med{
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    @include all-below-mobile-lg{
+        width: 100%;
+    }
+    .heart-icon {
+        @extend %posabsolute;
+        @extend %basetransition1;
+        left: 20px;
+        top: 15px;
+        z-index: 2;
+        color: #94CF50;
+        &:hover {
+            @extend %primary-color;
+        }
+    }
+    .slick-arrow {
+        height: 66px;
+        line-height: 78px;
+        width: 26px;
+        top: 50%;
+        margin-top: -33px;
+        background-color: #BECCC5;
+        font-size: 20px;
+        @extend %white-color;
+        @extend %cursorpointer;
+        @extend %basetransition1;
+        &:hover{
+            @extend %primary-bg-color;
+        }
+        i {
+            transform: rotate(-90deg);
+            @extend %posabsolute;
+            @extend %textcenter;
+            top: 50%;
+            left: 7px;
+            margin-top: -11px;
+            font-size: 24px;
+            @include mx-desktops{
+                margin-top: -7px;
+            }
+        }
+    }
+    .arrow-right {
+        right: 0;
+        @extend %posabsolute;
+        z-index: 2;
+    }
+    .arrow-left {
+        left: 0;
+        @extend %posabsolute;
+        z-index: 2;
+    }
+    .slider {
+        margin-bottom: 6px;
+        .popup-link1 {
+            right: 20px;
+            bottom: 20px;
+            width: 40px;
+            height: 40px;
+            border: 1px solid #94CF50;
+            line-height: 39px;
+            color: #94CF50;
+            @extend %posabsolute;
+            @extend %textcenter;
+            @extend %displayblock;
+            @extend %borderradius50;
+            @extend %basetransition2;
+            &:hover{
+                background-color: #94CF50;
+                @extend %white-color;
+            }
+        }
+    }
+    .slider-nav-thumbnails {
+        @include all-mx-mobile{
+            display: none;
+        }
+        .slick-list {
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+        .slick-slide {
+            margin: 0 3px;
+            @include  all-below-mobile-lg{
+                margin: 0 4px;
+            }
+            img {
+                max-width: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+// .product-slider photo overlap issue
+.slider, .slider-nav-thumbnails{
+    @extend %invisible;	 
+    transition: opacity 0.1s;
+    &.slick-initialized{
+        @extend %visible;
+        .single-car-item{
+            @extend %displayblock;
+            visibility:visible !important;
+        }
+    }
+    .single-car-item{
+        @extend %displaynone;
+        img{
+            @extend %w100;
+        }
+        &:nth-child(1){
+            @extend %displayblock;
+        }
+    }
+}
+
+.product-details{
+    padding: 20px;
+    @extend %default-box-shadow-2;
+}
+
+.product-details h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-details .price {
+    font-size: 18px;
+}
+
+.stars {
+    margin-bottom: 10px;
+}
+
+.stars span {
+    color: #F08E25;
+}
+
+.product-details .nice-select {
+    border-color: #f0f0f0;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 3px;
+}
+
+.nice-select:before {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: #F7FBFF;
+    content: "";
+    border-left: 1px solid #E5ECF6;
+    border-radius: 0 3px 3px 0;
+}
+
+.nice-select:after {
+    border-color: #000000;
+    right: 17px;
+}
+
+.coupon-code input[type=text] {
+    border-color: #E5ECF6;
+    height: 42px;
+    padding: 9px 20px;
+}
+
+.coupon-code {
+    flex-basis: 220px;
+}
+
+.coupon-code {}
+
+.cart-plus-minus {
+    flex-basis: 140px;
+    margin-right: 20px;
+}
+
+.coupon-code input[type=text]:focus {
+    border-color: #E8505B;
+}
+
+.product-details .boxed-btn {
+    width: 100%;
+    margin-top: 20px;
+}

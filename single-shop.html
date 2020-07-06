@@ -242,10 +242,10 @@
                                         <div class="single-select-item w-50 pr-2">
                                             <select name="size" id="size">
                                                 <option value="Select Size">Select Size</option>
-                                                <option value="S Size">S Size</option>
-                                                <option value="M Size">M Size</option>
-                                                <option value="L Size">L Size</option>
-                                                <option value="XL Size">XL Size</option>
+                                                <option value="S Size">S</option>
+                                                <option value="M Size">M</option>
+                                                <option value="L Size">L</option>
+                                                <option value="XL Size">XL</option>
                                             </select>
                                         </div>
                                         <div class="single-select-item w-50 pl-2">
@@ -260,7 +260,11 @@
                                     </div>
                                     <div class="d-flex">
                                         <div class="cart-plus-minus">
-                                            <input type="text" value="1">
+                                            <div class="number d-flex">
+                                                <span class="minus">-</span>
+                                                <input type="text" value="1"/>
+                                                <span class="plus">+</span>
+                                            </div>
                                         </div>
                                         <div class="coupon-code">
                                             <input type="text" placeholder="Enter Discount Code" name="couponcode">
@@ -282,8 +286,9 @@
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
                                     <div class="description">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
-                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                        <h6>Description</h6>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
@@ -354,21 +359,31 @@
                             <h4>Add A Review</h4>
                             <div class="review-form">
                                 <form action="POST">
-                                    <div class="d-flex">
-                                        <div class="form-item">
+                                    <div class="d-flex flex-wrap flex-md-nowrap">
+                                        <div class="form-item one order-1 order-md-0">
                                             <input type="text" id="fullname" placeholder="Full Name" name="fullname">
                                         </div>
-                                        <div class="form-item">
-                                            <input type="text" id="email" placeholder="Email Address" name="email">
+                                        <div class="form-item two  order-2 order-md-1">
+                                            <input type="email" id="email" placeholder="Email Address" name="email">
                                         </div>
-                                        <div class="form-item d-flex justify-content-lg-end align-items-center">
+                                        <div class="form-item three d-flex justify-content-end  order-0 order-md-2">
                                             <span>Your Rating:</span>
-                                            <div class="stars">
-                                                <span><i class="far fa-star"></i></span>
-                                                <span><i class="far fa-star"></i></span>
-                                                <span><i class="far fa-star"></i></span>
-                                                <span><i class="far fa-star"></i></span>
-                                                <span><i class="far fa-star"></i></span>
+                                            <div id="rating" class="stars d-flex">
+                                                <div class="single-star position-relative active">
+                                                    <span><i class="fas fa-star"></i></span>
+                                                </div>  
+                                                <div class="single-star position-relative">
+                                                    <span><i class="fas fa-star"></i></span>
+                                                </div>  
+                                                <div class="single-star position-relative">
+                                                    <span><i class="fas fa-star"></i></span>
+                                                </div>  
+                                                <div class="single-star position-relative">
+                                                    <span><i class="fas fa-star"></i></span>
+                                                </div>  
+                                                <div class="single-star position-relative">
+                                                    <span><i class="fas fa-star"></i></span>
+                                                </div>  
                                             </div>
                                         </div>
                                     </div>

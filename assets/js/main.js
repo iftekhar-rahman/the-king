@@ -287,7 +287,7 @@ jQuery(document).ready(function($){
         navText: ["<i class='fal fa-caret-left'></i>", "<i class='fal fa-caret-right'></i>"]
     });
     
-    // Shop page
+    // Shop page JS Code
     // slick slider
     $('.slider').slick({
         slidesToShow: 1,
@@ -342,7 +342,7 @@ jQuery(document).ready(function($){
             {
                 breakpoint: 750,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 5,
                     vertical:false,
                 }
             },
@@ -355,7 +355,31 @@ jQuery(document).ready(function($){
             }
         ]
     });
-    
+
+    $('.minus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+    });
+    $('.plus').click(function () {
+        var $input = $(this).parent().find('input');
+        $input.val(parseInt($input.val()) + 1);
+        $input.change();
+        return false;
+    });
+    // Ratings JS
+    var spansCounts =  $('#rating .single-star').length
+    $('#rating .single-star').on('click', function(e) {
+        console.log($(this).index())
+        $('#rating .single-star').removeClass('active');
+
+        for(var i=0 ; i < $(this).index() + 1; i++){
+            $('#rating .single-star').eq(i).addClass('active')
+        }
+    })
     
 
 });

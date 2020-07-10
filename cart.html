@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!--Title-->
-        <title>Portfolio style 2</title>
+        <title>Cart</title>
 
          <!--Favicon-->
         <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="images/x-icon" />
@@ -22,6 +22,7 @@
         <link href="assets/css/magnific-popup.css" rel="stylesheet">
         <link href="assets/css/slicknav.min.css" rel="stylesheet">
         <link href="assets/css/aos.css" rel="stylesheet">
+        <link href="assets/css/slick.css" rel="stylesheet">
 
         <!--Theme specific styles-->
         <link href="assets/css/style.css" rel="stylesheet">
@@ -141,15 +142,16 @@
         <!-- header ends -->
 
         <!-- .banner-area starts -->
-        <section class="banner-area" style="background-image: url(./assets/img/banner-1.jpg);">
+        <section class="banner-area team-banner" style="background-image: url(./assets/img/banner-1.jpg);">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 my-auto">
                         <div data-aos="fade-up" class="banner-content">
-                            <h2>Portfolio Grid</h2>
+                            <h2>Shopping Cart</h2>
                             <ul>
                                 <li><a href="#">Home</a></li>
-                                <li> - Portfolio</li>
+                                <li>- <a href="#">Shop</a></li>
+                                <li> - Cart</li>
                             </ul>
                         </div>
                     </div>
@@ -158,173 +160,211 @@
         </section>
         <!-- .banner-area ends -->
 
-        <!-- .portfolio-area starts -->
-        <section class="portfolio-area section-padding-115-100">
+        <!-- .cart-area area -->
+        <div class="cart-area section-padding-115-100">
             <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <div class="section-title text-center">
-                            <h4>RECENT PROJECTS</h4>
-                            <h2>Our Latest Case Studies</h2>
-                        </div>
-                        <div class="filters">
-                            <div class="portfolio-filter text-center button-group" data-filter-group="">
-                                <button class="button is-checked" data-filter="*">Show All <span class="filter-count"></span></button>
-                                <button class="button" data-filter=".financial">Financial <span class="filter-count"></span></button>
-                                <button class="button" data-filter=".resources">Resources <span class="filter-count"></span></button>
-                                <button class="button" data-filter=".solicitory">Solicitory <span class="filter-count"></span></button>
-                                <button class="button" data-filter=".startups">Start Ups <span class="filter-count"></span></button>
-                            </div>
-                        </div>
-                        <div data-aos="fade-up" class="portfolio-gallery grid">
-                            <div class="single-portfolio-item resources startups">
-                                <div class="portfolio-inner hover-style-2">
-                                    <div class="image-wrap position-relative">
-                                        <img src="assets/img/portfolio-1.jpg" alt="Financial Human">
-                                        <div class="portfolio-hover">
-                                            <a href="#"><i class="fal fa-link"></i></a>
-                                            <a class="popup-link1" href="assets/img/portfolio-1.jpg"><i class="fal fa-search"></i></a>
+                    <div class="col-12">
+                        <form action="#">
+                            <div class="table-content table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th class="product">Product</th>
+                                            <th class="price">Price</th>
+                                            <th class="quantity">Quantity</th>
+                                            <th class="total">Total</th>
+                                            <th class="edit">Edit</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/shop/cart-product-thumb-1.jpg" alt="cart product">
+                                                    <h4>Product Title Here</h4>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <h4>$250.00</h4>
+                                            </td>
+                                            <td>
+                                                <div class="cart-plus-minus">
+                                                    <div class="number d-flex">
+                                                        <span class="minus">-</span>
+                                                        <input type="text" value="2"/>
+                                                        <span class="plus">+</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h4>$500.00</h4>
+                                            </td>
+                                            <td>
+                                                <span class="close"><i class="far fa-times"></i></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/shop/cart-product-thumb-2.jpg" alt="cart product">
+                                                    <h4>Product Title Here</h4>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <h4>$440.00</h4>
+                                            </td>
+                                            <td>
+                                                <div class="cart-plus-minus">
+                                                    <div class="number d-flex">
+                                                        <span class="minus">-</span>
+                                                        <input type="text" value="2"/>
+                                                        <span class="plus">+</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h4>$880.00</h4>
+                                            </td>
+                                            <td>
+                                                <span class="close"><i class="far fa-times"></i></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/shop/cart-product-thumb-3.jpg" alt="cart product">
+                                                    <h4>Product Title Here</h4>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <h4>$120.00</h4>
+                                            </td>
+                                            <td>
+                                                <div class="cart-plus-minus">
+                                                    <div class="number d-flex">
+                                                        <span class="minus">-</span>
+                                                        <input type="text" value="2"/>
+                                                        <span class="plus">+</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h4>$240.00</h4>
+                                            </td>
+                                            <td>
+                                                <span class="close"><i class="far fa-times"></i></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/shop/cart-product-thumb-4.jpg" alt="cart product">
+                                                    <h4>Product Title Here</h4>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <h4>$300.00</h4>
+                                            </td>
+                                            <td>
+                                                <div class="cart-plus-minus">
+                                                    <div class="number d-flex">
+                                                        <span class="minus">-</span>
+                                                        <input type="text" value="2"/>
+                                                        <span class="plus">+</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h4>$600.00</h4>
+                                            </td>
+                                            <td>
+                                                <span class="close"><i class="far fa-times"></i></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/shop/cart-product-thumb-5.jpg" alt="cart product">
+                                                    <h4>Product Title Here</h4>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <h4>$360.00</h4>
+                                            </td>
+                                            <td>
+                                                <div class="cart-plus-minus">
+                                                    <div class="number d-flex">
+                                                        <span class="minus">-</span>
+                                                        <input type="text" value="2"/>
+                                                        <span class="plus">+</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h4>$720.00</h4>
+                                            </td>
+                                            <td>
+                                                <span class="close"><i class="far fa-times"></i></span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div><!-- ends -->
+                            <div class="checkout-box d-flex justify-content-between">
+                                <div class="coupon">
+                                    <input id="coupon_code" name="coupon_code" value="" placeholder="Coupon Code..." type="text">
+                                    <button class="boxed-btn" name="apply_coupon" type="submit" value="submit">Apply coupon</button>
+                                </div>
+                                <div class="proceed-btn">
+                                    <button class="boxed-btn" type="submit" value="submit">Update Cart</button>
+                                    <button class="boxed-btn" type="submit" value="submit">Proceed to Checkout</button>
+                                </div>
+                            </div><!-- ends -->
+                            <div class="cart-total-box d-flex">
+                                <div class="left-content w-50">
+                                    <h4>Calculate Shipping</h4>
+                                    <div class="left">
+                                        <div class="single-select-item">
+                                            <select name="shipping" id="shipping">
+                                                <option value="1">United Kingdom (UK)</option>
+                                                <option value="2">United State (USA)</option>
+                                                <option value="3">Canada</option>
+                                                <option value="4">Mexico</option>
+                                            </select>
                                         </div>
-                                    </div>
-                                    <div class="portfolio-content text-center">
-                                        <h3><a href="#">Edge Catalysts For Change</a></h3>
-                                        <p>Financial | Human</p>
+                                        <div class="row">
+                                            <div class="col pr-2">
+                                                <div class="single-text-field">
+                                                    <input type="text" placeholder="State / Country" name="state">
+                                                </div>
+                                            </div>
+                                            <div class="col pl-2">
+                                                <div class="single-text-field">
+                                                    <input type="text" placeholder="Postcode / ZIP" name="zipcode">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="boxed-btn" type="submit" value="submit">Update Total</button>
                                     </div>
                                 </div>
-                            </div><!--  ends -->
-                            <div class="single-portfolio-item startups resources">
-                                <div class="portfolio-inner hover-style-2">
-                                    <div class="image-wrap position-relative">
-                                        <img src="assets/img/portfolio-2.jpg" alt="Resources Strategy">
-                                        <div class="portfolio-hover">
-                                            <a href="#"><i class="fal fa-link"></i></a>
-                                            <a class="popup-link1" href="assets/img/portfolio-2.jpg"><i class="fal fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-content text-center">
-                                        <h3><a href="#">Plagiarze Reable Bandwdth</a></h3>
-                                        <p>Resources | Strategy</p>
+                                <div class="right-content w-50">
+                                    <h4>Cart Totals</h4>
+                                    <div class="right">
+                                        <ul>
+                                            <li>Cart Subtotal <span>$0.00</span></li>
+                                            <li>Shipping and Handling <span>Free Shipping</span></li>
+                                            <li>Order Total <span>$2940.00</span></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div><!-- ends -->
-                            <div class="single-portfolio-item solicitory financial">
-                                <div class="portfolio-inner hover-style-2">
-                                    <div class="image-wrap position-relative">
-                                        <img src="assets/img/portfolio-3.jpg" alt="Start Ups Resources">
-                                        <div class="portfolio-hover">
-                                            <a href="#"><i class="fal fa-link"></i></a>
-                                            <a class="popup-link1" href="assets/img/portfolio-3.jpg"><i class="fal fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-content text-center">
-                                        <h3><a href="#">Cuting Edge Mindshare Visa</a></h3>
-                                        <p>Start Ups | Resources</p>
-                                    </div>
-                                </div>
-                            </div><!-- ends -->
-                            <div class="single-portfolio-item startups solicitory financial">
-                                <div class="portfolio-inner hover-style-2">
-                                    <div class="image-wrap position-relative">
-                                        <img src="assets/img/portfolio-4.jpg" alt="Financial Human">
-                                        <div class="portfolio-hover">
-                                            <a href="#"><i class="fal fa-link"></i></a>
-                                            <a class="popup-link1" href="assets/img/portfolio-4.jpg"><i class="fal fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-content text-center">
-                                        <h3><a href="#">Edge Catalysts For Change</a></h3>
-                                        <p>Financial | Human</p>
-                                    </div>
-                                </div>
-                            </div><!-- ends -->
-                            <div class="single-portfolio-item resources startups solicitory">
-                                <div class="portfolio-inner hover-style-2">
-                                    <div class="image-wrap position-relative">
-                                        <img src="assets/img/portfolio-5.jpg" alt="Resources Strategy">
-                                        <div class="portfolio-hover">
-                                            <a href="#"><i class="fal fa-link"></i></a>
-                                            <a class="popup-link1" href="assets/img/portfolio-5.jpg"><i class="fal fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-content text-center">
-                                        <h3><a href="#">Plagiarze Reable Bandwdth</a></h3>
-                                        <p>Resources | Strategy</p>
-                                    </div>
-                                </div>
-                            </div><!-- ends -->
-                            <div class="single-portfolio-item solicitory financial">
-                                <div class="portfolio-inner hover-style-2">
-                                    <div class="image-wrap position-relative">
-                                        <img src="assets/img/portfolio-6.jpg" alt="Start Ups Resources">
-                                        <div class="portfolio-hover">
-                                            <a href="#"><i class="fal fa-link"></i></a>
-                                            <a class="popup-link1" href="assets/img/portfolio-6.jpg"><i class="fal fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-content text-center">
-                                        <h3><a href="#">Cuting Edge Mindshare Visa</a></h3>
-                                        <p>Start Ups | Resources</p>
-                                    </div>
-                                </div>
-                            </div><!-- ends -->
-                            <div class="single-portfolio-item startups solicitory financial">
-                                <div class="portfolio-inner hover-style-2">
-                                    <div class="image-wrap position-relative">
-                                        <img src="assets/img/portfolio-7.jpg" alt="Financial Human">
-                                        <div class="portfolio-hover">
-                                            <a href="#"><i class="fal fa-link"></i></a>
-                                            <a class="popup-link1" href="assets/img/portfolio-4.jpg"><i class="fal fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-content text-center">
-                                        <h3><a href="#">Edge Catalysts For Change</a></h3>
-                                        <p>Financial | Human</p>
-                                    </div>
-                                </div>
-                            </div><!-- ends -->
-                            <div class="single-portfolio-item resources startups solicitory">
-                                <div class="portfolio-inner hover-style-2">
-                                    <div class="image-wrap position-relative">
-                                        <img src="assets/img/portfolio-8.jpg" alt="Resources Strategy">
-                                        <div class="portfolio-hover">
-                                            <a href="#"><i class="fal fa-link"></i></a>
-                                            <a class="popup-link1" href="assets/img/portfolio-5.jpg"><i class="fal fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-content text-center">
-                                        <h3><a href="#">Plagiarze Reable Bandwdth</a></h3>
-                                        <p>Resources | Strategy</p>
-                                    </div>
-                                </div>
-                            </div><!-- ends -->
-                            <div class="single-portfolio-item solicitory financial">
-                                <div class="portfolio-inner hover-style-2">
-                                    <div class="image-wrap position-relative">
-                                        <img src="assets/img/portfolio-9.jpg" alt="Start Ups Resources">
-                                        <div class="portfolio-hover">
-                                            <a href="#"><i class="fal fa-link"></i></a>
-                                            <a class="popup-link1" href="assets/img/portfolio-6.jpg"><i class="fal fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-content text-center">
-                                        <h3><a href="#">Cuting Edge Mindshare Visa</a></h3>
-                                        <p>Start Ups | Resources</p>
-                                    </div>
-                                </div>
-                            </div><!-- ends -->
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="loadmore-btn text-center">
-                            <a href="#" class="boxed-btn">Load more</a>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- .portfolio-area ends -->
+        </div>
+        <!-- .cart-area ends -->
 
         <!-- .footer-area starts -->
         <footer class="footer-area" style="background-image: url(./assets/img/map-bg-2.png);">
@@ -392,11 +432,8 @@
         <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <script src="assets/js/jquery.slicknav.min.js"></script>
         <script src="assets/js/aos.js"></script>
-        <!-- Google Map -->
-        <!-- <script src="assets/js/map.js"></script> -->
-        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_hd-2QIFyzwP6OdYw2BJj7E2JH0Gft74&callback=initMap"></script> -->
+        <script src="assets/js/slick.min.js"></script>
         
-
         <!--Active & Custom JS-->
         <script src="assets/js/main.js"></script>
     </body>

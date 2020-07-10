@@ -768,14 +768,26 @@
 }
 
 
-// Cart Page
+/*================Cart Page CSS===============*/
 .cart-area {
     h4 {
         font-size: 18px;
         margin: 0;
+        @include all-below-med{
+            font-size: 16px;
+            font-weight: 500;
+        }
     }
     .cart-plus-minus {
         margin: 0 auto;
+        @include all-below-med{
+            width: 110px;
+        }
+        .number input{
+            @include all-below-med{
+                width: 40px;
+            }
+        }
     }
     .cart-plus-minus .number .minus, .cart-plus-minus .number .plus{
         background: transparent;
@@ -784,6 +796,9 @@
 .table-content{
     @extend %default-box-shadow-2;
     margin-bottom: 70px;
+    @include all-below-mobile-lg{
+        margin-bottom: 30px;
+    }
     .table {
         margin: 0;
         padding: 0;
@@ -817,6 +832,12 @@
                         width: 14%;
                         padding-right: 40px;
                         @extend %textright;
+                        @include all-below-med{
+                            padding-right: 30px;
+                        }
+                        @include all-below-mobile-lg{
+                            padding-right: 20px;
+                        }
                     }
                 }
             }
@@ -833,6 +854,13 @@
                         float: left;
                         margin-right: 25px;
                         max-width: 85px;
+                        @include all-below-med{
+                            margin-right: 10px;
+                        }
+                        @include all-below-mobile-lg{
+                            margin: 0 0 10px;
+                            float: none;
+                        }
                     }
                     a {
                         @extend %displayblock;
@@ -845,10 +873,21 @@
                             @extend %basetransition1;
                             margin: 0;
                             padding: 30px 0 0 0px;
+                            @include all-below-med{
+                                padding: 24px 0 0 0px;
+                            }
+                            @include all-below-mobile-lg{
+                               padding: 0;
+                               font-size: 16px;
+                               font-weight: 400;
+                            }
                         }
                     }
                     &:nth-child(1) {
                         width: 32%;
+                        // @include all-below-med{
+                        //     width: 44%;
+                        // }
                     }
                     &:nth-child(2) {
                         @extend %textcenter;
@@ -856,6 +895,9 @@
                     }
                     &:nth-child(3) {
                         width: 22%;
+                        // @include all-below-med{
+                        //     width: 20%;
+                        // }
                     }
                     &:nth-child(4) {
                         width: 15%;
@@ -864,6 +906,12 @@
                     &:nth-child(5) {
                         width: 14%;
                         padding-right: 40px;
+                        @include all-below-med{
+                            padding-right: 28px;
+                        }
+                        @include all-below-mobile-lg{
+                            padding-right: 20px;
+                        }
                         .close {
                             @extend %primary-color;
                             @extend %cursorpointer;
@@ -886,6 +934,12 @@
     @extend %default-box-shadow-2;
     margin-bottom: 50px;
     padding: 20px 30px;
+    @include all-below-med{
+        padding: 20px;
+    }
+    @include all-below-mobile-lg{
+        margin-bottom: 30px;
+    }
     button[type=submit] {
         padding: 18px 20px 17px;
         font-size: 14px;
@@ -893,6 +947,9 @@
         color: #0a1f44;
         @extend %basetransition2;
         border-radius: 0 5px 5px 0;
+        @include all-below-med{
+            padding: 18px 15px 17px;
+        }
         &:hover {
             @extend %white-color;
             @extend %primary-bg-color;
@@ -904,14 +961,44 @@
     .coupon {
         border: 1px solid $border-color;
         border-radius: 5px;
+        @include all-below-mobile-lg{
+            flex-basis: 100%;
+            margin-bottom: 20px;
+        } 
         input[type=text] {
             width: 190px;
             border: 0;
+            @include all-below-med{
+                width: 140px;
+                height: 55px;
+                padding: 15px 15px;
+            }
+            @include all-below-mobile-lg{
+                width: 100%;
+            }
+        }
+        button[type=submit]{
+            @include all-below-mobile-lg{
+                position: absolute;
+                right: 0;
+                top: 0;
+            } 
         }
     }
-    .proceed-btn button[type=submit] {
-        border-radius: 5px;
-        margin-left: 15px;
+    .proceed-btn {
+        @include all-below-mobile-lg{
+            flex-basis: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        button[type=submit] {
+            border-radius: 5px;
+            margin-left: 15px;
+            @include all-below-mobile-lg{
+                flex-basis: 48%;
+                margin-left: 0;
+            }
+        }
     }
 }
 
@@ -919,13 +1006,23 @@
 .cart-total-box{
     @extend %default-box-shadow-2;
     margin-bottom: 50px;
+    @include all-below-mobile-lg{
+        margin-bottom: 20px;
+    }
     h4 {
         padding: 24px 20px;
         border-bottom: 1px solid $border-color;
     }
     .left-content {
+        @include all-below-mobile-lg{
+            width: 100% !important;
+        }
         .left {
             padding: 20px 15px 30px 20px;
+            @include all-below-mobile-lg{
+                padding: 20px;
+                border-bottom: 1px solid $border-color;
+            }
             .single-select-item {
                 .nice-select {
                     height: 50px;
@@ -947,8 +1044,14 @@
         }
     }
     .right-content{
+        @include all-below-mobile-lg{
+            width: 100% !important;
+        }
         .right {
             padding: 20px 20px 30px 15px;
+            @include all-below-mobile-lg{
+                padding: 20px 20px 0 20px;
+            }
             ul {
                 li {
                     border: 1px solid $border-color;

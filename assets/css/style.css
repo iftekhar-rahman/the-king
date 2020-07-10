@@ -17733,18 +17733,32 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
     .add-reviews-form .review-form .form-item .stars .single-star.active span {
       color: #F08E25; }
 
+/*================Cart Page CSS===============*/
 .cart-area h4 {
   font-size: 18px;
   margin: 0; }
+  @media (max-width: 991px) {
+    .cart-area h4 {
+      font-size: 16px;
+      font-weight: 500; } }
 
 .cart-area .cart-plus-minus {
   margin: 0 auto; }
+  @media (max-width: 991px) {
+    .cart-area .cart-plus-minus {
+      width: 110px; } }
+  @media (max-width: 991px) {
+    .cart-area .cart-plus-minus .number input {
+      width: 40px; } }
 
 .cart-area .cart-plus-minus .number .minus, .cart-area .cart-plus-minus .number .plus {
   background: transparent; }
 
 .table-content {
   margin-bottom: 70px; }
+  @media (max-width: 767px) {
+    .table-content {
+      margin-bottom: 30px; } }
   .table-content .table {
     margin: 0;
     padding: 0; }
@@ -17765,6 +17779,12 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
       .table-content .table thead tr th:nth-child(5) {
         width: 14%;
         padding-right: 40px; }
+        @media (max-width: 991px) {
+          .table-content .table thead tr th:nth-child(5) {
+            padding-right: 30px; } }
+        @media (max-width: 767px) {
+          .table-content .table thead tr th:nth-child(5) {
+            padding-right: 20px; } }
     .table-content .table tbody tr {
       border-bottom: 1px solid #F0F0F0; }
       .table-content .table tbody tr:last-child {
@@ -17775,9 +17795,24 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
           float: left;
           margin-right: 25px;
           max-width: 85px; }
+          @media (max-width: 991px) {
+            .table-content .table tbody tr td img {
+              margin-right: 10px; } }
+          @media (max-width: 767px) {
+            .table-content .table tbody tr td img {
+              margin: 0 0 10px;
+              float: none; } }
         .table-content .table tbody tr td a h4 {
           margin: 0;
           padding: 30px 0 0 0px; }
+          @media (max-width: 991px) {
+            .table-content .table tbody tr td a h4 {
+              padding: 24px 0 0 0px; } }
+          @media (max-width: 767px) {
+            .table-content .table tbody tr td a h4 {
+              padding: 0;
+              font-size: 16px;
+              font-weight: 400; } }
         .table-content .table tbody tr td:nth-child(1) {
           width: 32%; }
         .table-content .table tbody tr td:nth-child(2) {
@@ -17789,6 +17824,12 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
         .table-content .table tbody tr td:nth-child(5) {
           width: 14%;
           padding-right: 40px; }
+          @media (max-width: 991px) {
+            .table-content .table tbody tr td:nth-child(5) {
+              padding-right: 28px; } }
+          @media (max-width: 767px) {
+            .table-content .table tbody tr td:nth-child(5) {
+              padding-right: 20px; } }
           .table-content .table tbody tr td:nth-child(5) .close {
             width: 30px; }
             .table-content .table tbody tr td:nth-child(5) .close:hover {
@@ -17797,31 +17838,83 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
 .checkout-box {
   margin-bottom: 50px;
   padding: 20px 30px; }
+  @media (max-width: 991px) {
+    .checkout-box {
+      padding: 20px; } }
+  @media (max-width: 767px) {
+    .checkout-box {
+      margin-bottom: 30px; } }
   .checkout-box button[type=submit] {
     padding: 18px 20px 17px;
     font-size: 14px;
     background: #F7FBFF;
     color: #0a1f44;
     border-radius: 0 5px 5px 0; }
+    @media (max-width: 991px) {
+      .checkout-box button[type=submit] {
+        padding: 18px 15px 17px; } }
     .checkout-box button[type=submit]:after {
       background: none; }
   .checkout-box .coupon {
     border: 1px solid #F0F0F0;
     border-radius: 5px; }
+    @media (max-width: 767px) {
+      .checkout-box .coupon {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        margin-bottom: 20px; } }
     .checkout-box .coupon input[type=text] {
       width: 190px;
       border: 0; }
+      @media (max-width: 991px) {
+        .checkout-box .coupon input[type=text] {
+          width: 140px;
+          height: 55px;
+          padding: 15px 15px; } }
+      @media (max-width: 767px) {
+        .checkout-box .coupon input[type=text] {
+          width: 100%; } }
+    @media (max-width: 767px) {
+      .checkout-box .coupon button[type=submit] {
+        position: absolute;
+        right: 0;
+        top: 0; } }
+  @media (max-width: 767px) {
+    .checkout-box .proceed-btn {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
   .checkout-box .proceed-btn button[type=submit] {
     border-radius: 5px;
     margin-left: 15px; }
+    @media (max-width: 767px) {
+      .checkout-box .proceed-btn button[type=submit] {
+        -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+        margin-left: 0; } }
 
 .cart-total-box {
   margin-bottom: 50px; }
+  @media (max-width: 767px) {
+    .cart-total-box {
+      margin-bottom: 20px; } }
   .cart-total-box h4 {
     padding: 24px 20px;
     border-bottom: 1px solid #F0F0F0; }
+  @media (max-width: 767px) {
+    .cart-total-box .left-content {
+      width: 100% !important; } }
   .cart-total-box .left-content .left {
     padding: 20px 15px 30px 20px; }
+    @media (max-width: 767px) {
+      .cart-total-box .left-content .left {
+        padding: 20px;
+        border-bottom: 1px solid #F0F0F0; } }
     .cart-total-box .left-content .left .single-select-item .nice-select {
       height: 50px;
       line-height: 50px;
@@ -17831,8 +17924,14 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
       height: 50px;
       padding: 12px 20px;
       margin-bottom: 30px; }
+  @media (max-width: 767px) {
+    .cart-total-box .right-content {
+      width: 100% !important; } }
   .cart-total-box .right-content .right {
     padding: 20px 20px 30px 15px; }
+    @media (max-width: 767px) {
+      .cart-total-box .right-content .right {
+        padding: 20px 20px 0 20px; } }
     .cart-total-box .right-content .right ul li {
       border: 1px solid #F0F0F0;
       border-radius: 5px;

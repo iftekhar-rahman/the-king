@@ -125,7 +125,7 @@ jQuery(document).ready(function($){
         itemSelector: '.single-portfolio-item'
     });
     var $filterButtons = $('.filters .button');
-    updateFilterCounts();
+    // updateFilterCounts();
     // store filter for each group
     var filters = {};
     $('.filters').on( 'click', '.button', function() {

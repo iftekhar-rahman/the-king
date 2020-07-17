@@ -1,15 +1,5 @@
 jQuery(document).ready(function($){
 
-    // $(".my-progress-bar").circularProgress({
-    //     line_width: 6,
-    //     height : "90px",
-    //     width : "90px",
-    //     color: "#FF4600",
-    //     starting_position: 0, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
-    //     percent: 0, // percent starts from
-    //     percentage: true,
-    // }).circularProgress('animate', 80, 2000);
-
     // Animate on scroll jQuery plugin
     AOS.init({
         disable: function() {
@@ -21,15 +11,16 @@ jQuery(document).ready(function($){
     // responsive menu
     $('#menu').slicknav();
 
+    // niceSelect
     $('select').niceSelect();
 
-
+    // single-accordion
     $(".single-accordion").on("click", function(){
         $(".single-accordion").removeClass("active");
         $(this).addClass("active");
     });
 
-
+    // .header-search
     $(".header-search span").on("click", function(){
         $(".search-box, .close-btn, .header-search span").addClass("active");
     });
@@ -83,7 +74,6 @@ jQuery(document).ready(function($){
         }
     })
 
-
     // Scroll To Top starts
     $(window).scroll(function(){
         if ($(this).scrollTop() > 500) {
@@ -99,49 +89,24 @@ jQuery(document).ready(function($){
         return false;
     }); // click() scroll top ENDS
 
-     //jQuery for portfolio section
-    //  $(".portfolio-filter button").on('click', function(){
-
-    //     $(".portfolio-filter button").removeClass("is-checked");
-    //     $(this).addClass("is-checked");
-
-
-    //     var selector =  $(this).attr("data-filter");
-
-    //     $(".grid").isotope({
-    //         filter: selector,
-    //     });
-
-    // });
-
-    // //jQuery for isotope
-    // $(".grid").isotope({
-    //     type: 'image'
-    // });
-
-    // portfolio isotope js
-    // init Isotope
+    /* portfolio isotope js */
     var $grid = $('.grid').isotope({
         itemSelector: '.single-portfolio-item'
     });
     var $filterButtons = $('.filters .button');
-    // updateFilterCounts();
-    // store filter for each group
+    updateFilterCounts();
+    /* store filter for each group*/
     var filters = {};
     $('.filters').on( 'click', '.button', function() {
         var $this = $(this);
-        // get group key
         var $buttonGroup = $this.parents('.button-group');
         var filterGroup = $buttonGroup.attr('data-filter-group');
-        // set filter for group
         filters[ filterGroup ] = $this.attr('data-filter');
-        // combine filters
         var filterValue = concatValues( filters );
-        // set filter for Isotope
         $grid.isotope({ filter: filterValue });
         updateFilterCounts();
     });
-    // change is-checked class on buttons
+    /* change is-checked class on buttons*/
     $('.button-group').each( function( i, buttonGroup ) {
         var $buttonGroup = $( buttonGroup );
         $buttonGroup.on( 'click', 'button', function() {
@@ -149,7 +114,7 @@ jQuery(document).ready(function($){
             $( this ).addClass('is-checked');
         });
     });
-    // flatten object by concatting values
+    /* flatten object by concatting values */
     function concatValues( obj ) {
         var value = '';
         for ( var prop in obj ) {
@@ -158,14 +123,12 @@ jQuery(document).ready(function($){
         return value;
     }
     function updateFilterCounts()  {
-        // get filtered item elements
         var itemElems = $grid.isotope('getFilteredItemElements');
         var $itemElems = $( itemElems );
         $filterButtons.each( function( i, button ) {
             var $button = $( button );
             var filterValue = $button.attr('data-filter');
             if ( !filterValue ) {
-                // do not update 'any' buttons
                 return;
             }
             var count = $itemElems.filter( filterValue ).length;
@@ -173,23 +136,8 @@ jQuery(document).ready(function($){
         });
     }
 
-    //jQuery for portfolio section
-    // $(".portfolio-filter button").on('click', function(){
 
-    //     $(".portfolio-filter button").removeClass("is-checked");
-    //     $(this).addClass("is-checked");
-
-
-    //     var selector =  $(this).attr("data-filter");
-
-    //     $(".grid").isotope({
-    //         filter: selector,
-    //     });
-
-    // });
-  
-
-    // Services page
+    //======Services page=======//
     // single service page sidebar
     $(".sidebar-open").on("click", function(){
         $(".sidebar, .close-btn, .sidebar-open").addClass("show-sidebar");
@@ -209,7 +157,7 @@ jQuery(document).ready(function($){
         navText: ["<i class='fal fa-caret-left'></i>", "<i class='fal fa-caret-right'></i>"]
     });
     
-    // Shop page JS Code
+    //========Shop page JS Code========//
     // slick slider
     $('.slider').slick({
         slidesToShow: 1,

@@ -16032,74 +16032,68 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
           right: 5px;
           line-height: 32px; } }
 
-.portfolio-area .portfolio-gallery {
-  margin-right: -15px;
-  margin-left: -15px; }
-  .portfolio-area .portfolio-gallery .single-portfolio-item {
-    width: 33.3333%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-bottom: 30px;
-    float: left; }
+.portfolio-area .portfolio-gallery .single-portfolio-item {
+  margin-bottom: 30px;
+  float: left; }
+  @media (max-width: 991px) {
+    .portfolio-area .portfolio-gallery .single-portfolio-item {
+      width: 50%; } }
+  @media (max-width: 767px) {
+    .portfolio-area .portfolio-gallery .single-portfolio-item {
+      width: 100%; } }
+  .portfolio-area .portfolio-gallery .single-portfolio-item.large-item {
+    width: 50%; }
     @media (max-width: 991px) {
-      .portfolio-area .portfolio-gallery .single-portfolio-item {
-        width: 50%; } }
-    @media (max-width: 767px) {
-      .portfolio-area .portfolio-gallery .single-portfolio-item {
+      .portfolio-area .portfolio-gallery .single-portfolio-item.large-item {
         width: 100%; } }
-    .portfolio-area .portfolio-gallery .single-portfolio-item.large-item {
-      width: 50%; }
-      @media (max-width: 991px) {
-        .portfolio-area .portfolio-gallery .single-portfolio-item.large-item {
-          width: 100%; } }
-      .portfolio-area .portfolio-gallery .single-portfolio-item.large-item .portfolio-inner .image-wrap:after {
-        background: none; }
-    .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner {
-      border-radius: 5px 5px 0 0; }
-      .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap {
-        z-index: 2; }
-        .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap img {
-          border-radius: 5px 5px 0 0; }
-        .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after {
-          left: 50%;
-          top: 50%;
-          width: 95%;
-          height: 95%;
-          z-index: 1;
-          -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
-        .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover {
-          left: 0;
-          top: 50%;
-          right: 0;
-          -webkit-transform: translate(0px, -50%);
-          -ms-transform: translate(0px, -50%);
-          transform: translate(0px, -50%);
-          z-index: 3; }
-          .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a {
-            width: 50px;
-            height: 50px;
-            font-size: 20px;
-            margin: 0 4px;
-            line-height: 50px; }
-      .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .portfolio-content {
-        padding: 26px 15px; }
-        .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .portfolio-content h3 {
-          font-size: 20px;
-          margin-bottom: 10px; }
-        .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .portfolio-content a {
-          color: #0a1f44; }
-      .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner.hover-style-2 .image-wrap .portfolio-hover {
-        top: 42%; }
-      .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner.hover-style-2 .portfolio-content {
-        z-index: 3;
+    .portfolio-area .portfolio-gallery .single-portfolio-item.large-item .portfolio-inner .image-wrap:after {
+      background: none; }
+  .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner {
+    border-radius: 5px 5px 0 0; }
+    .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap {
+      z-index: 2; }
+      .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap img {
+        border-radius: 5px 5px 0 0; }
+      .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap:after {
+        left: 50%;
+        top: 50%;
+        width: 95%;
+        height: 95%;
+        z-index: 1;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+      .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover {
         left: 0;
+        top: 50%;
         right: 0;
-        bottom: 67px; }
-    .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner .image-wrap:after {
-      opacity: .9;
-      visibility: visible; }
+        -webkit-transform: translate(0px, -50%);
+        -ms-transform: translate(0px, -50%);
+        transform: translate(0px, -50%);
+        z-index: 3; }
+        .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .image-wrap .portfolio-hover a {
+          width: 50px;
+          height: 50px;
+          font-size: 20px;
+          margin: 0 4px;
+          line-height: 50px; }
+    .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .portfolio-content {
+      padding: 26px 15px; }
+      .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .portfolio-content h3 {
+        font-size: 20px;
+        margin-bottom: 10px; }
+      .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner .portfolio-content a {
+        color: #0a1f44; }
+    .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner.hover-style-2 .image-wrap .portfolio-hover {
+      top: 42%; }
+    .portfolio-area .portfolio-gallery .single-portfolio-item .portfolio-inner.hover-style-2 .portfolio-content {
+      z-index: 3;
+      left: 0;
+      right: 0;
+      bottom: 67px; }
+  .portfolio-area .portfolio-gallery .single-portfolio-item:hover .portfolio-inner .image-wrap:after {
+    opacity: .9;
+    visibility: visible; }
 
 @media (max-width: 991px) {
   .contact-area {

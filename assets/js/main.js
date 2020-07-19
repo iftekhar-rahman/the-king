@@ -137,29 +137,7 @@ jQuery(document).ready(function($){
             });
         }
     });
-    
-
-    // $('.filters button').click(function(){
-    //     $('.filters button').removeClass('is-checked');
-    //     $(this).addClass('is-checked');
-        
-    //     var data = $(this).attr('data-filter');
-    //     $grid.isotope({
-    //       filter: data
-    //     })
-    // });
-      
-    // var $grid = $(".grid").isotope({
-    //     itemSelector: ".all",
-    //     percentPosition: true,
-    //     masonry: {
-    //         columnWidth: ".all"
-    //     }
-    // });
-
  
-
-
 
     //======Services page=======//
     // single service page sidebar

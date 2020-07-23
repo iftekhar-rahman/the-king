@@ -15413,6 +15413,8 @@ textarea {
       border: 0;
       width: 40px;
       font-size: 22px; } }
+  .header-area .header-cart .header-cart-icon {
+    cursor: pointer; }
   .header-area .header-cart .number {
     width: 24px;
     height: 24px;

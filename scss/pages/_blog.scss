@@ -480,3 +480,35 @@
         }
     }
 }
+
+// blog-carousel
+.blog-carousel{
+    .slick-arrow {
+        height: 50px;
+        width: 50px;
+        margin-top: -25px;
+        background-color: #ffffff;
+        border-radius: 50px;
+        color: #4a4452;
+        @extend %basetransition1;
+        i {
+            transform: rotate(0deg);
+            left: 18px;
+            margin-top: -12px;
+            font-size: 26px;
+        }
+        &:hover{
+            @extend %primary-bg-color;
+            @extend %white-color;
+        }
+    }
+    .arrow-left {
+        left: 20px;
+    }
+    .arrow-right {
+        right: 20px;
+        i {
+            left: 22px;
+        }
+    }
+}

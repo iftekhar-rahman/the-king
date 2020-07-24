@@ -149,14 +149,15 @@ jQuery(document).ready(function($){
     });
 
     // Blog Page
-    // homepage-slides
-	$(".blog-carousel").owlCarousel({
-		items: 1,
-		loop: true,
-		nav: true,
-		dots: false,
-        autoplay: false,
-        navText: ["<i class='fal fa-caret-left'></i>", "<i class='fal fa-caret-right'></i>"]
+    $('.blog-carousel').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: '<span class="arrow-left"><i class="fal fa-caret-left"></i></span>',
+        nextArrow: '<span class="arrow-right"><i class="fal fa-caret-right"></i></span>',
+        vertical:false,
+        fade: false,
+        asNavFor: '',
     });
     
     //========Shop page JS Code========//

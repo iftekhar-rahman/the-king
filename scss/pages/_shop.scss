@@ -315,43 +315,6 @@
             @extend %primary-color;
         }
     }
-    .slick-arrow {
-        height: 66px;
-        line-height: 78px;
-        width: 26px;
-        top: 50%;
-        margin-top: -33px;
-        background-color: #BECCC5;
-        font-size: 20px;
-        @extend %white-color;
-        @extend %cursorpointer;
-        @extend %basetransition1;
-        &:hover{
-            @extend %primary-bg-color;
-        }
-        i {
-            transform: rotate(-90deg);
-            @extend %posabsolute;
-            @extend %textcenter;
-            top: 50%;
-            left: 7px;
-            margin-top: -12px;
-            font-size: 24px;
-            @include mx-desktops{
-                // margin-top: -7px;
-            }
-        }
-    }
-    .arrow-right {
-        right: 0;
-        @extend %posabsolute;
-        z-index: 2;
-    }
-    .arrow-left {
-        left: 0;
-        @extend %posabsolute;
-        z-index: 2;
-    }
     .slider {
         margin-bottom: 6px;
         .popup-link1 {
